@@ -1,0 +1,178 @@
+
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Thomas Moreau</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<!--[if lt IE 9]>
+<script src="http://dpkingma.com/wordpress/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script src="https://use.fontawesome.com/ae904b9937.js"></script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" href="/css/academicons.css"/>
+<script type="text/javascript" src="/javascript/lib.js"></script>
+<!-- highlight current page in navigation -->
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).parent().addClass('current-menu-item');
+    }
+  });
+});
+</script>
+	
+</head>
+
+<body class="home">
+<div id="sidebar">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<img class="profile_img" src="https://s.gravatar.com/avatar/1c7c7939d1173cd6f455ce4313e831c5?s=150&r=x" />
+			<h2 class="site-title">
+				<a href="about">Thomas Moreau</a></h2>
+			<h4 class="site-description">CMLA - ENS Paris Saclay </h4>
+			<h5 class="email"> thomas.moreau [AT] cmla.ens-cachan.fr</h5>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<div class="menu-menu-1-container"><ul id="menu-nav" class="menu-nav">
+				<li class="nav-menu-item"><a href="index.html">About</a></li>
+				<li class="nav-menu-item"><a href="publications.html">Publications</a></li>
+				<li class="nav-menu-item"><a href="oss.html">Open Source Software</a></li>
+			</ul></div>
+		</nav><!-- #site-navigation -->
+		<div id="social-media">
+			<a href="https://github.com/tomMoral">
+				<i class="fa fa-github fa-3x"></i></a>
+			<a href="https://scholar.google.fr/citations?user=HEO_PsAAAAAJ">
+				<i class="ai ai-google-scholar ai-3x"></i></a>
+			<a href="http://stackoverflow.com/users/2642845/thomas-moreau">
+				<i class="fa fa-stack-overflow fa-3x"></i></a>
+			<a href="https://linkedin.com/in/tomMoral">
+				<i class="fa fa-linkedin fa-3x"></i></a>				
+		</div>
+	</header><!-- #masthead -->
+</div>
+</div>
+
+<div id="page">
+	<div class="page-content">
+	<article class="inner-text">
+		<header class="entry-header">
+			<h1 class="entry-title">About me</h1>
+		</header>
+
+		<div class="entry-content">
+
+<!-- <h3>Academia</h3> -->
+<p>
+	I am a PhD student at Centre de Mathématiques et de leurs applications (CMLA), ENS Paris-Saclay, since Fall 2014.
+	My PhD subject is <i>Automatic feature extraction for physiological time series</i>.<br>
+	Before enrolling in my PhD program, I did a MSc at Ecole Normale Superieure de Cachan in Applied Mathematics (MVA) and a MSc at Ecole Polytechnique in both Applied Mathematics and Computer Science.
+</p>
+
+<p> 
+	My research interests touch several areas of Machine Learning, Signal Processing and High-Dimensional Statistics.
+	In particular, I have been working on Convolutional Dictionary Learning, studying both their computational aspects and their possible application to pattern analysis.
+	I am also studying on theoretical properties of learned optimization algorithms.
+</p>
+<p>
+	With more technical projects, I have been experimenting with different tools for parallel and distributed computation, ranging from standard libraries like python <code>multiprocessing</code> to more advance tools such as <code>CUDA</code> or <code>openMPI</code>.
+	I also participated in some Open source projects in link with the python ecosystem and some gnome shell extensions.
+</p>
+
+<!-- <h3>Code</h3>
+
+<p>Fun with OSS</p> -->
+
+<header class="entry-header">
+	<h1 class="entry-title">Latest publication and projects</h1>
+</header>
+   
+    
+    <div class="publication">
+    	<div class="project_item">
+            <span class="title">Post Training in Deep Learning with Last Kernel </span>
+            <span style="width:2em;"></span>
+			
+            <a href="https://arxiv.org/abs/1611.04499"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+</a>
+			
+			
+			<a href="https://github.com/tomMoral/lastKernel"><i class="fa fa-github-alt" aria-hidden="true"></i>
+</a>
+			
+			<br>
+		    <span class="authors">Thomas Moreau and Julien Audiffren,</span>
+	        <span class="date">Nov 2016,</span>
+            
+            <span><i>preprint Arxiv</i></span>
+            
+ 
+        </div>
+	    
+        <i class="fa fa-plus-circle display-status" id="2"
+               onclick="expend(this)" status="off"></i>
+        
+        <div class="description show" id="sd_2">Additional training step for deep networks to optimize the use of the features learnerd during the classical training. A link with existing kernel methods is then discussed.
+        </div>
+        <div class="description hide" id="ld_2">One of the main challenges of deep learning methods is the choice of an appropriate training strategy. In particular, additional steps, such as unsupervised pre-training, have been shown to greatly improve the performances of deep structures. In this paper, we introduce a new training step,the post-training, which takes place after the training and where only specific layers are trained. In particular, we focus on the particular case -- named Last Kernel -- where only the last layer is trained. This step aims to find the optimal use of data representation learned during the other phases of the training. We show that Last Kernel can be effortlessly added to most learning strategies, is computationally inexpensive, does not cause overfitting and often produces significant improvement. Additionally, we show that with commonly used losses and activation functions, Last Kernel solves a convex closed optimization problems, offering rapid convergence -- or even closed-form solutions.
+        </div>
+        
+    </div>
+    <div class="project">
+    <div class="project_item">
+        <span class="title">Loky </span>
+        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i>
+</a>
+        <span class="date">Nov 2016</span>
+
+    </div>
+    
+    <i class="fa fa-plus-circle display-status" id="1"
+           onclick="expend(this)" status="off"></i>
+    
+    <span class="description show" id="sd_1">The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <code>ProcessPoolExecutor</code> class of <code>concurrent.futures</code>.</span>
+    <div class="description hide" id="ld_1">The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <code>ProcessPoolExecutor</code> class of <code>concurrent.futures</code>. It features:
+
+<ul>
+ <li> <b>Deadlock free implementation</b>: one of the major concern in standard multiprocessing and concurrent.futures libraries is the ability of the Pool/Executor to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.
+</li>
+
+    <li><b>Consistent spawn behavior</b>: All processes are started using fork/exec on POSIX systems. This ensures safer interactions with third party libraries.
+</li>
+
+   <li><b>Reusable executor</b>: strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.
+</li>
+</ul>
+<br><br>
+<i>python, multiprocessing, parallel computing</i></div>
+    
+</div>
+	</div><!-- .entry-content -->
+</article><!-- #post -->
+	</div>
+</div><!-- #page -->
+
+<div style="display:none">
+</div>
+
+</body>
+
+<script type="text/javascript">
+	window.onresize = function(){
+		var sidebar = document.getElementById("sidebar");
+		var page = document.getElementById("page");
+		page.style.setProperty("min-height", sidebar.clientHeight);
+	}
+	window.onresize()
+
+
+</script>
+</html>
