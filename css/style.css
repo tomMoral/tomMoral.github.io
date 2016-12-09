@@ -1,0 +1,149 @@
+
+html{
+	background-color: #8d8d8d;
+        overflow: hidden;
+}
+body{
+	margin: 0 0 0 0;
+}
+
+#sidebar, #page{
+	min-height: 600px;
+	display: inline-block;
+	margin-left: 5%;
+}
+
+.fa,.ai{
+	color: black;
+	margin-left: .1em;
+	margin-right: .1em;
+}
+
+
+#sidebar{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 20%;
+	text-align: center;
+	min-width: 300px;
+	padding: 5em 0em 5em 0em;
+
+	color: white;
+
+	background-color: rgba(0, 57, 158, 0.7);
+	background: -moz-linear-gradient(rgba(0, 57, 158, 0.7), rgba(0, 57, 158, 1));
+	background: linear-gradient(rgba(0, 57, 158, 0.5), rgba(0, 57, 158, 1));
+}
+	#sidebar .site-title a:link{
+		text-decoration: none;
+	}
+
+	#sidebar header{
+		margin-bottom: 15%;
+		margin-top: 15%;
+	}
+	#sidebar a:link,#sidebar a:visited{
+		color:white;
+	}
+	.profile_img{
+		border-radius: 50%;
+	}
+
+	.menu-nav{
+		border-bottom: solid darkgray 1px;
+		border-top: solid darkgray 1px;
+		text-align: left;
+		width: 60%;
+		margin-left: 15%;
+		padding: 5% 0% 5% 10%;
+		list-style-type: circle;
+	}
+		.menu-toggle{
+			visibility: hidden;
+		}
+	#sidebar .email{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+#page:before {
+    content: "";
+    display: inline-block;
+    width: 25%;
+    min-width: 300px;
+    background-color: yellow;
+}
+#page{
+	background-color: white;
+	/*width: 75%;
+	min-width: 900px;*/
+	min-height: 100%;
+	vertical-align: top;
+	margin-right: 5%;
+}
+    #page .page-content{
+    	padding-top: 5em;
+    	width: 70%;
+    	display: inline-block;
+		vertical-align: top;
+    }
+    #page .inner-text{
+		padding-left: 8%;
+    	text-align: justify;
+    }
+    #page h3{
+    	padding-left: 3%;
+    }
+    #page .fa{
+		color: black;
+	}
+
+	.entry-content{
+		width: 95%;
+		padding-top: 1em;
+	}
+
+
+/*------------------------------------------------------
+						List of projects
+-------------------------------------------------------*/
+.publication, .project{
+	background-color: rgba(128, 128, 128, .1);
+	margin: 1em;
+	padding: 1em;
+	width: 95%;
+	display: list-item;
+}
+.project_item{
+	width: 100%;
+}
+.title{
+	font-weight: bold;
+	color: rgba(0, 57, 158, 0.7);
+}
+.authors{
+	font-style: italic;
+}
+
+.project .date{
+	float: right;
+}
+.display-status{
+	float: right;
+	margin: 1em 0 0 0;
+	cursor: pointer;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+.description{
+	text-align: justify;
+	margin-top: 1em;
+	margin-left: 1em;
+	width: 90%;
+	margin-right: 5%;
+}
