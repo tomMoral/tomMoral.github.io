@@ -1,8 +1,9 @@
 
 html{
 	background-color: #8d8d8d;
-        overflow: hidden;
+    overflow-y: scroll;
 }
+
 body{
 	margin: 0 0 0 0;
 }
