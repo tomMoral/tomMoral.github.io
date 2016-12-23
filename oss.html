@@ -70,48 +70,45 @@ $(function(){
 
     <div class="entry-content">
 
-
-
     <div class="project">
-    <div class="project_item">
-        <span class="title">Loky </span>
-        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i>
-</a>
-        <span class="date">Nov 2016</span>
-
-    </div>
-    
-    
-
-    <input type="checkbox" class="btnCtrl" id="1"/>
-    <label class="btn display-status" for="1">
-        <i class="fa fa-plus-circle plus"></i>
-        <i class="fa fa-minus-circle minus"></i>
-    </label>
-    <div class="description">
-        <span class="summary">
-            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <code>ProcessPoolExecutor</code> class of <code>concurrent.futures</code>.
-        </span>
-        <div class="details">
-            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <code>ProcessPoolExecutor</code> class of <code>concurrent.futures</code>. It features:
-
-            <ul>
-                <li><b>Deadlock free implementation</b>:
-                    One of the major concern in standard multiprocessing and concurrent.futures libraries is the ability of the Pool/Executor to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.
-                </li>
-
-                <li><b>Consistent spawn behavior</b>:
-                    All processes are started using fork/exec on POSIX systems. This ensures safer interactions with third party libraries.
-                </li>
-
-               <li><b>Reusable executor</b>:
-                    Strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.
-                </li>
-            </ul>
-            <br><br>
-            <i>python, multiprocessing, parallel computing</i>
+        <div class="project_item">
+            <span class="title">Loky </span>
+            <a href="https://github.com/tomMoral/loky">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+             </a>
+            <span class="date">Nov 2016</span>
         </div>
-                
+
+        <input type="checkbox" class="btnCtrl" id="1"/>
+        <label class="btn display-status" for="1">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <span class="summary">
+                The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <code>ProcessPoolExecutor</code> class of <code>concurrent.futures</code>.
+            </span>
+            <div class="details">
+                The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <code>ProcessPoolExecutor</code> class of <code>concurrent.futures</code>. It features:
+
+                <ul>
+                    <li><b>Deadlock free implementation</b>:
+                        One of the major concern in standard multiprocessing and concurrent.futures libraries is the ability of the Pool/Executor to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.
+                    </li>
+
+                    <li><b>Consistent spawn behavior</b>:
+                        All processes are started using fork/exec on POSIX systems. This ensures safer interactions with third party libraries.
+                    </li>
+
+                   <li><b>Reusable executor</b>:
+                        Strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.
+                    </li>
+                </ul>
+                <br><br>
+                <i>python, multiprocessing, parallel computing</i>
+            </div>
+                    
+        </div>
     </div>
 
 
@@ -152,8 +149,8 @@ $(function(){
             <span class="date">Oct 2016</span>
         </div>
     
-        <input type="checkbox" class="btnCtrl" id="2"/>
-        <label class="btn display-status" for="2">
+        <input type="checkbox" class="btnCtrl" id="3"/>
+        <label class="btn display-status" for="3">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
@@ -170,7 +167,6 @@ $(function(){
         </div>
     </div>
 </article>
-    </div>
 </div><!-- #page -->
 
 <div style="display:none">
