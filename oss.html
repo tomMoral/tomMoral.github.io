@@ -34,18 +34,19 @@ $(function(){
     <header id="masthead" class="site-header" role="banner">
         <hgroup>
             <img class="profile_img" src="https://s.gravatar.com/avatar/1c7c7939d1173cd6f455ce4313e831c5?s=150&r=x" />
-            <h2 class="site-title">
-                <a href="index">Thomas Moreau</a></h2>
-            <h4 class="site-description">CMLA - ENS Paris Saclay </h4>
-            <h5 class="email"> thomas.moreau [AT] cmla.ens-cachan.fr</h5>
+            <div class="info">
+                <h2 class="site-title"><a href="about">Thomas Moreau</a></h2>
+                <h4 class="site-description">CMLA - ENS Paris Saclay </h4>
+                <h5 class="email"> thomas.moreau [AT] cmla.ens-cachan.fr</h5>
+            </div>
         </hgroup>
 
-        
         <nav id="site-navigation" class="main-navigation" role="navigation">
             <div class="menu-menu-1-container"><ul id="menu-nav" class="menu-nav">
-                <li class="nav-menu-item"><a href="index#about">About</a></li>
-                <li class="nav-menu-item"><a href="publications#publi">Publications</a></li>
-                <li class="nav-menu-item"><a href="oss#oss">Open Source Software</a></li>
+                <li class="nav-menu-item"><a href="about">About</a></li>
+                <li class="nav-menu-item"><a href="publications">Publications</a></li>
+                <li class="nav-menu-item"><a href="talks">Talks and Videos</a></li>
+                <li class="nav-menu-item"><a href="oss">Open Source Software</a></li>
             </ul></div>
         </nav><!-- #site-navigation -->
         <div id="social-media">
@@ -53,120 +54,120 @@ $(function(){
                 <i class="fa fa-github fa-3x"></i></a>
             <a href="https://scholar.google.fr/citations?user=HEO_PsAAAAAJ">
                 <i class="ai ai-google-scholar ai-3x"></i></a>
-            <a href="http://stackoverflow.com/story/tomMoral">
+            <a href="https://stackoverflow.com/story/tomMoral">
                 <i class="fa fa-stack-overflow fa-3x"></i></a>
             <a href="https://linkedin.com/in/tomMoral">
-                <i class="fa fa-linkedin fa-3x"></i></a>                
+                <i class="fa fa-linkedin fa-3x"></i></a>
         </div>
     </header><!-- #masthead -->
+</div>
 </div>
 
 <div id="page">
     <div class="page-content">
     <article class="inner-text">
-    <header class="entry-header"  id="oss">
+    <header class="entry-header">
         <h1 class="entry-title">Softwares</h1>
     </header>
 
     <div class="entry-content">
 
+
+
     <div class="project">
-        <div class="project_item">
-            <span class="title">Loky </span>
-            <a href="https://github.com/tomMoral/loky">
-                <i class="fa fa-github-alt" aria-hidden="true"></i>
-             </a>
-            <span class="date">Nov 2016</span>
-        </div>
+    <div class="project_item">
+        <span class="title">Loky </span>
+        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i>
+</a>
+        <span class="date">Nov 2016</span>
 
-        <input type="checkbox" class="btnCtrl" id="1"/>
-        <label class="btn display-status" for="1">
-            <i class="fa fa-plus-circle plus"></i>
-            <i class="fa fa-minus-circle minus"></i>
-        </label>
-        <div class="description">
-            <span class="summary">
-                The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <code>ProcessPoolExecutor</code> class of <code>concurrent.futures</code>.
-            </span>
-            <div class="details">
-                The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <code>ProcessPoolExecutor</code> class of <code>concurrent.futures</code>. It features:
-
-                <ul>
-                    <li><b>Deadlock free implementation</b>:
-                        One of the major concern in standard multiprocessing and concurrent.futures libraries is the ability of the Pool/Executor to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.
-                    </li>
-
-                    <li><b>Consistent spawn behavior</b>:
-                        All processes are started using fork/exec on POSIX systems. This ensures safer interactions with third party libraries.
-                    </li>
-
-                   <li><b>Reusable executor</b>:
-                        Strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.
-                    </li>
-                </ul>
-                <br><br>
-                <i>python, multiprocessing, parallel computing</i>
-            </div>
-                    
-        </div>
     </div>
 
+    <input type="checkbox" class="btnCtrl" id="proj1"/>
+    <label class="btn display-status" for="proj1">
+        <i class="fa fa-plus-circle plus"></i>
+        <i class="fa fa-minus-circle minus"></i>
+    </label>
+    <div class="description">
+        
+        <span class="summary">
+            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of <span class="highlightcode">concurrent.futures</span>.
+        </span>
+        <div class="details">
+            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of <span class="highlightcode">concurrent.futures</span>. It features:</br>
+<ul> <li> <b>Deadlock free implementation</b>: one of the major concern in standard multiprocessing and concurrent.futures libraries is the ability of the Pool/Executor to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.</li></br>
+<li><b>Consistent spawn behavior</b>: All processes are started using fork/exec on POSIX systems. This ensures safer interactions with third party libraries.</li></br>
+<li><b>Reusable executor</b>: strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.</li></ul></br>
+</br>
+<i>python, multiprocessing, parallel computing</i>
+        </div>
+        
+    </div>
+</div>
+
 
     <div class="project">
-        <div class="project_item">
-            <span class="title">Gnome Shell Extension NvApplet </span>
-            <a href="https://github.com/tomMoral/nvapplet-gnome-shell-extension">
-                <i class="fa fa-github-alt" aria-hidden="true"></i>
-            </a>
-            <span class="date">Oct 2016</span>
-        </div>
-    
+    <div class="project_item">
+        <span class="title">Gnome Shell Extension NvApplet </span>
+        <a href="https://github.com/tomMoral/nvapplet-gnome-shell-extension"><i class="fa fa-github-alt" aria-hidden="true"></i>
+</a>
+        <span class="date">Oct 2016</span>
 
-        <input type="checkbox" class="btnCtrl" id="2"/>
-        <label class="btn display-status" for="2">
-            <i class="fa fa-plus-circle plus"></i>
-            <i class="fa fa-minus-circle minus"></i>
-        </label>
-        <div class="description">
-            <span class="summary">
-                Gnome shell extension displaying the status of Nvidia GPU card in the gnome-shell panel.
-            </span>
-            <div class="details">
-                Gnome shell extension displaying the status of Nvidia GPU card in the gnome-shell panel.
-                <br><br>
-                <i>gnome-shell, clutter, bash</i>
-            </div>
-        </div>
-    
     </div>
 
+    <input type="checkbox" class="btnCtrl" id="proj3"/>
+    <label class="btn display-status" for="proj3">
+        <i class="fa fa-plus-circle plus"></i>
+        <i class="fa fa-minus-circle minus"></i>
+    </label>
+    <div class="description">
+        
+        <span class="summary">
+            Gnome shell extension displaying the status of Nvidia GPU card in the gnome-shell panel.
+        </span>
+        <div class="details">
+            Gnome shell extension displaying the status of Nvidia GPU card in the gnome-shell panel.</br>
+</br>
+</br>
+<i>gnome-shell, clutter, bash</i>
+        </div>
+        
+    </div>
+</div>
+
+
     <div class="project">
-        <div class="project_item">
-            <span class="title">Gnome Shell Extension Section Todolist </span>
-            <a href="https://github.com/tomMoral/ToDoList">
-                <i class="fa fa-github-alt" aria-hidden="true"></i>
-            </a>
-            <span class="date">Oct 2016</span>
+    <div class="project_item">
+        <span class="title">Gnome Shell Extension Section Todolist </span>
+        <a href="https://github.com/tomMoral/ToDoList"><i class="fa fa-github-alt" aria-hidden="true"></i>
+</a>
+        <span class="date">Oct 2016</span>
+
+    </div>
+
+    <input type="checkbox" class="btnCtrl" id="proj2"/>
+    <label class="btn display-status" for="proj2">
+        <i class="fa fa-plus-circle plus"></i>
+        <i class="fa fa-minus-circle minus"></i>
+    </label>
+    <div class="description">
+        
+        <span class="summary">
+            Gnome shell extension to manage a todolist with different subsections.
+        </span>
+        <div class="details">
+            Gnome shell extension to manage a todolist with different subsections.</br>
+This section is integrated in the gnome shell with a counter of the remaining tasks.</br>
+<i>javascript, gnome-shell, bash, clutter</i>
         </div>
-    
-        <input type="checkbox" class="btnCtrl" id="3"/>
-        <label class="btn display-status" for="3">
-            <i class="fa fa-plus-circle plus"></i>
-            <i class="fa fa-minus-circle minus"></i>
-        </label>
-        <div class="description">
-            <span class="summary">
-                Gnome shell extension to manage a todolist with different subsections.
-            </span>
-            <div class="details">
-                Gnome shell extension to manage a todolist with different subsections.<br>
-                This todolist is integrated in the gnome shell with a counter of the remaining tasks.<br><br>
-                <i>javascript, gnome-shell, bash, clutter</i>
-            </div>
-            
-        </div>
+        
+    </div>
+</div>
+
+
     </div>
 </article>
+    </div>
 </div><!-- #page -->
 
 <div style="display:none">
@@ -181,7 +182,5 @@ $(function(){
         page.style.setProperty("min-height", sidebar.clientHeight);
     }
     window.onresize()
-
-
 </script>
 </html>

@@ -34,17 +34,19 @@ $(function(){
     <header id="masthead" class="site-header" role="banner">
         <hgroup>
             <img class="profile_img" src="https://s.gravatar.com/avatar/1c7c7939d1173cd6f455ce4313e831c5?s=150&r=x" />
-            <h2 class="site-title">
-                <a href="index">Thomas Moreau</a></h2>
-            <h4 class="site-description">CMLA - ENS Paris Saclay </h4>
-            <h5 class="email"> thomas.moreau [AT] cmla.ens-cachan.fr</h5>
+            <div class="info">
+                <h2 class="site-title"><a href="about">Thomas Moreau</a></h2>
+                <h4 class="site-description">CMLA - ENS Paris Saclay </h4>
+                <h5 class="email"> thomas.moreau [AT] cmla.ens-cachan.fr</h5>
+            </div>
         </hgroup>
 
         <nav id="site-navigation" class="main-navigation" role="navigation">
             <div class="menu-menu-1-container"><ul id="menu-nav" class="menu-nav">
-                <li class="nav-menu-item"><a href="index#about">About</a></li>
-                <li class="nav-menu-item"><a href="publications#publi">Publications</a></li>
-                <li class="nav-menu-item"><a href="oss#oss">Open Source Software</a></li>
+                <li class="nav-menu-item"><a href="about">About</a></li>
+                <li class="nav-menu-item"><a href="publications">Publications</a></li>
+                <li class="nav-menu-item"><a href="talks">Talks and Videos</a></li>
+                <li class="nav-menu-item"><a href="oss">Open Source Software</a></li>
             </ul></div>
         </nav><!-- #site-navigation -->
         <div id="social-media">
@@ -52,23 +54,100 @@ $(function(){
                 <i class="fa fa-github fa-3x"></i></a>
             <a href="https://scholar.google.fr/citations?user=HEO_PsAAAAAJ">
                 <i class="ai ai-google-scholar ai-3x"></i></a>
-            <a href="http://stackoverflow.com/story/tomMoral">
+            <a href="https://stackoverflow.com/story/tomMoral">
                 <i class="fa fa-stack-overflow fa-3x"></i></a>
             <a href="https://linkedin.com/in/tomMoral">
-                <i class="fa fa-linkedin fa-3x"></i></a>                
+                <i class="fa fa-linkedin fa-3x"></i></a>
         </div>
     </header><!-- #masthead -->
+</div>
 </div>
 
 <div id="page">
     <div class="page-content">
     <article class="inner-text">
-    <header class="entry-header" id="publi">
-        <h1 class="entry-title">Publications</h1>
-    </header>
+	<header class="entry-header">
+		<h1 class="entry-title">Publications</h1>
+	</header>
 
-    <div class="entry-content">
+	<div class="entry-content">
 
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Understanding the Learned Iterative Soft Thresholding Algorithm with matrix factorization </span>
+            <span style="width:2em;"></span>
+            
+            <a href="https://arxiv.org/pdf/1706.01338.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+            
+            
+            <br>
+            <span class="authors">Thomas Moreau, Joan Bruna,</span>
+            <span class="date">Jun 2017,</span>
+            
+                <span><i>preprint Arxiv</i></span>
+            
+ 
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub7"/>
+        <label class="btn display-status" for="pub7">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            
+            <div class="summary">
+                This paper aims to extend the results from our previous paper studying the mechanisms of LISTA and gives an acceleration certificate for generic dictionaries.
+            </div>
+            <div class="details">
+                Sparse coding is a core building block in many data analysis and machine learning pipelines. Typically it is solved by relying on generic optimization techniques, such as the Iterative Soft Thresholding Algorithm and its accelerated version (ISTA, FISTA). These methods are optimal in the class of first-order methods for non-smooth, convex functions. However, they do not exploit the particular structure of the problem at hand nor the input data distribution. An acceleration using neural networks, coined LISTA, was proposed in Gregor and Le Cun (2010), which showed empirically that one could achieve high quality estimates with few iterations by modifying the parameters of the proximal splitting appropriately.</br>
+
+In this paper we study the reasons for such acceleration. Our mathematical analysis reveals that it is related to a specific matrix factorization of the Gram kernel of the dictionary, which attempts to nearly diagonalise the kernel with a basis that produces a small perturbation of the ℓ1 ball. When this factorization succeeds, we prove that the resulting splitting algorithm enjoys an improved convergence bound with respect to the non-adaptive version. Moreover, our analysis also shows that conditions for acceleration occur mostly at the beginning of the iterative process, consistent with numerical experiments. We further validate our analysis by showing that on dictionaries where this factorization does not exist, adaptive acceleration fails.
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Distributed Convolutional Sparse Coding </span>
+            <span style="width:2em;"></span>
+            
+            <a href="https://arxiv.org/pdf/1705.10087.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+            
+            
+            <br>
+            <span class="authors">Thomas Moreau, Laurent Oudre, Nicolas Vayatis,</span>
+            <span class="date">May 2017,</span>
+            
+                <span><i>preprint Arxiv</i></span>
+            
+ 
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub6"/>
+        <label class="btn display-status" for="pub6">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            
+            <div class="summary">
+                We consider the problem of building shift-invariant representations for long signals in the context of distributed processing.   We propose an asynchronous algorithm based on coordinate descent called DICOD.
+            </div>
+            <div class="details">
+                We consider the problem of building shift-invariant representations for long signals in the context of distributed processing.   We propose an asynchronous algorithm based on coordinate descent called DICOD to efficiently solve the l1-minimization problems involved in convolutional sparse coding.  This algorithm leverages the weak temporal dependency of the convolution to reduce the interprocess communication to a few local messages.   We prove that this algorithm converges to the optimal solution and that it scales with superlinear speedup, up to a certain limit. These properties are illustrated with numerical experiments and our algorithm is compared to the state-of-the-art methods used for convolutional sparse coding
+            </div>
+            
+        </div>
+    </div>
 
     
     <div class="publication">
@@ -76,74 +155,81 @@ $(function(){
             <span class="title">Post Training in Deep Learning with Last Kernel </span>
             <span style="width:2em;"></span>
             
-            <a href="https://arxiv.org/abs/1611.04499"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-</a>
+            <a href="https://arxiv.org/abs/1611.04499">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
             
             
-            <a href="https://github.com/tomMoral/lastKernel"><i class="fa fa-github-alt" aria-hidden="true"></i>
-</a>
+            <a href="https://github.com/tomMoral/lastKernel">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
             
             <br>
             <span class="authors">Thomas Moreau and Julien Audiffren,</span>
             <span class="date">Nov 2016,</span>
             
-            <span><i>preprint Arxiv</i></span>
+                <span><i>preprint Arxiv</i></span>
             
  
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="1"/>
-        <label class="btn display-status" for="1">
+        <input type="checkbox" class="btnCtrl" id="pub2"/>
+        <label class="btn display-status" for="pub2">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
+            
             <div class="summary">
                 Additional training step for deep networks to optimize the use of the features learnerd during the classical training. A link with existing kernel methods is then discussed.
             </div>
             <div class="details">
                 One of the main challenges of deep learning methods is the choice of an appropriate training strategy. In particular, additional steps, such as unsupervised pre-training, have been shown to greatly improve the performances of deep structures. In this paper, we introduce a new training step,the post-training, which takes place after the training and where only specific layers are trained. In particular, we focus on the particular case -- named Last Kernel -- where only the last layer is trained. This step aims to find the optimal use of data representation learned during the other phases of the training. We show that Last Kernel can be effortlessly added to most learning strategies, is computationally inexpensive, does not cause overfitting and often produces significant improvement. Additionally, we show that with commonly used losses and activation functions, Last Kernel solves a convex closed optimization problems, offering rapid convergence -- or even closed-form solutions.
             </div>
+            
         </div>
     </div>
 
     
     <div class="publication">
         <div class="project_item">
-            <span class="title">Understanding Neural Sparse Coding with Matrix Factorization </span>
+            <span class="title">Understanding Trainable Sparse Coding with Matrix Factorization </span>
             <span style="width:2em;"></span>
             
-            <a href="https://arxiv.org/abs/1609.00285"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-</a>
+            <a href="https://openreview.net/forum?id=SJGPL9Dex">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
             
             
-            <a href="https://github.com/tomMoral/AdaptiveOptim"><i class="fa fa-github-alt" aria-hidden="true"></i>
-</a>
+            <a href="https://github.com/tomMoral/AdaptiveOptim">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
             
             <br>
             <span class="authors">Thomas Moreau and Joan Bruna,</span>
             <span class="date">Sep 2016,</span>
             
-            <span><i>preprint Arxiv</i></span>
+                <span class="conference">In proceedings of <i>International Conference on Learning Representations (ICLR)</i></span>
             
  
         </div>
-        
-        <input type="checkbox" class="btnCtrl" id="2"/>
-        <label class="btn display-status" for="2">
+
+        <input type="checkbox" class="btnCtrl" id="pub3"/>
+        <label class="btn display-status" for="pub3">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
+            
             <div class="summary">
-                Theoretical analysis of neural sparse coding algorithms
+                In this paper we study the mechanisms behind LISTA.
             </div>
-           <div class="details">
+            <div class="details">
                 Sparse coding is a core building block in many data analysis and machine learning pipelines. Typically it is solved by relying on generic optimization techniques, that are optimal in the class of first-order methods for non-smooth, convex functions, such as the Iterative Soft Thresholding Algorithm and its accelerated version (ISTA, FISTA). However, these methods don't exploit the particular structure of the problem at hand nor the input data distribution. An acceleration using neural networks was proposed in <a href="http://machinelearning.wustl.edu/mlpapers/paper_files/icml2010_GregorL10.pdf">Gregor10</a>, coined LISTA, which showed empirically that one could achieve high quality estimates with few iterations by modifying the parameters of the proximal splitting appropriately.<br>
-                In this paper we study the reasons for such acceleration. Our mathematical analysis reveals that it is related to a specific matrix factorization of the Gram kernel of the dictionary, which attempts to nearly diagonalise the kernel with a basis that produces a small perturbation of the ℓ1 ball. When this factorization succeeds, we prove that the resulting splitting algorithm enjoys an improved convergence bound with respect to the non-adaptive version. Moreover, our analysis also shows that conditions for acceleration occur mostly at the beginning of the iterative process, consistent with numerical experiments. We further validate our analysis by showing that on dictionaries where this factorization does not exist, adaptive acceleration fails.
+In this paper we study the reasons for such acceleration. Our mathematical analysis reveals that it is related to a specific matrix factorization of the Gram kernel of the dictionary, which attempts to nearly diagonalise the kernel with a basis that produces a small perturbation of the ℓ1 ball. When this factorization succeeds, we prove that the resulting splitting algorithm enjoys an improved convergence bound with respect to the non-adaptive version. Moreover, our analysis also shows that conditions for acceleration occur mostly at the beginning of the iterative process, consistent with numerical experiments. We further validate our analysis by showing that on dictionaries where this factorization does not exist, adaptive acceleration fails.
             </div>
+            
         </div>
-        
     </div>
 
     
@@ -152,33 +238,35 @@ $(function(){
             <span class="title">Distributed Convolutional Sparse Coding via Message Passing Interface </span>
             <span style="width:2em;"></span>
             
-            <a href="http://www.cs.cmu.edu/~andrewgw/rep/MorOudVay.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-</a>
+            <a href="http://www.cs.cmu.edu/~andrewgw/rep/MorOudVay.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
             
             
             <br>
             <span class="authors">Thomas Moreau and Laurent Oudre and Nicolas Vayatis,</span>
             <span class="date">Dec 2015,</span>
             
-            <span class="conference">In <i>NIPS Workshop Nonparametric Methods for Large Scale Representation Learning</i></span>
+                <span class="conference">In <i>NIPS Workshop Nonparametric Methods for Large Scale Representation Learning</i></span>
             
  
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="3"/>
-        <label class="btn display-status" for="3">
+        <input type="checkbox" class="btnCtrl" id="pub1"/>
+        <label class="btn display-status" for="pub1">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
+            
             <div class="summary">
                 Asynchronous algorithm to solve the convolutional sparse coding. This algorithm can be implemented using the MPI framework.
             </div>
             <div class="details">
                 We consider the problem of building shift-invariant representations of signals from sensors with a large frequency of acquisition. We propose a distributed algorithm for convolutional sparse coding called DICOD that is based on coordinate descent and scales up with a speed up that is quadratic with respect to the number of processing units. Indeed, our implementation avoids sharing variables between cores and does not require any lock or synchronization at every step. We present theoretical results and empirical evidence of convergence of DICOD, and also provide numerical comparisons with respect to widely used algorithms for convolutional sparse coding.
             </div>
+            
         </div>
-        
     </div>
 
     
@@ -187,33 +275,35 @@ $(function(){
             <span class="title">Groupement automatique pour l’analyse du spectre singulier </span>
             <span style="width:2em;"></span>
             
-            <a href="http://www.laurentoudre.fr/publis/MOV-GRETSI-15.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-</a>
+            <a href="http://www.laurentoudre.fr/publis/MOV-GRETSI-15.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
             
             
             <br>
             <span class="authors">Thomas Moreau, Laurent Oudre and Nicolas Vayatis,</span>
             <span class="date">Sep 2015,</span>
             
-            <span class="conference">In proceedings of <i>the Groupe de Recherche et d&#39;Etudes en Traitement du Signal et des Images (GRETSI)</i></span>
+                <span class="conference">In proceedings of <i>the Groupe de Recherche et d&#39;Etudes en Traitement du Signal et des Images (GRETSI)</i></span>
             
  
         </div>
-        
-        <input type="checkbox" class="btnCtrl" id="4"/>
-        <label class="btn display-status" for="4">
+
+        <input type="checkbox" class="btnCtrl" id="pub4"/>
+        <label class="btn display-status" for="pub4">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
+            
             <div class="summary">
                 This paper introduces several automatic grouping strategies for Singular Spectrum Analysis (SSA) components in a unified framework.
             </div>
             <div class="details">
                 This paper introduces several automatic grouping strategies for Singular Spectrum Analysis (SSA) components. This step is useful to retrieve meaningful insight about the temporal dynamics of the series. A unifying framework is proposed to evaluate and compare the efficiency of different original methods compared to the existing ones.
             </div>
+            
         </div>
-        
     </div>
 
     
@@ -227,29 +317,30 @@ $(function(){
             <span class="authors">L. Oudre , T. Moreau , C. Truong , R. Barrois-Müller , R. Dadashi  and T. Grégory,</span>
             <span class="date">Sep 2015,</span>
             
-            <span class="conference">In proceedings of <i>the Groupe de Recherche et d&#39;Etudes en Traitement du Signal et des Images (GRETSI)</i></span>
+                <span class="conference">In proceedings of <i>the Groupe de Recherche et d&#39;Etudes en Traitement du Signal et des Images (GRETSI)</i></span>
             
  
         </div>
-        
-        <input type="checkbox" class="btnCtrl" id="5"/>
-        <label class="btn display-status" for="5">
+
+        <input type="checkbox" class="btnCtrl" id="pub5"/>
+        <label class="btn display-status" for="pub5">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
+            
             <div class="summary">
                 This article presents a method for step detection from accelerometer signals based on template matching.
             </div>
             <div class="details">
                 This article presents a method for step detection from accelerometer signals based on template matching. This method uses a library of step templates extracted from real data in order to not only count the steps but also to retrieve the start and end times of each step. The algorithm is tested on a large database of 300 recordings, composed of healthy patients and patients with various orthopaedic troubles. Simulations show that even with only 20 templates, our method achieves remarkable results with a 97% recall and a 96% precision, is robust and adapts well to pathological subjects.
             </div>
+            
         </div>
-        
     </div>
 
 
-    </div>
+	</div>
 </article>
     </div>
 </div><!-- #page -->
@@ -266,7 +357,5 @@ $(function(){
         page.style.setProperty("min-height", sidebar.clientHeight);
     }
     window.onresize()
-
-
 </script>
 </html>
