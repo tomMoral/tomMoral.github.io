@@ -74,43 +74,109 @@ $(function(){
 
 
     
-    <div class="talk">
-        
-    	<div class="talk_item">
-            <span class="title">Robustifying <span class="highlightcode">concurrent.futures</span> with <span class="highlightcode">loky</span> </span>
-            <span style="width:2em;"></span>
+        <div class="talk">
             
-            <a href="pyparis17">
+            <div class="talk_item">
+                <span class="title">Robustifying <span class="highlightcode">concurrent.futures</span> with <span class="highlightcode">loky</span> </span>
+                <span style="width:2em;"></span>
                 
-                <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
-            </a>
-            
-            
-            <br>
-            <span class="date">Mon Jun 2017,</span>
-            <span class="conference">At <i>PyParis 2017</i></span>
- 
-        </div>
-
-        <input type="checkbox" class="btnCtrl" id="talk1"/>
-        <label class="btn display-status" for="talk1">
-            <i class="fa fa-plus-circle plus"></i>
-            <i class="fa fa-minus-circle minus"></i>
-        </label>
-        <div class="description">
-            <div class="summary">
-                The <span class="highlightcode">concurrent.futures</span> module offers an easy to use API to parallelize code execution in python, using <span class="highlightcode">threading</span> or <span class="highlightcode">multiprocessing</span> primitives. We will begin our talk by presenting this API and the differences between <span class="highlightcode">Thread</span> and <span class="highlightcode">Process</span>.
+                <a href="pyparis17">
+                    
+                    <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+                </a>
+                
+                
+                <br>
+                <span class="date">Mon Jun 2017,</span>
+                <span class="conference">At <i>PyParis 2017</i></span>
+     
             </div>
-            <div class="details">
-                The <span class="highlightcode">concurrent.futures</span> module offers an easy to use API to parallelize code execution in python, using <span class="highlightcode">threading</span> or <span class="highlightcode">multiprocessing</span> primitives. We will begin our talk by presenting this API and the differences between <span class="highlightcode">Thread</span> and <span class="highlightcode">Process</span>.</br>
-</br>
-For <span class="highlightcode">Process</span> backed executions, useful for pure python parallelization, several issues can reduce the performance. Spawning new workers for each execution can create a large overhead, but maintaining the pool of worker across the program can become quickly bothersome. We will describe several of the pitfall that can make using <span class="highlightcode">concurrent.futures</span> unstable.</br>
-</br>
-Finally, we will introduce <span class="highlightcode">loky</span>, a library providing a robust, reusable pool of workers, handled internally. It uses a customized implementation of <span class="highlightcode">ProcessPoolExecutor</span> from <span class="highlightcode">concurrent.futures</span>. We will describe its main features and the major technical design choice that helped making it more robust.
+    
+            <input type="checkbox" class="btnCtrl" id="talk1"/>
+            <label class="btn display-status" for="talk1">
+                <i class="fa fa-plus-circle plus"></i>
+                <i class="fa fa-minus-circle minus"></i>
+            </label>
+            <div class="description">
+                <div class="summary">
+                    The <span class="highlightcode">concurrent.futures</span> module
+                    offers an easy to use API to parallelize code execution in
+                    python, using <span class="highlightcode">threading</span> or
+                    <span class="highlightcode">multiprocessing</span> primitives.
+                    We will begin our talk by presenting this API and the
+                    differences between <span class="highlightcode">Thread</span>
+                    and <span class="highlightcode">Process</span>.
+                </div>
+                <div class="details">
+                    The <span class="highlightcode">concurrent.futures</span> module
+                    offers an easy to use API to parallelize code execution in
+                    python, using <span class="highlightcode">threading</span> or
+                    <span class="highlightcode">multiprocessing</span> primitives.
+                    We will begin our talk by presenting this API and the
+                    differences between <span class="highlightcode">Thread</span>
+                    and <span class="highlightcode">Process</span>.
+                    </br>
+    
+                    </br>
+                    For <span class="highlightcode">Process</span> backed
+                    executions, useful for pure python parallelization, several
+                    issues can reduce the performance. Spawning new workers for each
+                    execution can create a large overhead, but maintaining the pool
+                    of worker across the program can become quickly bothersome. We
+                    will describe several of the pitfall that can make using
+                    <span class="highlightcode">concurrent.futures</span> unstable.
+                    </br>
+    
+                    </br>
+                    Finally, we will introduce <span
+                    class="highlightcode">loky</span>, a library providing a robust,
+                    reusable pool of workers, handled internally. It uses a
+                    customized implementation of <span
+                    class="highlightcode">ProcessPoolExecutor</span> from <span
+                    class="highlightcode">concurrent.futures</span>. We will
+                    describe its main features and the major technical design choice
+                    that helped making it more robust.
+                </div>
             </div>
+            
         </div>
         
-    </div>
+        <div class="talk">
+            
+            <div class="talk_item">
+                <span class="title">Understanding physiological signals via sparse representations</span>
+                <span style="width:2em;"></span>
+                
+                <a href="edmh_17_10/prez.pdf">
+                    <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+                </a>
+                
+                
+                <br>
+                <span class="date">Mon 9 Oct 2017,</span>
+                <span class="conference">
+                    At <i>IHES - Journée de rentré EDMH</i>
+                </span>
+     
+            </div>
+    
+            <input type="checkbox" class="btnCtrl" id="talk1"/>
+            <label class="btn display-status" for="talk1">
+                <i class="fa fa-plus-circle plus"></i>
+                <i class="fa fa-minus-circle minus"></i>
+            </label>
+            <div class="description">
+                <div class="summary">
+                    General presentation of time series representations and of
+                    the convolutional representation model.
+                </div>
+                <div class="details">
+                    General presentation of time series representations and of
+                    the convolutional representation model.
+                </div>
+            </div>
+            
+        </div>
 
 
 	</div>
