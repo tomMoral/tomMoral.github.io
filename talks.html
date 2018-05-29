@@ -76,6 +76,110 @@ $(function(){
         <div class="talk">
         
     	<div class="talk_item">
+            <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
+            <span style="width:2em;"></span>
+            <a href="/talks/18_05_29_multicsc.pdf">
+                
+                <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+            </a>
+            
+            <br>
+            <span class="date">Tue May 2018,</span>
+            <span class="conference">At <i>parietal group meeting</i></span>
+ 
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk4"/>
+        <label class="btn display-status" for="talk4">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                A multivariate CSC with rank-1 constrain algorithm designed to study brain activity waveforms
+            </div>
+            <div class="details">
+                Frequency-specific patterns of neural activity are traditionally interpreted as sustained rhythmic oscillations, and related to cognitive mechanisms such as attention, high level visual processing or motor control. While alpha waves (8-12 Hz) are known to closely resemble short sinusoids, and thus are revealed by Fourier analysis or wavelet transforms, there is an evolving debate that electromagnetic neural signals are composed of more complex waveforms that cannot be analyzed by linear filters and traditional signal representations. In this paper, we propose to learn dedicated representations of such recordings using a multivariate convolutional sparse coding (CSC) algorithm. Applied to electroencephalography (EEG) or magnetoencephalography (MEG) data, this method is able to learn not only prototypical temporal waveforms, but also associated spatial patterns so their origin can be localized in the brain. Our algorithm is based on alternated minimization and a greedy coordinate descent solver that leads to state-of-the-art running time on long time series. To demonstrate the implications of this method, we apply it to MEG data and show that it is able to recover biological artifacts. More remarkably, our approach also reveals the presence of non-sinusoidal mu-shaped patterns, along with their topographic maps related to the somatosensory cortex.
+            </div>
+        </div>
+        
+    </div>
+
+
+        <div class="talk">
+        
+    	<div class="talk_item">
+            <span class="title">PhD defense </span>
+            <span style="width:2em;"></span>
+            <a href="/talks/17_12_19_defense.pdf">
+                
+                <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+            </a>
+            
+            <br>
+            <span class="date">Tue Dec 2017,</span>
+            <span class="conference">At <i>CMLA, ENS Paris-Saclay</i></span>
+ 
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk5"/>
+        <label class="btn display-status" for="talk5">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Convolutional Sparse Representations -- application to physiological signals and interpretability for Deep Learning
+            </div>
+            <div class="details">
+                Convolutional representations extract recurrent patterns which lead to the discovery of local structures in a set of signals. They are well suited to analyze physiological signals which requires interpretable representations in order to understand the relevant information. Moreover, these representations can be linked to deep learning models, as a way to bring interpretability in their internal representations. In this dissertation, we describe recent advances on both computational and theoretical aspects of these models.<br/></br>
+Our main contribution in the first part is an asynchronous algorithm, called DICOD, based on greedy coordinate descent, to solve convolutional sparse coding for long signals. Our algorithm has super-linear acceleration. We also explored the relationship of Singular Spectrum Analysis with convolutional representations, as an initialization step for convolutional dictionary learning.<br/></br>
+In a second part, we focus on the link between representations and neural networks. Our main result is a study of the mechanisms which accelerate sparse coding algorithms with neural networks. We show that it is linked to a factorization of the Gram matrix of the dictionary. Other aspects of representations in neural networks are also investigated with an extra training step for deep learning, called post-training, to boost the performances of trained networks by improving their last layer's weights.<br/></br>
+Finally, we illustrate the relevance of convolutional representations for physiological signals. Convolutional dictionary learning is used to summarize signals from human walking and Singular Spectrum Analysis is used to remove the gaze movement in young infant's oculometric recordings.
+            </div>
+        </div>
+        
+    </div>
+
+
+        <div class="talk">
+        
+    	<div class="talk_item">
+            <span class="title">Accelerating sparse coding resolution </span>
+            <span style="width:2em;"></span>
+            <a href="/talks/17_12_01_MAP5_seminar.pdf">
+                
+                <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+            </a>
+            
+            <br>
+            <span class="date">Fri Dec 2017,</span>
+            <span class="conference">At <i>séminaire de statistique du MAP5</i></span>
+ 
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk6"/>
+        <label class="btn display-status" for="talk6">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Acceleration strategies for sparse coding resolution, using the optmization structure.
+            </div>
+            <div class="details">
+                Sparse coding is a core building block in many data analysis and machine learning pipelines. Finding good algorithms to accelerate the resolution of such problem is thus critical to many  applications.<br/></br>
+The first part of this talk is focused on recent acceleration techniques which estimate the sparse code with a train neural network such as LISTA. Empirical results have shown that they achieve high quality estimates with few iterations by modifying the parameters of the proximal splitting appropriately. In this talk, I will link the performance of these network to a factorization of the Gram matrix of the problem which preserves the l1 norm. This mechanism is shown to be sufficient to explain the performance of LISTA and numerical experiments show that it is also necessary. (Joint work with J. Bruna)</br></br>
+In a second part of the talk, I will focus on convolutional sparse coding, with band circulant matrices. The particular properties of these problems allow to derive an efficient distributed algorithm based on the greedy coordinate descent. It can be shown that this algorithm converges in an asynchronous setting, is communication efficient and has a super-linear speed-up. These different properties are then illustrated with numerical experiments. (Joint work with N. Vayatis and L. Oudre)
+            </div>
+        </div>
+        
+    </div>
+
+
+        <div class="talk">
+        
+    	<div class="talk_item">
             <span class="title">Understanding Trainable Sparse Coding with Matrix Factorization </span>
             <span style="width:2em;"></span>
             <a href="/talks/17_11_Google_ZRH.pdf">

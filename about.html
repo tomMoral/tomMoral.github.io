@@ -92,37 +92,39 @@ $(function(){
         
     <div class="publication">
         <div class="project_item">
-            <span class="title">Understanding the Learned Iterative Soft Thresholding Algorithm with matrix factorization </span>
+            <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
             <span style="width:2em;"></span>
             
-            <a href="https://arxiv.org/pdf/1706.01338.pdf">
+            <a href="https://arxiv.org/pdf/1805.09654.pdf">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
             
             
+            <a href="https://github.com/tomMoral/multicsc">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+            
             <br>
-            <span class="authors">Thomas Moreau, Joan Bruna,</span>
-            <span class="date">Jun 2017,</span>
+            <span class="authors">Tom Dupré La Tour, Thomas Moreau, Mainak Jas, Alexandre Gramfort,</span>
+            <span class="date">May 2018,</span>
             
                 <span><i>preprint Arxiv</i></span>
             
  
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="pub7"/>
-        <label class="btn display-status" for="pub7">
+        <input type="checkbox" class="btnCtrl" id="pub8"/>
+        <label class="btn display-status" for="pub8">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             
             <div class="summary">
-                This paper aims to extend the results from our previous paper studying the mechanisms of LISTA and gives an acceleration certificate for generic dictionaries.
+                A multivariate CSC with rank-1 constrain algorithm designed to study brain activity waveforms
             </div>
             <div class="details">
-                Sparse coding is a core building block in many data analysis and machine learning pipelines. Typically it is solved by relying on generic optimization techniques, such as the Iterative Soft Thresholding Algorithm and its accelerated version (ISTA, FISTA). These methods are optimal in the class of first-order methods for non-smooth, convex functions. However, they do not exploit the particular structure of the problem at hand nor the input data distribution. An acceleration using neural networks, coined LISTA, was proposed in Gregor and Le Cun (2010), which showed empirically that one could achieve high quality estimates with few iterations by modifying the parameters of the proximal splitting appropriately.</br>
-
-In this paper we study the reasons for such acceleration. Our mathematical analysis reveals that it is related to a specific matrix factorization of the Gram kernel of the dictionary, which attempts to nearly diagonalise the kernel with a basis that produces a small perturbation of the ℓ1 ball. When this factorization succeeds, we prove that the resulting splitting algorithm enjoys an improved convergence bound with respect to the non-adaptive version. Moreover, our analysis also shows that conditions for acceleration occur mostly at the beginning of the iterative process, consistent with numerical experiments. We further validate our analysis by showing that on dictionaries where this factorization does not exist, adaptive acceleration fails.
+                Frequency-specific patterns of neural activity are traditionally interpreted as sustained rhythmic oscillations, and related to cognitive mechanisms such as attention, high level visual processing or motor control. While alpha waves (8-12 Hz) are known to closely resemble short sinusoids, and thus are revealed by Fourier analysis or wavelet transforms, there is an evolving debate that electromagnetic neural signals are composed of more complex waveforms that cannot be analyzed by linear filters and traditional signal representations. In this paper, we propose to learn dedicated representations of such recordings using a multivariate convolutional sparse coding (CSC) algorithm. Applied to electroencephalography (EEG) or magnetoencephalography (MEG) data, this method is able to learn not only prototypical temporal waveforms, but also associated spatial patterns so their origin can be localized in the brain. Our algorithm is based on alternated minimization and a greedy coordinate descent solver that leads to state-of-the-art running time on long time series. To demonstrate the implications of this method, we apply it to MEG data and show that it is able to recover biological artifacts. More remarkably, our approach also reveals the presence of non-sinusoidal mu-shaped patterns, along with their topographic maps related to the somatosensory cortex.
             </div>
             
         </div>
@@ -130,31 +132,30 @@ In this paper we study the reasons for such acceleration. Our mathematical analy
             <div class="talk">
         
     	<div class="talk_item">
-            <span class="title">Understanding Trainable Sparse Coding with Matrix Factorization </span>
+            <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
             <span style="width:2em;"></span>
-            <a href="/talks/17_11_Google_ZRH.pdf">
+            <a href="/talks/18_05_29_multicsc.pdf">
                 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
             
             <br>
-            <span class="date">Mon Nov 2017,</span>
-            <span class="conference">At <i>Tech talk - Google Zurich</i></span>
+            <span class="date">Tue May 2018,</span>
+            <span class="conference">At <i>parietal group meeting</i></span>
  
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk3"/>
-        <label class="btn display-status" for="talk3">
+        <input type="checkbox" class="btnCtrl" id="talk4"/>
+        <label class="btn display-status" for="talk4">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                In this talk, we provide elements explaining why Learned ISTA is able to accelerate the LASSO resolution. This vision of optimization algorithms in the neural network framework could be used to link sparse representations and neural networks.
+                A multivariate CSC with rank-1 constrain algorithm designed to study brain activity waveforms
             </div>
             <div class="details">
-                Optimization algorithms for sparse coding can be viewed in the light of the neural network framework. Using this framework, it is possible to design trainable networks which accelerate the resolution of an optimization problem on a given distribution, as it has been shown with the Learned ISTA network, proposed by Gregor & Le Cun (2010).</br></br>
-In this talk, we provide elements explaining why the acceleration is possible in the case of ISTA. We show that the resolution of sparse coding can be accelerated compared to ISTA when the design matrix admits a quasi-diagonal factorization with sparse eigenspaces. The resulting algorithm has the same convergence rate but an improved constant factor. Then we show under which conditions such factorization is possible with high probability for generic Gaussian dictionaries. Finally, we design neural networks which compute this algorithm and show that they are a re-parametrization of LISTA. Thus, the performance of LISTA are at least as good as this algorithm. We conclude by designing adverse examples for our factorization based algorithm and show that LISTA also fails to accelerate on these cases, proving that this mechanism plays a role in LISTA acceleration.
+                Frequency-specific patterns of neural activity are traditionally interpreted as sustained rhythmic oscillations, and related to cognitive mechanisms such as attention, high level visual processing or motor control. While alpha waves (8-12 Hz) are known to closely resemble short sinusoids, and thus are revealed by Fourier analysis or wavelet transforms, there is an evolving debate that electromagnetic neural signals are composed of more complex waveforms that cannot be analyzed by linear filters and traditional signal representations. In this paper, we propose to learn dedicated representations of such recordings using a multivariate convolutional sparse coding (CSC) algorithm. Applied to electroencephalography (EEG) or magnetoencephalography (MEG) data, this method is able to learn not only prototypical temporal waveforms, but also associated spatial patterns so their origin can be localized in the brain. Our algorithm is based on alternated minimization and a greedy coordinate descent solver that leads to state-of-the-art running time on long time series. To demonstrate the implications of this method, we apply it to MEG data and show that it is able to recover biological artifacts. More remarkably, our approach also reveals the presence of non-sinusoidal mu-shaped patterns, along with their topographic maps related to the somatosensory cortex.
             </div>
         </div>
         
