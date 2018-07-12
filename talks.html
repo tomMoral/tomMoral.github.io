@@ -10,9 +10,6 @@
 <script src="http://dpkingma.com/wordpress/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <script src="https://use.fontawesome.com/ae904b9937.js"></script>
-
-
-
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
 <link rel="stylesheet" href="/css/academicons.css"/>
 <script type="text/javascript" src="/javascript/lib.js"></script>
@@ -26,9 +23,7 @@ $(function(){
   });
 });
 </script>
-    
 </head>
-
 <body class="home">
 <div id="sidebar">
     <header id="masthead" class="site-header" role="banner">
@@ -40,7 +35,6 @@ $(function(){
                 <h5 class="email"> thomas.moreau [AT] cmla.ens-cachan.fr</h5>
             </div>
         </hgroup>
-
         <nav id="site-navigation" class="main-navigation" role="navigation">
             <div class="menu-menu-1-container"><ul id="menu-nav" class="menu-nav">
                 <li class="nav-menu-item"><a href="about">About</a></li>
@@ -62,33 +56,49 @@ $(function(){
     </header><!-- #masthead -->
 </div>
 </div>
-
 <div id="page">
     <div class="page-content">
     <article class="inner-text">
-	<header class="entry-header">
-		<h1 class="entry-title">Presentations</h1>
-	</header>
-
-	<div class="entry-content">
-
-
+    <header class="entry-header">
+        <h1 class="entry-title">Presentations</h1>
+    </header>
+    <div class="entry-content">
         <div class="talk">
-        
-    	<div class="talk_item">
+            <div class="talk_item">
+                <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
+                <span style="width:2em;"></span>
+                <a href="/talks/18_07_12_dicod.pdf">
+                    <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+                </a>
+                <br>
+                <span class="date">Jul 2018,</span>
+                <span class="conference">At <i>International Conference on Machine Learning (ICML)</i></span>
+            </div>
+            <input type="checkbox" class="btnCtrl" id="talk4"/>
+            <label class="btn display-status" for="talk4">
+                <i class="fa fa-plus-circle plus"></i>
+                <i class="fa fa-minus-circle minus"></i>
+            </label>
+            <div class="description">
+                <div class="summary">
+                    A communication efficient asynchronous algorithm for convolutional sparse coding.
+                </div>
+                <div class="details">
+                    In this paper, we introduce DICOD, a convolutional sparse coding algorithm which builds shift invariant representations for long signals. This algorithm is designed to run in a distributed setting, with local message passing, making it communication efficient. It is based on coordinate descent and uses locally greedy updates which accelerate the resolution compared to greedy coordinate selection. We prove the convergence of this algorithm and highlight its computational speed-up which is super-linear in the number of cores used. We also provide empirical evidence for the acceleration properties of our algorithm compared to state-of-the-art methods.
+                </div>
+            </div>
+        </div>
+        <div class="talk">
+        <div class="talk_item">
             <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
             <span style="width:2em;"></span>
             <a href="/talks/18_05_29_multicsc.pdf">
-                
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
-            
             <br>
             <span class="date">Tue May 2018,</span>
             <span class="conference">At <i>parietal group meeting</i></span>
- 
         </div>
-
         <input type="checkbox" class="btnCtrl" id="talk4"/>
         <label class="btn display-status" for="talk4">
             <i class="fa fa-plus-circle plus"></i>
@@ -102,26 +112,18 @@ $(function(){
                 Frequency-specific patterns of neural activity are traditionally interpreted as sustained rhythmic oscillations, and related to cognitive mechanisms such as attention, high level visual processing or motor control. While alpha waves (8-12 Hz) are known to closely resemble short sinusoids, and thus are revealed by Fourier analysis or wavelet transforms, there is an evolving debate that electromagnetic neural signals are composed of more complex waveforms that cannot be analyzed by linear filters and traditional signal representations. In this paper, we propose to learn dedicated representations of such recordings using a multivariate convolutional sparse coding (CSC) algorithm. Applied to electroencephalography (EEG) or magnetoencephalography (MEG) data, this method is able to learn not only prototypical temporal waveforms, but also associated spatial patterns so their origin can be localized in the brain. Our algorithm is based on alternated minimization and a greedy coordinate descent solver that leads to state-of-the-art running time on long time series. To demonstrate the implications of this method, we apply it to MEG data and show that it is able to recover biological artifacts. More remarkably, our approach also reveals the presence of non-sinusoidal mu-shaped patterns, along with their topographic maps related to the somatosensory cortex.
             </div>
         </div>
-        
     </div>
-
-
         <div class="talk">
-        
-    	<div class="talk_item">
+        <div class="talk_item">
             <span class="title">PhD defense </span>
             <span style="width:2em;"></span>
             <a href="/talks/17_12_19_defense.pdf">
-                
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
-            
             <br>
             <span class="date">Tue Dec 2017,</span>
             <span class="conference">At <i>CMLA, ENS Paris-Saclay</i></span>
- 
         </div>
-
         <input type="checkbox" class="btnCtrl" id="talk5"/>
         <label class="btn display-status" for="talk5">
             <i class="fa fa-plus-circle plus"></i>
@@ -132,32 +134,27 @@ $(function(){
                 Convolutional Sparse Representations -- application to physiological signals and interpretability for Deep Learning
             </div>
             <div class="details">
-                Convolutional representations extract recurrent patterns which lead to the discovery of local structures in a set of signals. They are well suited to analyze physiological signals which requires interpretable representations in order to understand the relevant information. Moreover, these representations can be linked to deep learning models, as a way to bring interpretability in their internal representations. In this dissertation, we describe recent advances on both computational and theoretical aspects of these models.<br/></br>
-Our main contribution in the first part is an asynchronous algorithm, called DICOD, based on greedy coordinate descent, to solve convolutional sparse coding for long signals. Our algorithm has super-linear acceleration. We also explored the relationship of Singular Spectrum Analysis with convolutional representations, as an initialization step for convolutional dictionary learning.<br/></br>
-In a second part, we focus on the link between representations and neural networks. Our main result is a study of the mechanisms which accelerate sparse coding algorithms with neural networks. We show that it is linked to a factorization of the Gram matrix of the dictionary. Other aspects of representations in neural networks are also investigated with an extra training step for deep learning, called post-training, to boost the performances of trained networks by improving their last layer's weights.<br/></br>
+                Convolutional representations extract recurrent patterns which lead to the discovery of local structures in a set of signals. They are well suited to analyze physiological signals which requires interpretable representations in order to understand the relevant information. Moreover, these representations can be linked to deep learning models, as a way to bring interpretability in their internal representations. In this dissertation, we describe recent advances on both computational and theoretical aspects of these models.<br/>
+</br>
+Our main contribution in the first part is an asynchronous algorithm, called DICOD, based on greedy coordinate descent, to solve convolutional sparse coding for long signals. Our algorithm has super-linear acceleration. We also explored the relationship of Singular Spectrum Analysis with convolutional representations, as an initialization step for convolutional dictionary learning.<br/>
+</br>
+In a second part, we focus on the link between representations and neural networks. Our main result is a study of the mechanisms which accelerate sparse coding algorithms with neural networks. We show that it is linked to a factorization of the Gram matrix of the dictionary. Other aspects of representations in neural networks are also investigated with an extra training step for deep learning, called post-training, to boost the performances of trained networks by improving their last layer's weights.<br/>
+</br>
 Finally, we illustrate the relevance of convolutional representations for physiological signals. Convolutional dictionary learning is used to summarize signals from human walking and Singular Spectrum Analysis is used to remove the gaze movement in young infant's oculometric recordings.
             </div>
         </div>
-        
     </div>
-
-
         <div class="talk">
-        
-    	<div class="talk_item">
+        <div class="talk_item">
             <span class="title">Accelerating sparse coding resolution </span>
             <span style="width:2em;"></span>
             <a href="/talks/17_12_01_MAP5_seminar.pdf">
-                
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
-            
             <br>
             <span class="date">Fri Dec 2017,</span>
             <span class="conference">At <i>séminaire de statistique du MAP5</i></span>
- 
         </div>
-
         <input type="checkbox" class="btnCtrl" id="talk6"/>
         <label class="btn display-status" for="talk6">
             <i class="fa fa-plus-circle plus"></i>
@@ -168,31 +165,25 @@ Finally, we illustrate the relevance of convolutional representations for physio
                 Acceleration strategies for sparse coding resolution, using the optmization structure.
             </div>
             <div class="details">
-                Sparse coding is a core building block in many data analysis and machine learning pipelines. Finding good algorithms to accelerate the resolution of such problem is thus critical to many  applications.<br/></br>
-The first part of this talk is focused on recent acceleration techniques which estimate the sparse code with a train neural network such as LISTA. Empirical results have shown that they achieve high quality estimates with few iterations by modifying the parameters of the proximal splitting appropriately. In this talk, I will link the performance of these network to a factorization of the Gram matrix of the problem which preserves the l1 norm. This mechanism is shown to be sufficient to explain the performance of LISTA and numerical experiments show that it is also necessary. (Joint work with J. Bruna)</br></br>
+                Sparse coding is a core building block in many data analysis and machine learning pipelines. Finding good algorithms to accelerate the resolution of such problem is thus critical to many  applications.<br/>
+</br>
+The first part of this talk is focused on recent acceleration techniques which estimate the sparse code with a train neural network such as LISTA. Empirical results have shown that they achieve high quality estimates with few iterations by modifying the parameters of the proximal splitting appropriately. In this talk, I will link the performance of these network to a factorization of the Gram matrix of the problem which preserves the l1 norm. This mechanism is shown to be sufficient to explain the performance of LISTA and numerical experiments show that it is also necessary. (Joint work with J. Bruna)</br>
+</br>
 In a second part of the talk, I will focus on convolutional sparse coding, with band circulant matrices. The particular properties of these problems allow to derive an efficient distributed algorithm based on the greedy coordinate descent. It can be shown that this algorithm converges in an asynchronous setting, is communication efficient and has a super-linear speed-up. These different properties are then illustrated with numerical experiments. (Joint work with N. Vayatis and L. Oudre)
             </div>
         </div>
-        
     </div>
-
-
         <div class="talk">
-        
-    	<div class="talk_item">
+        <div class="talk_item">
             <span class="title">Understanding Trainable Sparse Coding with Matrix Factorization </span>
             <span style="width:2em;"></span>
             <a href="/talks/17_11_Google_ZRH.pdf">
-                
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
-            
             <br>
             <span class="date">Mon Nov 2017,</span>
             <span class="conference">At <i>Tech talk - Google Zurich</i></span>
- 
         </div>
-
         <input type="checkbox" class="btnCtrl" id="talk3"/>
         <label class="btn display-status" for="talk3">
             <i class="fa fa-plus-circle plus"></i>
@@ -203,30 +194,23 @@ In a second part of the talk, I will focus on convolutional sparse coding, with 
                 In this talk, we provide elements explaining why Learned ISTA is able to accelerate the LASSO resolution. This vision of optimization algorithms in the neural network framework could be used to link sparse representations and neural networks.
             </div>
             <div class="details">
-                Optimization algorithms for sparse coding can be viewed in the light of the neural network framework. Using this framework, it is possible to design trainable networks which accelerate the resolution of an optimization problem on a given distribution, as it has been shown with the Learned ISTA network, proposed by Gregor & Le Cun (2010).</br></br>
+                Optimization algorithms for sparse coding can be viewed in the light of the neural network framework. Using this framework, it is possible to design trainable networks which accelerate the resolution of an optimization problem on a given distribution, as it has been shown with the Learned ISTA network, proposed by Gregor & Le Cun (2010).</br>
+</br>
 In this talk, we provide elements explaining why the acceleration is possible in the case of ISTA. We show that the resolution of sparse coding can be accelerated compared to ISTA when the design matrix admits a quasi-diagonal factorization with sparse eigenspaces. The resulting algorithm has the same convergence rate but an improved constant factor. Then we show under which conditions such factorization is possible with high probability for generic Gaussian dictionaries. Finally, we design neural networks which compute this algorithm and show that they are a re-parametrization of LISTA. Thus, the performance of LISTA are at least as good as this algorithm. We conclude by designing adverse examples for our factorization based algorithm and show that LISTA also fails to accelerate on these cases, proving that this mechanism plays a role in LISTA acceleration.
             </div>
         </div>
-        
     </div>
-
-
         <div class="talk">
-        
-    	<div class="talk_item">
+        <div class="talk_item">
             <span class="title">Understanding physiological signals via sparse representations </span>
             <span style="width:2em;"></span>
             <a href="/talks/17_10_EDMH.pdf">
-                
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
-            
             <br>
             <span class="date">Mon Oct 2017,</span>
             <span class="conference">At <i>IHES - Journée de rentré EDMH</i></span>
- 
         </div>
-
         <input type="checkbox" class="btnCtrl" id="talk2"/>
         <label class="btn display-status" for="talk2">
             <i class="fa fa-plus-circle plus"></i>
@@ -240,17 +224,12 @@ In this talk, we provide elements explaining why the acceleration is possible in
                 General presentation of time series representations and of the convolutional representation model.
             </div>
         </div>
-        
     </div>
-
-
         <div class="talk">
-        
-    	<div class="talk_item">
+        <div class="talk_item">
             <span class="title">Robustifying <span class="highlightcode">concurrent.futures</span> with <span class="highlightcode">loky</span> </span>
             <span style="width:2em;"></span>
             <a href="/talks/pyparis17">
-                
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
             <a href="https://youtu.be/VpLBrWPOYQ8">
@@ -259,9 +238,7 @@ In this talk, we provide elements explaining why the acceleration is possible in
             <br>
             <span class="date">Mon Jun 2017,</span>
             <span class="conference">At <i>PyParis 2017</i></span>
- 
         </div>
-
         <input type="checkbox" class="btnCtrl" id="talk1"/>
         <label class="btn display-status" for="talk1">
             <i class="fa fa-plus-circle plus"></i>
@@ -272,28 +249,23 @@ In this talk, we provide elements explaining why the acceleration is possible in
                 The <span class="highlightcode">concurrent.futures</span> module offers an easy to use API to parallelize code execution in python, using <span class="highlightcode">threading</span> or <span class="highlightcode">multiprocessing</span> primitives. We will begin our talk by presenting this API and the differences between <span class="highlightcode">Thread</span> and <span class="highlightcode">Process</span>.
             </div>
             <div class="details">
-                The <span class="highlightcode">concurrent.futures</span> module offers an easy to use API to parallelize code execution in python, using <span class="highlightcode">threading</span> or <span class="highlightcode">multiprocessing</span> primitives. We will begin our talk by presenting this API and the differences between <span class="highlightcode">Thread</span> and <span class="highlightcode">Process</span>.</br>
-</br>
-For <span class="highlightcode">Process</span> backed executions, useful for pure python parallelization, several issues can reduce the performance. Spawning new workers for each execution can create a large overhead, but maintaining the pool of worker across the program can become quickly bothersome. We will describe several of the pitfall that can make using <span class="highlightcode">concurrent.futures</span> unstable.</br>
-</br>
+                The <span class="highlightcode">concurrent.futures</span> module offers an easy to use API to parallelize code execution in python, using <span class="highlightcode">threading</span> or <span class="highlightcode">multiprocessing</span> primitives. We will begin our talk by presenting this API and the differences between <span class="highlightcode">Thread</span> and <span class="highlightcode">Process</span>.
+</br>
+</br>
+For <span class="highlightcode">Process</span> backed executions, useful for pure python parallelization, several issues can reduce the performance. Spawning new workers for each execution can create a large overhead, but maintaining the pool of worker across the program can become quickly bothersome. We will describe several of the pitfall that can make using <span class="highlightcode">concurrent.futures</span> unstable.
+</br>
+</br>
 Finally, we will introduce <span class="highlightcode">loky</span>, a library providing a robust, reusable pool of workers, handled internally. It uses a customized implementation of <span class="highlightcode">ProcessPoolExecutor</span> from <span class="highlightcode">concurrent.futures</span>. We will describe its main features and the major technical design choice that helped making it more robust.
             </div>
         </div>
-        
     </div>
-
-
-
-	</div>
+    </div>
 </article>
     </div>
 </div><!-- #page -->
-
 <div style="display:none">
 </div>
-
 </body>
-
 <script type="text/javascript">
     window.onresize = function(){
         var sidebar = document.getElementById("sidebar");
