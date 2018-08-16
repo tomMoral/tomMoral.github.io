@@ -26,7 +26,7 @@ $(function(){
   });
 });
 </script>
-    
+
 </head>
 
 <body class="home">
@@ -72,101 +72,92 @@ $(function(){
 
     <div class="entry-content">
 	<p>
-	    I am a PhD student at Centre de Mathématiques et de leurs applications (CMLA), ENS Paris-Saclay, since Fall 2014.
-	    My PhD subject is <i>Convolutional Sparse Representations -- application to physiological signals and interpretability
-            for Deep Learning</i>.
+        I am a PostDoc researcher in the parietal team @ INRIA Saclay, since spring 2018, working on convolutional dictionary learning.
 	</p>
 
 	<p>
-            My research interests touch several areas of Machine Learning, Signal Processing and High-Dimensional Statistics.
-	    In particular, I have been working on Convolutional Dictionary Learning, studying both their computational aspects
-            and their possible application to pattern analysis. I am also studying on theoretical properties of learned
-            optimization algorithms.
+        My research interests touch several areas of Machine Learning, Signal Processing and High-Dimensional Statistics. In particular, I have been working on Convolutional Dictionary Learning, studying both their computational aspects and their possible application to pattern analysis. I am also interested in theoretical properties of learned optimization algorithms such as LISTA.
 	</p>
 	<p>
-	    Before enrolling in my PhD program, I did a MsC at Ecole Normale Superieure de Cachan in Applied Mathematics (MVA)
-            and a MsC at Ecole Polytechnique in both Applied Mathematics and Computer Science.
+        I did my PhD under the supervision of Nicolas Vayatis and Laurent Oudre, in the CMLA @ ENS Paris-Saclay. My PhD focuses on convolutional representations and their applications to physiological signals. I am also involved in open-source projects such as <span class="highlightcode">joblib</span> or <span class="highlightcode">loky</span>, for parallel scientific computing.
 	</p>
 
 	<h3>Latest publication and projects</h3>
         
     <div class="publication">
         <div class="project_item">
-            <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
+            <span class="title">DICOD: Distributed Convolutional Coordinate Descent for Convolutional Sparse Coding </span>
             <span style="width:2em;"></span>
-            
-            <a href="https://arxiv.org/pdf/1805.09654.pdf">
+
+            <a href="http://proceedings.mlr.press/v80/moreau18a/moreau18a.pdf">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
-            
-            
-            <a href="https://github.com/tomMoral/multicsc">
+
+
+            <a href="https://github.com/tomMoral/dicod">
                 <i class="fa fa-github-alt" aria-hidden="true"></i>
             </a>
-            
+
             <br>
-            <span class="authors">Tom Dupré La Tour, Thomas Moreau, Mainak Jas, Alexandre Gramfort,</span>
-            <span class="date">May 2018,</span>
-            
-                <span><i>preprint Arxiv</i></span>
-            
- 
+            <span class="authors">Thomas Moreau, Laurent Oudre, Nicolas Vayatis,</span>
+            <span class="date">Jul 2018,</span>
+
+                <span class="conference">In proceedings of <i>International Conference on Machine Learning (ICML)</i></span>
+
+
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="pub8"/>
-        <label class="btn display-status" for="pub8">
+        <input type="checkbox" class="btnCtrl" id="pub6"/>
+        <label class="btn display-status" for="pub6">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
-            
             <div class="summary">
-                A multivariate CSC with rank-1 constrain algorithm designed to study brain activity waveforms
+                In this paper, we introduce DICOD, a distributed convolutional sparse coding algorithm to build shift invariant representations for long signals.
             </div>
             <div class="details">
-                Frequency-specific patterns of neural activity are traditionally interpreted as sustained rhythmic oscillations, and related to cognitive mechanisms such as attention, high level visual processing or motor control. While alpha waves (8-12 Hz) are known to closely resemble short sinusoids, and thus are revealed by Fourier analysis or wavelet transforms, there is an evolving debate that electromagnetic neural signals are composed of more complex waveforms that cannot be analyzed by linear filters and traditional signal representations. In this paper, we propose to learn dedicated representations of such recordings using a multivariate convolutional sparse coding (CSC) algorithm. Applied to electroencephalography (EEG) or magnetoencephalography (MEG) data, this method is able to learn not only prototypical temporal waveforms, but also associated spatial patterns so their origin can be localized in the brain. Our algorithm is based on alternated minimization and a greedy coordinate descent solver that leads to state-of-the-art running time on long time series. To demonstrate the implications of this method, we apply it to MEG data and show that it is able to recover biological artifacts. More remarkably, our approach also reveals the presence of non-sinusoidal mu-shaped patterns, along with their topographic maps related to the somatosensory cortex.
+                In this paper, we introduce DICOD, a distributed convolutional sparse coding algorithm to build shift invariant representations for long signals. This algorithm is designed to run in a distributed setting, with local message passing, making it communication efficient. It is based on coordinate descent and uses locally greedy updates which accelerate the resolution compared to greedy coordinate selection. We prove the convergence of this algorithm and highlight its computational speed-up which is super-linear in the number of cores used. We also provide empirical evidence for the acceleration properties of our algorithm compared to state-of-the-art methods.
             </div>
-            
         </div>
     </div>
             <div class="talk">
-        
-    	<div class="talk_item">
-            <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
+        <div class="talk_item">
+            <span class="title">DICOD: Distributed Convolutional Coordinate Descent for Convolutional Sparse Coding </span>
             <span style="width:2em;"></span>
-            <a href="/talks/18_05_29_multicsc.pdf">
-                
+
+            <a href="/talks/18_07_12_dicod.pdf">
+
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
-            
+
+
             <br>
-            <span class="date">Tue May 2018,</span>
-            <span class="conference">At <i>parietal group meeting</i></span>
- 
+            <span class="date">Thu Jul 2018,</span>
+            <span class="conference">At <i>ICML, Stockholm, Sweden</i></span>
+
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk4"/>
-        <label class="btn display-status" for="talk4">
+        <input type="checkbox" class="btnCtrl" id="talk7"/>
+        <label class="btn display-status" for="talk7">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                A multivariate CSC with rank-1 constrain algorithm designed to study brain activity waveforms
+                In this talk, we introduce DICOD, a distributed  convolutional sparse coding algorithm to build shift invariant representations for long signals
             </div>
             <div class="details">
-                Frequency-specific patterns of neural activity are traditionally interpreted as sustained rhythmic oscillations, and related to cognitive mechanisms such as attention, high level visual processing or motor control. While alpha waves (8-12 Hz) are known to closely resemble short sinusoids, and thus are revealed by Fourier analysis or wavelet transforms, there is an evolving debate that electromagnetic neural signals are composed of more complex waveforms that cannot be analyzed by linear filters and traditional signal representations. In this paper, we propose to learn dedicated representations of such recordings using a multivariate convolutional sparse coding (CSC) algorithm. Applied to electroencephalography (EEG) or magnetoencephalography (MEG) data, this method is able to learn not only prototypical temporal waveforms, but also associated spatial patterns so their origin can be localized in the brain. Our algorithm is based on alternated minimization and a greedy coordinate descent solver that leads to state-of-the-art running time on long time series. To demonstrate the implications of this method, we apply it to MEG data and show that it is able to recover biological artifacts. More remarkably, our approach also reveals the presence of non-sinusoidal mu-shaped patterns, along with their topographic maps related to the somatosensory cortex.
+                In this talk, we introduce DICOD, a  distributed convolutional sparse coding algorithm to build shift invariant representations for long signals. This algorithm is designed to run in a distributed setting, with local message passing, making it communication efficient. It is based on coordinate descent and uses locally greedy updates which accelerate the resolution compared to greedy coordinate selection. We prove the convergence of this algorithm and highlight its computational speed-up which is super-linear in the number of cores used. We also provide empirical evidence for the acceleration properties of our algorithm compared to state-of-the-art methods.
             </div>
         </div>
-        
     </div>
 
         <div class="project">
     <div class="project_item">
         <span class="title">Loky </span>
-        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i>
-</a>
-        <span class="date">Nov 2016</span>
+        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <span class="date">Aug 2018</span>
 
     </div>
 
@@ -176,19 +167,17 @@ $(function(){
         <i class="fa fa-minus-circle minus"></i>
     </label>
     <div class="description">
-        
         <span class="summary">
             The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of <span class="highlightcode">concurrent.futures</span>.
         </span>
         <div class="details">
-            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of <span class="highlightcode">concurrent.futures</span>. It features:</br>
-<ul> <li> <b>Deadlock free implementation</b>: one of the major concern in standard multiprocessing and concurrent.futures libraries is the ability of the Pool/Executor to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.</li></br>
-<li><b>Consistent spawn behavior</b>: All processes are started using fork/exec on POSIX systems. This ensures safer interactions with third party libraries.</li></br>
+            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of  <span class="highlightcode">concurrent.futures</span>. It features:</br>
+<ul> <li> <b>Deadlock free implementation</b>: one of the major concern in standard <span class="highlightcode">multiprocessing</span> and <span class="highlightcode">concurrent.futures</span> libraries is the ability of the <span class="highlightcode">Pool/Executor</span> to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.</li></br>
+<li><b>Consistent spawn behavior</b>: All processes are started using <span class="highlightcode">fork/exec</span> on POSIX systems. This ensures safer interactions with third party libraries.</li></br>
 <li><b>Reusable executor</b>: strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.</li></ul></br>
 </br>
 <i>python, multiprocessing, parallel computing</i>
         </div>
-        
     </div>
 </div>
     </div><!-- .entry-content -->

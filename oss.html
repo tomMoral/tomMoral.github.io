@@ -26,7 +26,7 @@ $(function(){
   });
 });
 </script>
-    
+
 </head>
 
 <body class="home">
@@ -77,9 +77,8 @@ $(function(){
     <div class="project">
     <div class="project_item">
         <span class="title">Loky </span>
-        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i>
-</a>
-        <span class="date">Nov 2016</span>
+        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <span class="date">Aug 2018</span>
 
     </div>
 
@@ -89,19 +88,41 @@ $(function(){
         <i class="fa fa-minus-circle minus"></i>
     </label>
     <div class="description">
-        
         <span class="summary">
             The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of <span class="highlightcode">concurrent.futures</span>.
         </span>
         <div class="details">
-            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of <span class="highlightcode">concurrent.futures</span>. It features:</br>
-<ul> <li> <b>Deadlock free implementation</b>: one of the major concern in standard multiprocessing and concurrent.futures libraries is the ability of the Pool/Executor to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.</li></br>
-<li><b>Consistent spawn behavior</b>: All processes are started using fork/exec on POSIX systems. This ensures safer interactions with third party libraries.</li></br>
+            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of  <span class="highlightcode">concurrent.futures</span>. It features:</br>
+<ul> <li> <b>Deadlock free implementation</b>: one of the major concern in standard <span class="highlightcode">multiprocessing</span> and <span class="highlightcode">concurrent.futures</span> libraries is the ability of the <span class="highlightcode">Pool/Executor</span> to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.</li></br>
+<li><b>Consistent spawn behavior</b>: All processes are started using <span class="highlightcode">fork/exec</span> on POSIX systems. This ensures safer interactions with third party libraries.</li></br>
 <li><b>Reusable executor</b>: strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.</li></ul></br>
 </br>
 <i>python, multiprocessing, parallel computing</i>
         </div>
-        
+    </div>
+</div>
+
+
+    <div class="project">
+    <div class="project_item">
+        <span class="title">DICOD </span>
+        <a href="https://github.com/tomMoral/dicod"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <span class="date">Jul 2018</span>
+
+    </div>
+
+    <input type="checkbox" class="btnCtrl" id="proj4"/>
+    <label class="btn display-status" for="proj4">
+        <i class="fa fa-plus-circle plus"></i>
+        <i class="fa fa-minus-circle minus"></i>
+    </label>
+    <div class="description">
+        <span class="summary">
+            Package to run the experiments for the ICML paper DICOD: Distributed Convolutional Coordinate Descent for Convolutional Sparse Coding, ICML 2018, T. Moreau, L. Oudre, N. Vayatis.
+        </span>
+        <div class="details">
+            Package to run the experiments for the ICML paper DICOD: Distributed Convolutional Coordinate Descent for Convolutional Sparse Coding, ICML 2018, T. Moreau, L. Oudre, N. Vayatis.
+        </div>
     </div>
 </div>
 
@@ -109,8 +130,7 @@ $(function(){
     <div class="project">
     <div class="project_item">
         <span class="title">Gnome Shell Extension NvApplet </span>
-        <a href="https://github.com/tomMoral/nvapplet-gnome-shell-extension"><i class="fa fa-github-alt" aria-hidden="true"></i>
-</a>
+        <a href="https://github.com/tomMoral/nvapplet-gnome-shell-extension"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
         <span class="date">Oct 2016</span>
 
     </div>
@@ -121,7 +141,6 @@ $(function(){
         <i class="fa fa-minus-circle minus"></i>
     </label>
     <div class="description">
-        
         <span class="summary">
             Gnome shell extension displaying the status of Nvidia GPU card in the gnome-shell panel.
         </span>
@@ -131,7 +150,6 @@ $(function(){
 </br>
 <i>gnome-shell, clutter, bash</i>
         </div>
-        
     </div>
 </div>
 
@@ -139,8 +157,7 @@ $(function(){
     <div class="project">
     <div class="project_item">
         <span class="title">Gnome Shell Extension Section Todolist </span>
-        <a href="https://github.com/tomMoral/ToDoList"><i class="fa fa-github-alt" aria-hidden="true"></i>
-</a>
+        <a href="https://github.com/tomMoral/ToDoList"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
         <span class="date">Oct 2016</span>
 
     </div>
@@ -151,7 +168,6 @@ $(function(){
         <i class="fa fa-minus-circle minus"></i>
     </label>
     <div class="description">
-        
         <span class="summary">
             Gnome shell extension to manage a todolist with different subsections.
         </span>
@@ -160,7 +176,6 @@ $(function(){
 This section is integrated in the gnome shell with a counter of the remaining tasks.</br>
 <i>javascript, gnome-shell, bash, clutter</i>
         </div>
-        
     </div>
 </div>
 
