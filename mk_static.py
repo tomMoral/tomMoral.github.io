@@ -5,8 +5,8 @@ import aiofiles as aiof
 import os
 
 
-EXPORT_DIR = "tomMoral.github.io"
-STATIC_DIR = "tomMoral.django.local/CV/static/CV"
+EXPORT_DIR = "."
+STATIC_DIR = "../django.local/CV/static/CV"
 
 
 async def fetch_page(session, url, fname):
