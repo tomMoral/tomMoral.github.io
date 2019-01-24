@@ -86,73 +86,69 @@ $(function(){
         
     <div class="publication">
         <div class="project_item">
-            <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
+            <span class="title">Distributed Convolutional Dictionary Learning (DiCoDiLe): Pattern Discovery in Large Images and Signals </span>
             <span style="width:2em;"></span>
 
-            <a href="https://arxiv.org/pdf/1805.09654.pdf">
+            <a href="/publications/main_dicodile_with_supp.pdf">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
 
 
-            <a href="https://github.com/tomMoral/alphacsc">
+            <a href="https://github.com/tomMoral/dicod">
                 <i class="fa fa-github-alt" aria-hidden="true"></i>
             </a>
 
             <br>
-            <span class="authors">Tom Dupré La Tour, Thomas Moreau, Mainak Jas, Alexandre Gramfort,</span>
-            <span class="date">Dec 2018,</span>
+            <span class="authors">Thomas Moreau; Alexandre Gramfort,</span>
+            <span class="date">Jan 2019,</span>
 
-                <span class="conference">In proceedings of <i>Advances in Neural Information Processing System (NIPS)</i></span>
+                <span><i>preprint /</i></span>
 
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="pub8"/>
-        <label class="btn display-status" for="pub8">
+        <input type="checkbox" class="btnCtrl" id="pub9"/>
+        <label class="btn display-status" for="pub9">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                A multivariate CSC with rank-1 constrain algorithm designed to study brain activity waveforms
+                DiCoDiLe: a distributed and asynchronous algorithm, employing locally greedy coordinate descent and an asynchronous locking mechanism that does not require a central server.
             </div>
             <div class="details">
-                Frequency-specific patterns of neural activity are traditionally interpreted as sustained rhythmic oscillations, and related to cognitive mechanisms such as attention, high level visual processing or motor control. While alpha waves (8-12 Hz) are known to closely resemble short sinusoids, and thus are revealed by Fourier analysis or wavelet transforms, there is an evolving debate that electromagnetic neural signals are composed of more complex waveforms that cannot be analyzed by linear filters and traditional signal representations. In this paper, we propose to learn dedicated representations of such recordings using a multivariate convolutional sparse coding (CSC) algorithm. Applied to electroencephalography (EEG) or magnetoencephalography (MEG) data, this method is able to learn not only prototypical temporal waveforms, but also associated spatial patterns so their origin can be localized in the brain. Our algorithm is based on alternated minimization and a greedy coordinate descent solver that leads to state-of-the-art running time on long time series. To demonstrate the implications of this method, we apply it to MEG data and show that it is able to recover biological artifacts. More remarkably, our approach also reveals the presence of non-sinusoidal mu-shaped patterns, along with their topographic maps related to the somatosensory cortex.
+                Convolutional dictionary learning (CDL) estimates shift invariant basis adapted to multidimensional data. CDL has proven useful for image denoising or inpainting, as well as for pattern discovery on multivariate signals. As estimated patterns can be positioned anywhere in signals or images, optimization techniques face the difficulty of working in extremely high dimensions with millions of pixels or time samples, contrarily to standard patch-based dictionary learning. To address this optimization problem, this work proposes a distributed and asynchronous algorithm, employing locally greedy coordinate descent and an asynchronous locking mechanism that does not require a central server. This algorithm can be used to distribute the computation on a number of workers which scales linearly with the encoded signal's size. Experiments confirm the scaling properties which allows us to learn patterns on large scales images from the Hubble Space Telescope.
             </div>
         </div>
     </div>
             <div class="talk">
         <div class="talk_item">
-            <span class="title">DICOD: Distributed Convolutional Coordinate Descent for Convolutional Sparse Coding </span>
+            <span class="title">Learning Recurring Patterns in Large Signals with Convolutional Dictionary Learning </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/18_07_12_dicod.pdf">
+            <a href="/talks/19_01_24_cosmostat.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
 
 
-            <a href="https://www.facebook.com/icml.imls/videos/session-1-parallel-and-distributed-learning/430850664096121/">
-                <i class="fa fa-video-camera" aria-hidden="true"></i>
-            </a>
-
             <br>
-            <span class="date">Thu Jul 2018,</span>
-            <span class="conference">At <i>ICML, Stockholm, Sweden</i></span>
+            <span class="date">Thu Jan 2019,</span>
+            <span class="conference">At <i>CosmoStat, CEA</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk7"/>
-        <label class="btn display-status" for="talk7">
+        <input type="checkbox" class="btnCtrl" id="talk8"/>
+        <label class="btn display-status" for="talk8">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                In this talk, we introduce DICOD, a distributed  convolutional sparse coding algorithm to build shift invariant representations for long signals
+                How convolutional dicitonary learning can be used in the context of large multivariate signals to learn and localize recurring patterns: modelisation and computational aspects.
             </div>
             <div class="details">
-                In this talk, we introduce DICOD, a  distributed convolutional sparse coding algorithm to build shift invariant representations for long signals. This algorithm is designed to run in a distributed setting, with local message passing, making it communication efficient. It is based on coordinate descent and uses locally greedy updates which accelerate the resolution compared to greedy coordinate selection. We prove the convergence of this algorithm and highlight its computational speed-up which is super-linear in the number of cores used. We also provide empirical evidence for the acceleration properties of our algorithm compared to state-of-the-art methods.
+                Convolutional dictionary learning has become a popular tool in image processing for denoising or inpainting. This technique extends dictionary learning to learn adapted basis that are shift invariant. This talk will discuss how this technique can also be used in the context of large multivariate signals to learn and localize recurring patterns. I will discuss both computational aspects, with efficient iterative and distributed convolutional sparse coding algorithms, as well as a novel rank 1 constraint for the learned atoms. This constraint, inspired from the underlying physical model for neurological signals, is then used to highlight relevant structure in MEG signals.
             </div>
         </div>
     </div>
