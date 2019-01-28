@@ -123,10 +123,10 @@ $(function(){
     </div>
             <div class="talk">
         <div class="talk_item">
-            <span class="title">Learning Recurring Patterns in Large Signals with Convolutional Dictionary Learning </span>
+            <span class="title">Using the Dictionary Structure for efficient Convolutional Dictionary Learning </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/19_01_24_cosmostat.pdf">
+            <a href="/talks/19_01_31_telecom.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
@@ -134,21 +134,27 @@ $(function(){
 
             <br>
             <span class="date">Thu Jan 2019,</span>
-            <span class="conference">At <i>CosmoStat, CEA</i></span>
+            <span class="conference">At <i>Seminaire du LTCI - Télécom paritech</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk8"/>
-        <label class="btn display-status" for="talk8">
+        <input type="checkbox" class="btnCtrl" id="talk9"/>
+        <label class="btn display-status" for="talk9">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                How convolutional dicitonary learning can be used in the context of large multivariate signals to learn and localize recurring patterns: modelisation and computational aspects.
+                Convolutional Dictionary Learning (CDL) is a popular tool in image processing for denoising or inpainting. This technique extends dictionary learning to learn adapted basis that are shift invariant. It can also be used in the context of large multivariate signals to learn and localize recurring patterns. In this talk, I will focus on how the structure of the dictionary can be leveraged to design efficient CDL algorithm and to improve the interpretability of the recovered patterns in MEG signals.
             </div>
             <div class="details">
-                Convolutional dictionary learning has become a popular tool in image processing for denoising or inpainting. This technique extends dictionary learning to learn adapted basis that are shift invariant. This talk will discuss how this technique can also be used in the context of large multivariate signals to learn and localize recurring patterns. I will discuss both computational aspects, with efficient iterative and distributed convolutional sparse coding algorithms, as well as a novel rank 1 constraint for the learned atoms. This constraint, inspired from the underlying physical model for neurological signals, is then used to highlight relevant structure in MEG signals.
+                Convolutional Dictionary Learning (CDL) is a popular tool in image processing for denoising or inpainting. This technique extends dictionary learning to learn adapted basis that are shift invariant. It can also be used in the context of large multivariate signals to learn and localize recurring patterns. In this talk, I will focus on how the structure of the dictionary can be leveraged to design efficient CDL algorithm and to improve the interpretability of the recovered patterns in MEG signals.</br>
+</br>
+Gregor and Le Cun (2010) have shown empirically it is possible to estimate the solution of the sparse coding with a neural network called LISTA trained with back-propagation. In the first part of this talk, I will show the link between the performance of this network and the particular structure of the dictionary and in particular the Gram matrix of the problem. This structure is shown to be sufficient to explain the performance of LISTA and numerical experiments show it is also necessary. (Joint work with J. Bruna).</br>
+</br>
+Then, I will focus on the convolutional sparse coding (CSC). The particular properties of the band-circulant matrices allow to derive an efficient algorithm, called Locally Greedy Coordinate Descent (LGCD), to solve the CSC. This algorithm is very efficient in this context as it prioritizes important updates, still managing low iteration complexity. This algorithm can also be used in an asynchronous and distributed setting. We show that even though the updates are only performed locally, without global communication, this distributed algorithm converges to the optimal solution of the CSC. Numerical experiments show that this algorithm has better performance than state-of-the-art algorithms for CSC and that it accelerates super linearly with the number of cores used. (Joint work with L. Oudre, N. Vayatis and A. Gramfort).</br>
+</br>
+In the final part of my talk, I will introduce a novel rank 1 constraint for the learned atoms for practical problems in neuroscience. This constraint, inspired from the underlying physical model for neurological signals, is then used to highlight relevant structure in MEG signals. (Join work with T. Dupré la Tour, M. Jas and A. Gramfort).
             </div>
         </div>
     </div>
