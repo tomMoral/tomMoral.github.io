@@ -228,6 +228,41 @@ $(function(){
     
     <div class="publication">
         <div class="project_item">
+            <span class="title">Convolutional Sparse Representations -- application to physiological signals and interpretability for Deep Learning </span>
+            <span style="width:2em;"></span>
+
+            <a href="/publications/thesis.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Thomas Moreau,</span>
+            <span class="date">Dec 2017,</span>
+
+                <span><i>/</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub11"/>
+        <label class="btn display-status" for="pub11">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Convolutional representations extract recurrent patterns which lead to the discovery of local structures in a set of signals. In this dissertation, we describe recent advances on both computational and theoretical aspects of these models.
+            </div>
+            <div class="details">
+                Convolutional representations extract recurrent patterns which lead to the discovery of local structures in a set of signals. They are well suited to analyze physiological signals which requires interpretable representations in order to understand the relevant information. Moreover, these representations can be linked to deep learning models, as a way to bring interpretability in their internal representations. In this dissertation, we describe recent advances on both computational and theoretical aspects of these models. First, we show that the Singular Spectrum Analysis can be used to compute convolutional representations. This representation is dense and we describe an automatized procedure to improve its interpretability. Also, we propose an asynchronous algorithm, called DICOD, based on greedy coordinate descent, to solve convolutional sparse coding for long signals. Our algorithm has super-linear acceleration.In a second part, we focus on the link between representations and neural networks. An extra training step for deep learning, called post-training, is introduced to boost the performances of the trained network by making sure the last layer is optimal. Then, we study the mechanisms which allow to accelerate sparse coding algorithms with neural networks. We show that it is linked to a factorization of the Gram matrix of the dictionary.Finally, we illustrate the relevance of convolutional representations for physiological signals. Convolutional dictionary learning is used to summarize human walk signals and Singular Spectrum Analysis is used to remove the gaze movement in young infant’s oculometric recordings.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
             <span class="title">Understanding the Learned Iterative Soft Thresholding Algorithm with matrix factorization </span>
             <span style="width:2em;"></span>
 
@@ -257,6 +292,46 @@ $(function(){
             <div class="details">
                 Sparse coding is a core building block in many data analysis and machine learning pipelines. Typically it is solved by relying on generic optimization techniques, such as the Iterative Soft Thresholding Algorithm and its accelerated version (ISTA, FISTA). These methods are optimal in the class of first-order methods for non-smooth, convex functions. However, they do not exploit the particular structure of the problem at hand nor the input data distribution. An acceleration using neural networks, coined LISTA, was proposed in Gregor and Le Cun (2010), which showed empirically that one could achieve high quality estimates with few iterations by modifying the parameters of the proximal splitting appropriately.</br>
 
+In this paper we study the reasons for such acceleration. Our mathematical analysis reveals that it is related to a specific matrix factorization of the Gram kernel of the dictionary, which attempts to nearly diagonalise the kernel with a basis that produces a small perturbation of the ℓ1 ball. When this factorization succeeds, we prove that the resulting splitting algorithm enjoys an improved convergence bound with respect to the non-adaptive version. Moreover, our analysis also shows that conditions for acceleration occur mostly at the beginning of the iterative process, consistent with numerical experiments. We further validate our analysis by showing that on dictionaries where this factorization does not exist, adaptive acceleration fails.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Understanding Trainable Sparse Coding with Matrix Factorization </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openreview.net/forum?id=SJGPL9Dex">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/tomMoral/AdaptiveOptim">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+            <br>
+            <span class="authors">Thomas Moreau and Joan Bruna,</span>
+            <span class="date">Apr 2017,</span>
+
+                <span class="conference">In proceedings of <i>International Conference on Learning Representations (ICLR)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub3"/>
+        <label class="btn display-status" for="pub3">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                In this paper we study the mechanisms behind LISTA.
+            </div>
+            <div class="details">
+                Sparse coding is a core building block in many data analysis and machine learning pipelines. Typically it is solved by relying on generic optimization techniques, that are optimal in the class of first-order methods for non-smooth, convex functions, such as the Iterative Soft Thresholding Algorithm and its accelerated version (ISTA, FISTA). However, these methods don't exploit the particular structure of the problem at hand nor the input data distribution. An acceleration using neural networks was proposed in <a href="http://machinelearning.wustl.edu/mlpapers/paper_files/icml2010_GregorL10.pdf">Gregor10</a>, coined LISTA, which showed empirically that one could achieve high quality estimates with few iterations by modifying the parameters of the proximal splitting appropriately.<br>
 In this paper we study the reasons for such acceleration. Our mathematical analysis reveals that it is related to a specific matrix factorization of the Gram kernel of the dictionary, which attempts to nearly diagonalise the kernel with a basis that produces a small perturbation of the ℓ1 ball. When this factorization succeeds, we prove that the resulting splitting algorithm enjoys an improved convergence bound with respect to the non-adaptive version. Moreover, our analysis also shows that conditions for acceleration occur mostly at the beginning of the iterative process, consistent with numerical experiments. We further validate our analysis by showing that on dictionaries where this factorization does not exist, adaptive acceleration fails.
             </div>
         </div>
@@ -297,46 +372,6 @@ In this paper we study the reasons for such acceleration. Our mathematical analy
             </div>
             <div class="details">
                 One of the main challenges of deep learning methods is the choice of an appropriate training strategy. In particular, additional steps, such as unsupervised pre-training, have been shown to greatly improve the performances of deep structures. In this article, we propose an extra training step, called post-training, which only optimizes the last layer of the network. We show that this procedure can be analyzed in the context of kernel theory, with the first layers computing an embedding of the data and the last layer a statistical model to solve the task based on this embedding. This step makes sure that the embedding, or representation, of the data is used in the best possible way for the considered task. This idea is then tested on multiple architectures with various data sets, showing that it consistently provides a boost in performance.
-            </div>
-        </div>
-    </div>
-
-    
-    <div class="publication">
-        <div class="project_item">
-            <span class="title">Understanding Trainable Sparse Coding with Matrix Factorization </span>
-            <span style="width:2em;"></span>
-
-            <a href="https://openreview.net/forum?id=SJGPL9Dex">
-                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-            </a>
-
-
-            <a href="https://github.com/tomMoral/AdaptiveOptim">
-                <i class="fa fa-github-alt" aria-hidden="true"></i>
-            </a>
-
-            <br>
-            <span class="authors">Thomas Moreau and Joan Bruna,</span>
-            <span class="date">Sep 2016,</span>
-
-                <span class="conference">In proceedings of <i>International Conference on Learning Representations (ICLR)</i></span>
-
-
-        </div>
-
-        <input type="checkbox" class="btnCtrl" id="pub3"/>
-        <label class="btn display-status" for="pub3">
-            <i class="fa fa-plus-circle plus"></i>
-            <i class="fa fa-minus-circle minus"></i>
-        </label>
-        <div class="description">
-            <div class="summary">
-                In this paper we study the mechanisms behind LISTA.
-            </div>
-            <div class="details">
-                Sparse coding is a core building block in many data analysis and machine learning pipelines. Typically it is solved by relying on generic optimization techniques, that are optimal in the class of first-order methods for non-smooth, convex functions, such as the Iterative Soft Thresholding Algorithm and its accelerated version (ISTA, FISTA). However, these methods don't exploit the particular structure of the problem at hand nor the input data distribution. An acceleration using neural networks was proposed in <a href="http://machinelearning.wustl.edu/mlpapers/paper_files/icml2010_GregorL10.pdf">Gregor10</a>, coined LISTA, which showed empirically that one could achieve high quality estimates with few iterations by modifying the parameters of the proximal splitting appropriately.<br>
-In this paper we study the reasons for such acceleration. Our mathematical analysis reveals that it is related to a specific matrix factorization of the Gram kernel of the dictionary, which attempts to nearly diagonalise the kernel with a basis that produces a small perturbation of the ℓ1 ball. When this factorization succeeds, we prove that the resulting splitting algorithm enjoys an improved convergence bound with respect to the non-adaptive version. Moreover, our analysis also shows that conditions for acceleration occur mostly at the beginning of the iterative process, consistent with numerical experiments. We further validate our analysis by showing that on dictionaries where this factorization does not exist, adaptive acceleration fails.
             </div>
         </div>
     </div>
