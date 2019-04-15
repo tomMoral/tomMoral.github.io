@@ -123,32 +123,32 @@ $(function(){
     </div>
             <div class="talk">
         <div class="talk_item">
-            <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
+            <span class="title">Distributed Convolutional Dictionary Learning (DiCoDiLe): Pattern Discovery in Large Images and Signals </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/19_03_28_SMILE_multicsc.pdf">
+            <a href="/talks/19_04_16_PARIETAL_dicodile.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
 
 
             <br>
-            <span class="date">Thu Mar 2019,</span>
-            <span class="conference">At <i>Séminaire SMILE, Paris</i></span>
+            <span class="date">Tue Apr 2019,</span>
+            <span class="conference">At <i>Parietal seminar; INRIA Saclay</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk10"/>
-        <label class="btn display-status" for="talk10">
+        <input type="checkbox" class="btnCtrl" id="talk12"/>
+        <label class="btn display-status" for="talk12">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Convolutional dictionary learning algorithm adapted to capture waveforms from MEG signals.
+                DiCoDiLe: a distributed and asynchronous algorithm, employing locally greedy coordinate descent and an asynchronous locking mechanism that does not require a central server.
             </div>
             <div class="details">
-                Frequency-specific patterns of neural activity are traditionally interpreted as sustained rhythmic oscillations, and related to cognitive mechanisms such as attention, high level visual processing or motor control. While alpha waves (8--12\, Hz) are known to closely resemble short sinusoids, and thus are revealed by Fourier analysis or wavelet transforms, there is an evolving debate that electromagnetic neural signals are composed of more complex waveforms that cannot be analyzed by linear filters and traditional signal representations. In this paper, we propose to learn dedicated representations of such recordings using a multivariate convolutional sparse coding (CSC) algorithm. Applied to electroencephalography (EEG) or magnetoencephalography (MEG) data, this method is able to learn not only prototypical temporal waveforms, but also associated spatial patterns so their origin can be localized in the brain. Our algorithm is based on alternated minimization and a greedy coordinate descent solver that leads to state-of-the-art running time on long time series. To demonstrate the implications of this method, we apply it to MEG data and show that it is able to recover biological artifacts. More remarkably, our approach also reveals the presence of non-sinusoidal mu-shaped patterns, along with their topographic maps related to the somatosensory cortex.
+                Convolutional dictionary learning (CDL) estimates shift invariant basis adapted to multidimensional data. CDL has proven useful for image denoising or inpainting, as well as for pattern discovery on multivariate signals. As estimated patterns can be positioned anywhere in signals or images, optimization techniques face the difficulty of working in extremely high dimensions with millions of pixels or time samples, contrarily to standard patch-based dictionary learning. To address this optimization problem, this work proposes a distributed and asynchronous algorithm, employing locally greedy coordinate descent and an asynchronous locking mechanism that does not require a central server. This algorithm can be used to distribute the computation on a number of workers which scales linearly with the encoded signal's size. Experiments confirm the scaling properties which allows us to learn patterns on large scales images from the Hubble Space Telescope.
             </div>
         </div>
     </div>
