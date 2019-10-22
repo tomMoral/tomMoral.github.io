@@ -6,20 +6,19 @@ import os
 
 
 EXPORT_DIR = "."
-STATIC_DIR = "../django.local/CV/static/CV"
+STATIC_DIR = "../tommoral.django.local/CV/static/CV"
 
 
 async def fetch_page(session, url, fname):
-        print(url)
-        async with session.get(url) as response:
-            assert response.status == 200
-            content = await response.read()
-            content = content.replace(b"/static/CV", b"")
-            async with aiof.open(os.path.join(EXPORT_DIR, fname),
-                                 mode='wb') as f:
-                await f.write(content)
-            return content
-        print(url)
+    print(url)
+    async with session.get(url) as response:
+        assert response.status == 200
+        content = await response.read()
+        content = content.replace(b"/static/CV", b"")
+        async with aiof.open(os.path.join(EXPORT_DIR, fname), mode='wb') as f:
+            await f.write(content)
+        return content
+    print(url)
 
 
 async def sync_static_files(fname):
@@ -43,20 +42,19 @@ async def sync_images():
     await asyncio.wait(fs)
 
 
-
 async def main():
     async with aiohttp.ClientSession() as session:
-            await fetch_page(session, 'http://127.0.0.1:8000/CV/about',
-                       "about.html"),
-            await fetch_page(session, 'http://127.0.0.1:8000/CV/publications',
-                       "publications.html"),
-            await fetch_page(session, 'http://127.0.0.1:8000/CV/talks',
-                       "talks.html"),
-            await fetch_page(session, 'http://127.0.0.1:8000/CV/oss',
-                       "oss.html"),
-            await sync_static_files("css/style.css"),
-            await sync_static_files("javascript/lib.js"),
-            await sync_images()
+        await fetch_page(session, 'http://127.0.0.1:8000/about/',
+                         "about.html"),
+        await fetch_page(session, 'http://127.0.0.1:8000/publications/',
+                         "publications.html"),
+        await fetch_page(session, 'http://127.0.0.1:8000/talks/',
+                         "talks.html"),
+        await fetch_page(session, 'http://127.0.0.1:8000/oss/',
+                         "oss.html"),
+        await sync_static_files("css/style.css"),
+        await sync_static_files("javascript/lib.js"),
+        await sync_images()
 
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
