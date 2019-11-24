@@ -162,26 +162,28 @@ $(function(){
 
         <div class="project">
     <div class="project_item">
-        <span class="title">Loky </span>
-        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-        <span class="date">Aug 2018</span>
+        <span class="title">Joblib 0.14 </span>
+        <a href="https://github.com/joblib/joblib"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <span class="date">Oct 2019</span>
+        <div class="logo">
+            <img src="https://joblib.readthedocs.io/en/latest/_static/joblib_logo.svg" style="height: 100%;"/>
+        </div>
 
     </div>
 
-    <input type="checkbox" class="btnCtrl" id="proj1"/>
-    <label class="btn display-status" for="proj1">
+    <input type="checkbox" class="btnCtrl" id="proj5"/>
+    <label class="btn display-status" for="proj5">
         <i class="fa fa-plus-circle plus"></i>
         <i class="fa fa-minus-circle minus"></i>
     </label>
     <div class="description">
         <span class="summary">
-            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of <span class="highlightcode">concurrent.futures</span>.
+            Easy and reliable parallel computing with Python functions.
         </span>
         <div class="details">
-            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of  <span class="highlightcode">concurrent.futures</span>. It features:</br>
-<ul> <li> <b>Deadlock free implementation</b>: one of the major concern in standard <span class="highlightcode">multiprocessing</span> and <span class="highlightcode">concurrent.futures</span> libraries is the ability of the <span class="highlightcode">Pool/Executor</span> to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.</li></br>
-<li><b>Consistent spawn behavior</b>: All processes are started using <span class="highlightcode">fork/exec</span> on POSIX systems. This ensures safer interactions with third party libraries.</li></br>
-<li><b>Reusable executor</b>: strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.</li></ul></br>
+            Joblib is a set of tools to provide lightweight pipelining in Python. In particular: <ul><li>transparent disk-caching of functions and lazy re-evaluation (memoize pattern)</li><li> easy simple parallel computing</li></ul> Joblib is optimized to be fast and robust on large data in particular and has specific optimizations for numpy arrays. It is BSD-licensed and its documentation can be found at <a href="https://joblib.readthedocs.io/">https://joblib.readthedocs.io/</a>.</br>
+</br>
+Starting 2017, I have been involved in Joblib development, first to integrate loky as a new multiprocessing backend and them as a regular developer for the library.</br>
 </br>
 <i>python, multiprocessing, parallel computing</i>
         </div>

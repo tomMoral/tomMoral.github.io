@@ -121,6 +121,86 @@ $(function(){
     
     <div class="publication">
         <div class="project_item">
+            <span class="title">A Data Set for the Study of Human Locomotion with Inertial Measurements Units </span>
+            <span style="width:2em;"></span>
+
+            <a href="http://www.ipol.im/pub/art/2019/265/">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/deepcharles/gait-data">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Charles Truong, Rémi Barrois-Müller, Thomas Moreau, Clément Provost, Aliénor Vienne-Jumeau, Albane Moreau, Pierre-Paul Vidal, Nicolas Vayatis, Stéphane Buffat, Alain Yelnik, Damien Ricard, Laurent Oudre,</span>
+            <span class="date">Nov 2019,</span>
+
+                <span><i>Image Processing On Line</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub14"/>
+        <label class="btn display-status" for="pub14">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                A data set of 1020 multivariate gait signals collected with two inertial measurement units, from 230 subjects undergoing a fixed protocol.
+            </div>
+            <div class="details">
+                This article thoroughly describes a data set of 1020 multivariate gait signals collected with two inertial measurement units, from 230 subjects undergoing a fixed protocol: standing still, walking 10 m, turning around, walking back and stopping. In total, 8.5~h of gait time series are distributed. The measured population was composed of healthy subjects as well as patients with neurological or orthopedic disorders. An outstanding feature of this data set is the amount of signal metadata that are provided. In particular, the start and end time stamps of more than 40,000 footsteps are available, as well as a number of contextual information about each trial. This exact data set was used in [Oudre et al., Template-based step detection with inertial measurement units, Sensors 18, 2018] to design and evaluate a step detection procedure.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Distributed Convolutional Dictionary Learning (DiCoDiLe): Pattern Discovery in Large Images and Signals </span>
+            <span style="width:2em;"></span>
+
+            <a href="/publications/main_dicodile_with_supp.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/tomMoral/dicodile">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Thomas Moreau and Alexandre Gramfort,</span>
+            <span class="date">Nov 2019,</span>
+
+                <span><i>preprint /</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub9"/>
+        <label class="btn display-status" for="pub9">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                DiCoDiLe: a distributed and asynchronous algorithm, employing locally greedy coordinate descent and an asynchronous locking mechanism that does not require a central server.
+            </div>
+            <div class="details">
+                Convolutional dictionary learning (CDL) estimates shift invariant basis adapted to multidimensional data. CDL has proven useful for image denoising or inpainting, as well as for pattern discovery on multivariate signals. As estimated patterns can be positioned anywhere in signals or images, optimization techniques face the difficulty of working in extremely high dimensions with millions of pixels or time samples, contrarily to standard patch-based dictionary learning. To address this optimization problem, this work proposes a distributed and asynchronous algorithm, employing locally greedy coordinate descent and an asynchronous locking mechanism that does not require a central server. This algorithm can be used to distribute the computation on a number of workers which scales linearly with the encoded signal's size. Experiments confirm the scaling properties which allows us to learn patterns on large scales images from the Hubble Space Telescope.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
             <span class="title">Sparsity-based blind deconvolution of neural activation signal in fMRI </span>
             <span style="width:2em;"></span>
 
@@ -154,46 +234,6 @@ $(function(){
             </div>
             <div class="details">
                 The estimation of the hemodynamic response function (HRF) in functional magnetic resonance imaging (fMRI) is critical to deconvolve a time-resolved neural activity and get insights on the underlying cognitive processes. Existing methods pro-pose to estimate the HRF using the experimental paradigm(EP)  in  task  fMRI  as  a  surrogate  of  neural  activity.   These approaches  induce  a  bias  as  they  do  not  account  for  latencies in the cognitive responses compared to EP and cannot be applied to resting-state data as no EP is available.  In this work, we formulate the joint estimation of the HRF and neural activation signal as a semi blind deconvolution problem. Its solution can be approximated using an efficient alternate minimization algorithm.  The proposed approach is applied to task fMRI data for validation purpose and compared to a state-of-the-art HRF estimation technique.  Numerical experiments suggest that our approach is competitive with others while not requiring EP information.
-            </div>
-        </div>
-    </div>
-
-    
-    <div class="publication">
-        <div class="project_item">
-            <span class="title">Distributed Convolutional Dictionary Learning (DiCoDiLe): Pattern Discovery in Large Images and Signals </span>
-            <span style="width:2em;"></span>
-
-            <a href="/publications/main_dicodile_with_supp.pdf">
-                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-            </a>
-
-
-            <a href="https://github.com/tomMoral/dicodile">
-                <i class="fa fa-github-alt" aria-hidden="true"></i>
-            </a>
-
-
-            <br>
-            <span class="authors">Thomas Moreau and Alexandre Gramfort,</span>
-            <span class="date">Jan 2019,</span>
-
-                <span><i>preprint /</i></span>
-
-
-        </div>
-
-        <input type="checkbox" class="btnCtrl" id="pub9"/>
-        <label class="btn display-status" for="pub9">
-            <i class="fa fa-plus-circle plus"></i>
-            <i class="fa fa-minus-circle minus"></i>
-        </label>
-        <div class="description">
-            <div class="summary">
-                DiCoDiLe: a distributed and asynchronous algorithm, employing locally greedy coordinate descent and an asynchronous locking mechanism that does not require a central server.
-            </div>
-            <div class="details">
-                Convolutional dictionary learning (CDL) estimates shift invariant basis adapted to multidimensional data. CDL has proven useful for image denoising or inpainting, as well as for pattern discovery on multivariate signals. As estimated patterns can be positioned anywhere in signals or images, optimization techniques face the difficulty of working in extremely high dimensions with millions of pixels or time samples, contrarily to standard patch-based dictionary learning. To address this optimization problem, this work proposes a distributed and asynchronous algorithm, employing locally greedy coordinate descent and an asynchronous locking mechanism that does not require a central server. This algorithm can be used to distribute the computation on a number of workers which scales linearly with the encoded signal's size. Experiments confirm the scaling properties which allows us to learn patterns on large scales images from the Hubble Space Telescope.
             </div>
         </div>
     </div>
