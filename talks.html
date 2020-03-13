@@ -76,6 +76,39 @@ $(function(){
 
         <div class="talk">
         <div class="talk_item">
+            <span class="title">Learning step sizes for unfolded sparse coding </span>
+            <span style="width:2em;"></span>
+
+            <a href="/talks/20_01_13_SemOpt_slista.pdf">
+
+                <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+            </a>
+
+
+            <br>
+            <span class="date">13 Mar 2020,</span>
+            <span class="conference">At <i>CIRM - Luminy</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk17"/>
+        <label class="btn display-status" for="talk17">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Unfolding and learning weights of ISTA using neural networks is a practical way to accelerate the Lasso resolution. However, the reason why learning the weights of such a network would accelerate sparse coding are not clear. In this talk, we look at this problem from the point of view of selecting adapted step sizes for ISTA.
+            </div>
+            <div class="details">
+                Sparse coding is typically solved by iterative optimization techniques, such as the Iterative Shrinkage-Thresholding Algorithm (ISTA). Unfolding and learning weights of ISTA using neural networks is a practical way to accelerate estimation. However, the reason why learning the weights of such a network would accelerate sparse coding are not clear. In this talk, we look at this problem from the point of view of selecting adapted step sizes for ISTA. We show that a simple step size strategy can improve the convergence rate of ISTA by leveraging the sparsity of the iterates. However, it is impractical in most large-scale applications. Therefore, we propose a network architecture where only the step sizes of ISTA are learned. We demonstrate if the learned algorithm converges to the solution of the Lasso, its last layers correspond to ISTA with learned step sizes. Experiments show that learning step sizes can effectively accelerate the convergence when the solutions are sparse enough.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
             <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
             <span style="width:2em;"></span>
 

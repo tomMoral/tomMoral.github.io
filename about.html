@@ -88,74 +88,66 @@ $(function(){
         
     <div class="publication">
         <div class="project_item">
-            <span class="title">Learning step sizes for unfolded sparse coding </span>
+            <span class="title">Super-efficiency of automatic differentiation for functions defined as a minimum </span>
             <span style="width:2em;"></span>
 
-            <a href="https://hal.archives-ouvertes.fr/hal-02140383v1">
+            <a href="https://arxiv.org/pdf/2002.03722">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
 
 
-            <a href="https://github.com/tomMoral/adopty">
-                <i class="fa fa-github-alt" aria-hidden="true"></i>
-            </a>
-
-
-            <a href="/talks/19_12_12_poster_slista.pdf">
-                <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
-            </a>
 
             <br>
-            <span class="authors">Pierre Ablin; Thomas Moreau; Mathurin Massias; Alexandre Gramfort,</span>
-            <span class="date">Dec 2019,</span>
+            <span class="authors">Pierre Ablin; Gabriel Peyré and Thomas Moreau,</span>
+            <span class="date">Feb 2020,</span>
 
-                <span class="conference">In proceedings of <i>Advances in Neural Information Processing Sytems (NeurIPS)</i></span>
+                <span><i>preprint /</i></span>
 
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="pub13"/>
-        <label class="btn display-status" for="pub13">
+        <input type="checkbox" class="btnCtrl" id="pub15"/>
+        <label class="btn display-status" for="pub15">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                This paper presents a theoretical study on how LISTA can learn to accelerate computation compared to ISTA based on larger step sizes adapted to the sparsity distribution of the solution estimate. this mechanism is the only one which ensure assymptotic convergence to the Lasso estimator.
+                We study the different techniques to differentiate a function defined as a min of an other.
             </div>
             <div class="details">
-                Sparse coding is typically solved by iterative optimization techniques, such as the Iterative Shrinkage-Thresholding Algorithm (ISTA). Unfolding and learning weights of ISTA using neural networks is a practical way to accelerate estimation. In this paper, we study the selection of adapted step sizes for ISTA. We show that a simple step size strategy can improve the convergence rate of ISTA by leveraging the sparsity of the iterates. However, it is impractical in most large-scale applications. Therefore, we propose a network architecture where only the step sizes of ISTA are learned. We demonstrate that for a large class of unfolded algorithms, if the algorithm converges to the solution of the Lasso, its last layers correspond to ISTA with learned step sizes. Experiments show that our method is competitive with state-of-the-art networks when the solutions are sparse enough.
+                In min-min optimization or max-min optimization, one has to compute the gradient of a function defined as a minimum. In most cases, the minimum has no closed-form, and an approximation is obtained via an iterative algorithm. There are two usual ways of estimating the gradient of the function: using either an analytic formula obtained by assuming exactness of the approximation, or automatic differentiation through the algorithm. In this paper, we study the asymptotic error made by these estimators as a function of the optimization error. We find that the error of the automatic estimator is close to the square of the error of the analytic estimator, reflecting a super-efficiency phenomenon. The convergence of the automatic estimator greatly depends on the convergence of the Jacobian of the algorithm. We analyze it for gradient descent and stochastic gradient descent and derive convergence rates for the estimators in these cases. Our analysis is backed by numerical experiments on toy problems and on Wasserstein barycenter computation. Finally, we discuss the computational complexity of these estimators and give practical guidelines to chose between them.
             </div>
         </div>
     </div>
             <div class="talk">
         <div class="talk_item">
-            <span class="title">Multivariate Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
+            <span class="title">Learning step sizes for unfolded sparse coding </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/20_02_25_PASADENA_multicsc.pdf">
+            <a href="/talks/20_01_13_SemOpt_slista.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
 
 
             <br>
-            <span class="date">26 Feb 2020,</span>
-            <span class="conference">At <i>GT PASADENA</i></span>
+            <span class="date">13 Mar 2020,</span>
+            <span class="conference">At <i>CIRM - Luminy</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk16"/>
-        <label class="btn display-status" for="talk16">
+        <input type="checkbox" class="btnCtrl" id="talk17"/>
+        <label class="btn display-status" for="talk17">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Convolutional dictionary learning algorithm adapted to capture waveforms from MEG signals.
+                Unfolding and learning weights of ISTA using neural networks is a practical way to accelerate the Lasso resolution. However, the reason why learning the weights of such a network would accelerate sparse coding are not clear. In this talk, we look at this problem from the point of view of selecting adapted step sizes for ISTA.
             </div>
             <div class="details">
-                Frequency-specific patterns of neural activity are traditionally interpreted as sustained rhythmic oscillations, and related to cognitive mechanisms such as attention, high level visual processing or motor control. While alpha waves (8--12\, Hz) are known to closely resemble short sinusoids, and thus are revealed by Fourier analysis or wavelet transforms, there is an evolving debate that electromagnetic neural signals are composed of more complex waveforms that cannot be analyzed by linear filters and traditional signal representations. In this paper, we propose to learn dedicated representations of such recordings using a multivariate convolutional sparse coding (CSC) algorithm. Applied to electroencephalography (EEG) or magnetoencephalography (MEG) data, this method is able to learn not only prototypical temporal waveforms, but also associated spatial patterns so their origin can be localized in the brain. Our algorithm is based on alternated minimization and a greedy coordinate descent solver that leads to state-of-the-art running time on long time series. To demonstrate the implications of this method, we apply it to MEG data and show that it is able to recover biological artifacts. More remarkably, our approach also reveals the presence of non-sinusoidal mu-shaped patterns, along with their topographic maps related to the somatosensory cortex.
+                Sparse coding is typically solved by iterative optimization techniques, such as the Iterative Shrinkage-Thresholding Algorithm (ISTA). Unfolding and learning weights of ISTA using neural networks is a practical way to accelerate estimation. However, the reason why learning the weights of such a network would accelerate sparse coding are not clear. In this talk, we look at this problem from the point of view of selecting adapted step sizes for ISTA. We show that a simple step size strategy can improve the convergence rate of ISTA by leveraging the sparsity of the iterates. However, it is impractical in most large-scale applications. Therefore, we propose a network architecture where only the step sizes of ISTA are learned. We demonstrate if the learned algorithm converges to the solution of the Lasso, its last layers correspond to ISTA with learned step sizes. Experiments show that learning step sizes can effectively accelerate the convergence when the solutions are sparse enough.
             </div>
         </div>
     </div>
