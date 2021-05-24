@@ -88,96 +88,101 @@ $(function(){
         
     <div class="publication">
         <div class="project_item">
-            <span class="title">Super-efficiency of automatic differentiation for functions defined as a minimum </span>
+            <span class="title">Learning to solve TV regularized problems with unrolled algorithms </span>
             <span style="width:2em;"></span>
 
-            <a href="https://arxiv.org/pdf/2002.03722">
+            <a href="https://papers.nips.cc/paper/9469-learning-step-sizes-for-unfolded-sparse-coding">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
 
 
+            <a href="https://github.com/hcherkaoui/carpet">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
 
             <br>
-            <span class="authors">Pierre Ablin; Gabriel Peyré and Thomas Moreau,</span>
-            <span class="date">Feb 2020,</span>
+            <span class="authors">Cherkaoui Hamza; Sulam Jeremias; Moreau Thomas,</span>
+            <span class="date">Dec 2020,</span>
 
-                <span><i>preprint /</i></span>
+                <span class="conference">In proceedings of <i>Advances in Neural Information Processing System</i></span>
 
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="pub15"/>
-        <label class="btn display-status" for="pub15">
+        <input type="checkbox" class="btnCtrl" id="pub16"/>
+        <label class="btn display-status" for="pub16">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                We study the different techniques to differentiate a function defined as a min of an other.
+                In this paper, we accelerate such iterative algorithms by unfolding proximal gradient descent solvers in order to learn their parameters for 1D TV regularized problems.  While this could be done using the synthesis formulation, we demonstrate that this leads to slower performances.  The main difficulty in applying such methods in the analysis formulation lies in proposing a way to compute the derivatives through the proximal operator.
             </div>
             <div class="details">
-                In min-min optimization or max-min optimization, one has to compute the gradient of a function defined as a minimum. In most cases, the minimum has no closed-form, and an approximation is obtained via an iterative algorithm. There are two usual ways of estimating the gradient of the function: using either an analytic formula obtained by assuming exactness of the approximation, or automatic differentiation through the algorithm. In this paper, we study the asymptotic error made by these estimators as a function of the optimization error. We find that the error of the automatic estimator is close to the square of the error of the analytic estimator, reflecting a super-efficiency phenomenon. The convergence of the automatic estimator greatly depends on the convergence of the Jacobian of the algorithm. We analyze it for gradient descent and stochastic gradient descent and derive convergence rates for the estimators in these cases. Our analysis is backed by numerical experiments on toy problems and on Wasserstein barycenter computation. Finally, we discuss the computational complexity of these estimators and give practical guidelines to chose between them.
+                Total Variation (TV) is a popular regularization strategy that promotes piece-wise constant signals by constraining the`1-norm of the first order derivative of the estimated signal.  The resulting optimization problem is usually solved using iterative algorithms such as proximal gradient descent, primal-dual algorithms or ADMM. However, such methods can require a very large number of iterations to converge to a suitable solution. In this paper, we accelerate such iterative algorithms by unfolding proximal gradient descent solvers in order to learn their parameters for 1D TV regularized problems.  While this could be done using the synthesis formulation, we demonstrate that this leads to slower performances.  The main difficulty in applying such methods in the analysis formulation lies in proposing a way to compute the derivatives through the proximal operator.  As our main contribution, we develop and characterize two approaches to do so, describe their benefits and limitations, and discuss the regime where they can actually improve over iterative procedures. We validate those findings with experiments on synthetic and real data.
             </div>
         </div>
     </div>
             <div class="talk">
         <div class="talk_item">
-            <span class="title">Learning step sizes for unfolded sparse coding </span>
+            <span class="title">Learning to optimize with unrolled algorithms </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/20_01_13_SemOpt_slista.pdf">
+            <a href="/talks/21_04_15_Monpellier_slista.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
 
 
             <br>
-            <span class="date">13 Mar 2020,</span>
-            <span class="conference">At <i>CIRM - Luminy</i></span>
+            <span class="date">15 Apr 2021,</span>
+            <span class="conference">At <i>ML-MTP seminar - Montpellier</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk17"/>
-        <label class="btn display-status" for="talk17">
+        <input type="checkbox" class="btnCtrl" id="talk19"/>
+        <label class="btn display-status" for="talk19">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Unfolding and learning weights of ISTA using neural networks is a practical way to accelerate the Lasso resolution. However, the reason why learning the weights of such a network would accelerate sparse coding are not clear. In this talk, we look at this problem from the point of view of selecting adapted step sizes for ISTA.
+                In this talk, I will first review how one can design unrolled algorithms to solve the linear regression with l1 or TV regularization, with a particular focus on the choice of parametrization and loss. Then, I will discuss the reasons why such procedure can lead to better results compared to classical optimization, with a particular focus on the choice of step sizes.
             </div>
             <div class="details">
-                Sparse coding is typically solved by iterative optimization techniques, such as the Iterative Shrinkage-Thresholding Algorithm (ISTA). Unfolding and learning weights of ISTA using neural networks is a practical way to accelerate estimation. However, the reason why learning the weights of such a network would accelerate sparse coding are not clear. In this talk, we look at this problem from the point of view of selecting adapted step sizes for ISTA. We show that a simple step size strategy can improve the convergence rate of ISTA by leveraging the sparsity of the iterates. However, it is impractical in most large-scale applications. Therefore, we propose a network architecture where only the step sizes of ISTA are learned. We demonstrate if the learned algorithm converges to the solution of the Lasso, its last layers correspond to ISTA with learned step sizes. Experiments show that learning step sizes can effectively accelerate the convergence when the solutions are sparse enough.
+                When solving multiple optimization problems sharing the same underlying structure, using iterative algorithms designed for worst case scenario can be considered as inefficient. When one aim at having good solution in average, it is possible to improve the performances by learning the weights of a neural networked designed to mimic an unfolded optimization algorithm. However, the reason why learning the weights of such a network would accelerate the problem resolution is not always clear.</br>
+In this talk, I will first review how one can design unrolled algorithms to solve the linear regression with l1 or TV regularization, with a particular focus on the choice of parametrization and loss. Then, I will discuss the reasons why such procedure can lead to better results compared to classical optimization, with a particular focus on the choice of step sizes.</br>
+</br>
+<u>Linked papers:</u><ol><li>Moreau & Bruna. <a href=https://openreview.net/forum?id=SJGPL9Dex>Understanding Neural Sparse Coding with Matrix Factorization</a>. ICLR 2017.</li><li>Ablin, Moreau, Massias & Gramfort. <a href=http://arxiv.org/abs/1905.11071>Learning step sizes for unfolded sparse coding</a>. NeurIPS 2019.</li><li>Cherkaoui, Sulam & Moreau. <a href=https://hal.archives-ouvertes.fr/hal-02954181>Learning to solve TV regularised problems with unrolled algorithms</a>. NeurIPS 2020.</li></ol>
             </div>
         </div>
     </div>
 
         <div class="project">
     <div class="project_item">
-        <span class="title">Joblib 0.14 </span>
-        <a href="https://github.com/joblib/joblib"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-        <span class="date">Oct 2019</span>
+        <span class="title">BenchOpt 1.1 </span>
+        <a href="https://github.com/benchopt/benchopt.git"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <span class="date">Apr 2021</span>
         <div class="logo">
-            <img src="https://joblib.readthedocs.io/en/latest/_static/joblib_logo.svg" style="height: 100%;"/>
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 100%;"/>
         </div>
 
     </div>
 
-    <input type="checkbox" class="btnCtrl" id="proj5"/>
-    <label class="btn display-status" for="proj5">
+    <input type="checkbox" class="btnCtrl" id="proj6"/>
+    <label class="btn display-status" for="proj6">
         <i class="fa fa-plus-circle plus"></i>
         <i class="fa fa-minus-circle minus"></i>
     </label>
     <div class="description">
         <span class="summary">
-            Easy and reliable parallel computing with Python functions.
+            Benchmarking tool for optimization.
         </span>
         <div class="details">
-            Joblib is a set of tools to provide lightweight pipelining in Python. In particular: <ul><li>transparent disk-caching of functions and lazy re-evaluation (memoize pattern)</li><li> easy simple parallel computing</li></ul> Joblib is optimized to be fast and robust on large data in particular and has specific optimizations for numpy arrays. It is BSD-licensed and its documentation can be found at <a href="https://joblib.readthedocs.io/">https://joblib.readthedocs.io/</a>.</br>
+            BenchOpt is a package to simplify, make more transparent and more reproducible the comparisons of optimization algorithms.</br>
 </br>
-Starting 2017, I have been involved in Joblib development, first to integrate loky as a new multiprocessing backend and them as a regular developer for the library.</br>
-</br>
-<i>python, multiprocessing, parallel computing</i>
+BenchOpt is written in Python but it is available with many programming languages. So far it has been tested with Python, R, Julia and compiled binaries written in C/C++ available via a terminal command. If it can be installed via conda it should just work!
         </div>
     </div>
 </div>
