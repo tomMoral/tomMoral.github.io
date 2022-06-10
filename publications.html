@@ -77,6 +77,431 @@ $(function(){
     
     <div class="publication">
         <div class="project_item">
+            <span class="title">SHINE: SHaring the INverse Estimate from the forward pass for bi-level optimization and implicit models </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openreview.net/forum?id=-ApAkox5mp">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Zaccharie Ramzi, Florian Mannel, Shaojie Bai, Jean-Luc Starck, Philippe Ciuciu, Thomas Moreau,</span>
+            <span class="date">Apr 2022,</span>
+
+                <span class="conference">In proceedings of <i>International Conference on Learning Representations (ICLR)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub22"/>
+        <label class="btn display-status" for="pub22">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                In recent years, implicit deep learning has emerged as a method to increase the depth of deep neural networks. While their training is memory-efficient, they are still significantly slower to train than their explicit counterparts. In Deep Equilibrium Models~(DEQs), the training is performed as a bi-level problem, and its computational complexity is partially driven by the iterative inversion of a huge Jacobian matrix.
+            </div>
+            <div class="details">
+                In recent years, implicit deep learning has emerged as a method to increase the depth of deep neural networks. While their training is memory-efficient, they are still significantly slower to train than their explicit counterparts. In Deep Equilibrium Models~(DEQs), the training is performed as a bi-level problem, and its computational complexity is partially driven by the iterative inversion of a huge Jacobian matrix. In this paper, we propose a novel strategy to tackle this computational bottleneck from which many bi-level problems suffer. The main idea is to use the quasi-Newton matrices from the forward pass to efficiently approximate the inverse Jacobian matrix in the direction needed for the gradient computation. We provide a theorem that motivates using our method with the original forward algorithms. In addition, by modifying these forward algorithms, we further provide theoretical guarantees that our method asymptotically estimates the true implicit gradient. We empirically study this approach in many settings, ranging from hyperparameter optimization to large Multiscale DEQs applied to CIFAR and ImageNet. We show that it reduces the computational cost of the backward pass by up to two orders of magnitude. All this is achieved while retaining the excellent performance of the original models in hyperparameter optimization and on CIFAR, and giving encouraging and competitive results on ImageNet.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Dictionary and prior learning with unrolled algorithms for unsupervised inverse problems </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openreview.net/forum?id=rI0LYgGeYaw">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Benoît Malézieux, Thomas Moreau, Matthieu Kowalski,</span>
+            <span class="date">Apr 2022,</span>
+
+                <span class="conference">In proceedings of <i>International Conference on Learning Representations (ICLR)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub23"/>
+        <label class="btn display-status" for="pub23">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Dictionary learning consists of finding a sparse representation from noisy data and is a common way to encode data-driven prior knowledge on signals. Alternating minimization (AM) is standard for the underlying optimization, where gradient descent steps alternate with sparse coding procedures. The major drawback of this method is its prohibitive computational cost, making it unpractical on large real-world data sets.
+            </div>
+            <div class="details">
+                Dictionary learning consists of finding a sparse representation from noisy data and is a common way to encode data-driven prior knowledge on signals. Alternating minimization (AM) is standard for the underlying optimization, where gradient descent steps alternate with sparse coding procedures. The major drawback of this method is its prohibitive computational cost, making it unpractical on large real-world data sets. This work studies an approximate formulation of dictionary learning based on unrolling and compares it to alternating minimization to find the best trade-off between speed and precision. We analyze the asymptotic behavior and convergence rate of gradients estimates in both methods. We show that unrolling performs better on the support of the inner problem solution and during the first iterations. Finally, we apply unrolling on pattern learning in magnetoencephalography (MEG) with the help of a stochastic algorithm and compare the performance to a state-of-the-art method.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">CADDA: Class-wise Automatic Differentiable Data Augmentation for EEG Signals </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openreview.net/forum?id=6IYp-35L-xJ">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Cédric Rommel ~Cédric_Rommel1 , Thomas Moreau, Joseph Paillard, Alexandre Gramfort,</span>
+            <span class="date">Apr 2022,</span>
+
+                <span class="conference">In proceedings of <i>International Conference on Learning Representations (ICLR)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub24"/>
+        <label class="btn display-status" for="pub24">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Data augmentation is a key element of deep learning pipelines, as it informs the network during training about transformations of the input data that keep the label unchanged. Manually finding adequate augmentation methods and parameters for a given pipeline is however rapidly cumbersome. In particular, while intuition can guide this decision for images, the design and choice of augmentation policies remains unclear for more complex types of data, such as neuroscience signals.
+            </div>
+            <div class="details">
+                Data augmentation is a key element of deep learning pipelines, as it informs the network during training about transformations of the input data that keep the label unchanged. Manually finding adequate augmentation methods and parameters for a given pipeline is however rapidly cumbersome. In particular, while intuition can guide this decision for images, the design and choice of augmentation policies remains unclear for more complex types of data, such as neuroscience signals. Besides, class-dependent augmentation strategies have been surprisingly unexplored in the literature, although it is quite intuitive: changing the color of a car image does not change the object class to be predicted, but doing the same to the picture of an orange does. This paper investigates gradient-based automatic data augmentation algorithms  amenable to class-wise policies with exponentially larger search spaces. Motivated by supervised learning applications using EEG signals for which good augmentation policies are mostly unknown, we propose a new differentiable relaxation of the problem. In the class-agnostic setting, results show that our new relaxation leads to optimal performance with faster training than competing gradient-based methods, while also outperforming gradient-free methods in the class-wise setting. This work proposes also novel differentiable augmentation operations relevant for sleep stage classification.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">DriPP: Driven Point Processes to Model Stimuli Induced Patterns in M/EEG Signals </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openreview.net/pdf?id=d_2lcDh0Y9c">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Cédric Allain, Alexandre Gramfort, Thomas Moreau,</span>
+            <span class="date">Apr 2022,</span>
+
+                <span class="conference">In proceedings of <i>International Conference on Learning Representations (ICLR)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub25"/>
+        <label class="btn display-status" for="pub25">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. Several works have shown that these patterns can be extracted efficiently in an unsupervised way, e.g., using Convolutional Dictionary Learning.
+            </div>
+            <div class="details">
+                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. Several works have shown that these patterns can be extracted efficiently in an unsupervised way, e.g., using Convolutional Dictionary Learning. This leads to an event-based description of the data. Given these events, a natural question is to estimate how their occurrences are modulated by certain cognitive tasks and experimental manipulations. To address it, we propose a point process approach. While point processes have been used in neuroscience in the past, in particular for single cell recordings (spike trains), techniques such as Convolutional Dictionary Learning make them amenable to human studies based on EEG/MEG signals. We develop a novel statistical point process model – called driven temporal point processes (DriPP) – where the intensity function of the point process model is linked to a set of point processes corresponding to stimulation events. We derive a fast and principled expectation-maximization algorithm to estimate the parameters of this model. Simulations reveal that model parameters can be identified from long enough signals. Results on standard MEG datasets demonstrate that our methodology reveals event-related neural responses – both evoked and induced – and isolates non-task specific temporal patterns.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Deep invariant networks with differentiable augmentation layers </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2202.02142">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Cédric Rommel, Thomas Moreau, Alexandre Gramfort,</span>
+            <span class="date">Apr 2022,</span>
+
+                <span><i>preprint Arxiv</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub27"/>
+        <label class="btn display-status" for="pub27">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Designing learning systems which are invariant to certain data transformations is critical in machine learning. Practitioners can typically enforce a desired invariance on the trained model through the choice of a network architecture, e.g. using convolutions for translations, or using data augmentation. Yet, enforcing true invariance in the network can be difficult, and data invariances are not always known a piori.
+            </div>
+            <div class="details">
+                Designing learning systems which are invariant to certain data transformations is critical in machine learning. Practitioners can typically enforce a desired invariance on the trained model through the choice of a network architecture, e.g. using convolutions for translations, or using data augmentation. Yet, enforcing true invariance in the network can be difficult, and data invariances are not always known a piori. State-of-the-art methods for learning data augmentation policies require held-out data and are based on bilevel optimization problems, which are complex to solve and often computationally demanding. In this work we investigate new ways of learning invariances only from the training data. Using learnable augmentation layers built directly in the network, we demonstrate that our method is very versatile. It can incorporate any type of differentiable augmentation and be applied to a broad class of learning problems beyond computer vision. We provide empirical evidence showing that our approach is easier and faster to train than modern automatic data augmentation techniques based on bilevel optimization, while achieving comparable results. Experiments show that while the invariances transferred to a model through automatic data augmentation are limited by the model expressivity, the invariance yielded by our approach is insensitive to it by design.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">A framework for bilevel optimization that enables stochastic and global variance reduction algorithms </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2201.13409">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Mathieu Dagréou, Pierre Ablin, Samuel Vaiter, Thomas Moreau,</span>
+            <span class="date">Jan 2022,</span>
+
+                <span><i>preprint Arxiv</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub28"/>
+        <label class="btn display-status" for="pub28">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Bilevel optimization, the problem of minimizing a value function which involves the arg-minimum of another function, appears in many areas of machine learning. In a large scale setting where the number of samples is huge, it is crucial to develop stochastic methods, which only use a few samples at a time to progress. However, computing the gradient of the value function involves solving a linear system, which makes it difficult to derive unbiased stochastic estimates.
+            </div>
+            <div class="details">
+                Bilevel optimization, the problem of minimizing a value function which involves the arg-minimum of another function, appears in many areas of machine learning. In a large scale setting where the number of samples is huge, it is crucial to develop stochastic methods, which only use a few samples at a time to progress. However, computing the gradient of the value function involves solving a linear system, which makes it difficult to derive unbiased stochastic estimates. To overcome this problem we introduce a novel framework, in which the solution of the inner problem, the solution of the linear system, and the main variable evolve at the same time. These directions are written as a sum, making it straightforward to derive unbiased estimates. The simplicity of our approach allows us to develop global variance reduction algorithms, where the dynamics of all variables is subject to variance reduction. We demonstrate that SABA, an adaptation of the celebrated SAGA algorithm in our framework, has O(1/T) convergence rate, and that it achieves linear convergence under Polyak-Lojasciewicz assumption. This is the first stochastic algorithm for bilevel optimization that verifies either of these properties. Numerical experiments validate the usefulness of our method.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Risk of death in individuals hospitalized for COVID-19 with and without psychiatric disorders: an observational multicenter study in France </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://pdf.sciencedirectassets.com/779133/AIP/1-s2.0-S2667174321001774/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjECIaCXVzLWVhc3QtMSJGMEQCIHIOPGsbfE1nOOHAxDnUA2L%2BrXbRHD3na1uVm2ha%2BwHEAiBu0aZfb5YCuo56KN%2F0nAS1Xue4Arxr0y7ImR1gLu586irSBAgrEAQaDDA1OTAwMzU0Njg2NSIM2OMCKfRl4SctHgaoKq8E0n%2F%2BqYrq9z%2BEWyZtRT93pGonjtmDppjnTaWmv4CgHLSDqsiN%2BNidT4ix61V5UlszCS7i%2FSNXDLi7N2IWhW8K%2FxkurRF1FQ7anXoca%2BQ9X%2BrGlG1S%2FVAVJdzVd6%2F%2FK3vWFdvSGaQewBs2uqhf%2BRGp81kcpejQyaVo5GqDt4m0xWjWKp%2FtC6C1DT0RaW">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Nicolas Hoertel, Marina Sánchez-Rico, Pedro de La Muela, Miriam Abellán, Carlos Blanco, Marion Leboyer, Céline Cougoule, Erich Gulbins, Johannes Kornhuber, Alexander Carpinteiro, Katrin Anne Becker, Raphaël Vernet, Nathanaël Beeker, Antoine Neuraz, Jesús M Alvarado, Juan José Herrera-Morueco, Guillaume Airagnes, Cédric Lemogne, Frédéric Limosin, Pierre-Yves Ancel, Alain Bauchet, Vincent Benoit, Mélodie Bernaux, Ali Bellamine, Romain Bey, Aurélie Bourmaud, Stéphane Breant, Anita Burgun et al.,</span>
+            <span class="date">Jan 2022,</span>
+
+                <span><i>Biological psychiatry global open science</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub29"/>
+        <label class="btn display-status" for="pub29">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Prior research suggests that psychiatric disorders could be linked to increased mortality among patients with COVID-19. However, whether all or specific psychiatric disorders are intrinsic risk factors of death in COVID-19 or whether these associations reflect the greater prevalence of medical risk factors in people with psychiatric disorders has yet to be evaluated.
+            </div>
+            <div class="details">
+                <b>Background:</b>
+Prior research suggests that psychiatric disorders could be linked to increased mortality among patients with COVID-19. However, whether all or specific psychiatric disorders are intrinsic risk factors of death in COVID-19 or whether these associations reflect the greater prevalence of medical risk factors in people with psychiatric disorders has yet to be evaluated.</br></br>
+
+<b>Methods</b>
+We performed an observational, multicenter, retrospective cohort study to examine the association between psychiatric disorders and mortality among patients hospitalized for laboratory-confirmed COVID-19 at 36 Greater Paris University hospitals.</br></br>
+
+<b>Results</b> Of 15,168 adult patients, 857 (5.7%) had an ICD-10 diagnosis of psychiatric disorder. Over a mean follow-up period of 14.6 days (SD = 17.9), 326 of 857 (38.0%) patients with a diagnosis of psychiatric disorder died compared with 1276 of 14,311 (8.9%) patients without such a diagnosis (odds ratio 6.27, 95% CI 5.40–7.28, p < .01). When adjusting for age, sex, hospital, current smoking status, and medications according to compassionate use or as part of a clinical trial, this association remained significant (adjusted odds ratio 3.27, 95% CI 2.78–3.85, p < .01). However, additional adjustments for obesity and number of medical conditions resulted in a nonsignificant association (adjusted odds ratio 1.02, 95% CI 0.84–1.23, p = .86). Exploratory analyses after the same adjustments suggested that a diagnosis of mood disorders was significantly associated with reduced mortality, which might be explained by the use of antidepressants.</br></br>
+
+
+<b>Conclusions:</b>
+These findings suggest that the increased risk of COVID-19–related mortality in individuals with psychiatric disorders hospitalized for COVID-19 might be explained by the greater number of medical conditions and the higher prevalence of obesity in this population and not by the underlying psychiatric disease.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Leveraging Global Parameters for Flow-based Neural Posterior Estimation </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://papers.nips.cc/paper/2021/file/6fbd841e2e4b2938351a4f9b68f12e6b-Paper.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Pedro L. C. Rodrigues, Thomas Moreau, Gilles Louppe, Alexandre Gramfort,</span>
+            <span class="date">Dec 2021,</span>
+
+                <span class="conference">In proceedings of <i>Advances in Neural Information Processing Systems (NeurIPS)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub21"/>
+        <label class="btn display-status" for="pub21">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Inferring the parameters of a stochastic model based on experimental observations is central to the scientific method. A particularly challenging setting is when the model is strongly indeterminate, i.e., when distinct sets of parameters yield identical observations.
+            </div>
+            <div class="details">
+                Inferring the parameters of a stochastic model based on experimental observations is central to the scientific method. A particularly challenging setting is when the model is strongly indeterminate, i.e., when distinct sets of parameters yield identical observations. This arises in many practical situations, such as when inferring the distance and power of a radio source (is the source close and weak or far and strong?) or when estimating the amplifier gain and underlying brain activity of an electrophysiological experiment. In this work, we present a method for cracking such indeterminacy by exploiting additional information conveyed by an auxiliary set of observations sharing global parameters. Our method extends recent developments in simulation-based inference(SBI) based on normalizing flows to Bayesian hierarchical models. We validate quantitatively our proposal on a motivating example amenable to analytical solutions, and then apply it to invert a well known non-linear model from computational neuroscience.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Multivariate semi-blind deconvolution of fMRI time series </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://hal.archives-ouvertes.fr/hal-03005584v2/document">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Hamza Cherkaoui, Thomas Moreau, Abderrahim Halimi, Claire Leroy, Philippe Ciuciu,</span>
+            <span class="date">Nov 2021,</span>
+
+                <span><i>NeuroImage</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub30"/>
+        <label class="btn display-status" for="pub30">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Whole brain estimation of the haemodynamic response function (HRF) in functional magnetic resonance imaging (fMRI) is critical to get insight on the global status of the neurovascular coupling of an individual in healthy or pathological condition. Most of existing approaches in the literature works on task-fMRI data and relies on the experimental paradigm as a surrogate of neural activity, hence remaining inoperative on resting-stage fMRI (rs-fMRI) data.
+            </div>
+            <div class="details">
+                Whole brain estimation of the haemodynamic response function (HRF) in functional magnetic resonance imaging (fMRI) is critical to get insight on the global status of the neurovascular coupling of an individual in healthy or pathological condition. Most of existing approaches in the literature works on task-fMRI data and relies on the experimental paradigm as a surrogate of neural activity, hence remaining inoperative on resting-stage fMRI (rs-fMRI) data. To cope with this issue, recent works have performed either a two-step analysis to detect large neu-ral events and then characterize the HRF shape or a joint estimation of both the neural and haemodynamic components in an univariate fashion. In this work, we express the neural activity signals as a combination of piece-wise constant temporal atoms associated with sparse spatial maps and introduce an haemodynamic parcel-lation of the brain featuring a temporally dilated version of a given HRF model in each parcel with unknown dilation parameters. We formulate the joint estimation of the HRF shapes and spatio-temporal neural representations as a multivariate semi-blind deconvolution problem in a paradigm-free setting and introduce constraints inspired from the dictionary learning literature to ease its identifiability. An efficient alternating minimization algorithm is proposed and validated on both synthetic and real rs-fMRI data at the subject level. To demonstrate its significance at the population level, we apply this new framework to the UK Biobank data set, first for the discrimination of haemodynamic territories between balanced groups (n = 24 individuals in each) patients with an history of stroke and healthy controls and second, for the analysis of normal aging on the neurovascular coupling. Overall, we statistically demonstrate that a pathology like stroke or a condition like normal brain aging induce longer haemodynamic delays in certain brain areas (e.g. Willis polygon, occipital, temporal and frontal cortices) and that this haemodynamic feature may be predictive with an accuracy of 74 % of the individual's age in a supervised classification task performed on n = 459 subjects.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Diabetes increases severe COVID-19 outcomes primarily in younger adults </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://hal.sorbonne-universite.fr/hal-03246831/file/Manuscrit_Diedisheim_revised_cleancopy%20R3.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Marc Diedisheim, Etienne Dancoisne, Jean-François Gautier, Etienne Larger, Emmanuel Cosson, Bruno Fève, Philippe Chanson, Sébastien Czernichow, Sopio Tatulashvili, Marie-Laure Raffin-Sanson, Kankoé Sallah, Muriel Bourgeon, Christiane Ajzenberg, Agnès Hartemann, Christel Daniel, Thomas Moreau, Ronan Roussel, Louis Potier,</span>
+            <span class="date">Sep 2021,</span>
+
+                <span><i>The Journal of Clinical Endocrinology &amp; Metabolism</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub31"/>
+        <label class="btn display-status" for="pub31">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Diabetes is reported as a risk factor for severe coronavirus disease 2019 (COVID-19), but whether this risk is similar in all categories of age remains unclear. To investigate the risk of severe COVID-19 outcomes in hospitalized patients with and without diabetes according to age categories.
+            </div>
+            <div class="details">
+                <b>Context</b>
+Diabetes is reported as a risk factor for severe coronavirus disease 2019 (COVID-19), but whether this risk is similar in all categories of age remains unclear.</br></br>
+
+<b>Objective</b>
+To investigate the risk of severe COVID-19 outcomes in hospitalized patients with and without diabetes according to age categories.</br></br>
+
+<b>Design Setting and Participants</b>
+We conducted a retrospective observational cohort study of 6314 consecutive patients hospitalized for COVID-19 between February and 30 June 2020 in the Paris metropolitan area, France; follow-up was recorded until 30 September 2020.
+</br></br>
+
+<b>Main Outcome Measure(s)</b>
+The main outcome was a composite outcome of mortality and orotracheal intubation in subjects with diabetes compared with subjects without diabetes, after adjustment for confounding variables and according to age categories.
+</br></br>
+
+<b>Results</b>
+Diabetes was recorded in 39% of subjects. Main outcome was higher in patients with diabetes, independently of confounding variables (hazard ratio [HR] 1.13 [1.03-1.24]) and increased with age in individuals without diabetes, from 23% for those <50 to 35% for those >80 years but reached a plateau after 70 years in those with diabetes. In direct comparison between patients with and without diabetes, diabetes-associated risk was inversely proportional to age, highest in <50 years and similar after 70 years. Similarly, mortality was higher in patients with diabetes (26%) than in those without diabetes (22%, P < 0.001), but adjusted HR for diabetes was significant only in patients younger than age 50 years (HR 1.81 [1.14-2.87]).
+</br></br>
+
+<b>Conclusions</b>
+Diabetes should be considered as an independent risk factor for the severity of COVID-19 in young adults more so than in older adults, especially for individuals younger than 70 years.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Wavelets in the Deep Learning Era </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://hal.inria.fr/hal-03346892/file/learnlets_journal_paper.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Zaccharie Ramzi, Jean-Luc Starck, Thomas Moreau, Philippe Ciuciu,</span>
+            <span class="date">Jan 2021,</span>
+
+                <span class="conference">In proceedings of <i>European Signal Processing Conference (EUSIPCO)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub20"/>
+        <label class="btn display-status" for="pub20">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Sparsity based methods, such as wavelets, have been state-of-the-art for more than 20 years for inverse problems before being overtaken by neural networks. In particular, U-nets have proven to be extremely effective. Their main ingredients are a highly non-linear processing, a massive learning made possible by the flourishing of optimization algorithms with the power of computers (GPU) and the use of large available data sets for training.
+            </div>
+            <div class="details">
+                Sparsity based methods, such as wavelets, have been state-of-the-art for more than 20 years for inverse problems before being overtaken by neural networks. In particular, U-nets have proven to be extremely effective. Their main ingredients are a highly non-linear processing, a massive learning made possible by the flourishing of optimization algorithms with the power of computers (GPU) and the use of large available data sets for training. While the many stages of non-linearity are intrinsic to deep learning, the usage of learning with training data could also be exploited by sparsity based approaches. The aim of our study is to push the limits of sparsity with learning, and comparing the results with U-nets. We present a new network architecture, which conserves the properties of sparsity based methods such as exact reconstruction and good generalization properties, while fostering the power of neural networks for learning and fast calculation. We evaluate the model on image denoising tasks and show it is competitive with learning-based models.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
             <span class="title">Learning to solve TV regularized problems with unrolled algorithms </span>
             <span style="width:2em;"></span>
 
@@ -117,6 +542,42 @@ $(function(){
     
     <div class="publication">
         <div class="project_item">
+            <span class="title">NeuMiss networks: differential programming for supervised learning with missing values </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://proceedings.neurips.cc/paper/2020/file/42ae1544956fbe6e09242e6cd752444c-Paper.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Marine Le Morvan, Julie Josse, Thomas Moreau, Erwan Scornet, Gaël Varoquaux,</span>
+            <span class="date">Dec 2020,</span>
+
+                <span class="conference">In proceedings of <i>Advances in Neural Information Processing Systems (NeurIPS)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub18"/>
+        <label class="btn display-status" for="pub18">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                The presence of missing values makes supervised learning much more challenging. Indeed, previous work has shown that even when the response is a linear function of the complete data, the optimal predictor is a complex function of the observed entries and the missingness indicator. As a result, the computational or sample complexities of consistent approaches depend on the number of missing patterns, which can be exponential in the number of dimensions.
+            </div>
+            <div class="details">
+                The presence of missing values makes supervised learning much more challenging. Indeed, previous work has shown that even when the response is a linear function of the complete data, the optimal predictor is a complex function of the observed entries and the missingness indicator. As a result, the computational or sample complexities of consistent approaches depend on the number of missing patterns, which can be exponential in the number of dimensions. In this work, we derive the analytical form of the optimal predictor under a linearity assumption and various missing data mechanisms including Missing at Random (MAR) and self-masking (Missing Not At Random). Based on a Neumann-series approximation of the optimal predictor, we propose a new principled architecture, named NeuMiss networks. Their originality and strength come from the use of a new type of non-linearity: the multiplication by the missingness indicator. We provide an upper bound on the Bayes risk of NeuMiss networks, and show that they have good predictive accuracy with both a number of parameters and a computational complexity independent of the number of missing data patterns. As a result they scale well to problems with many features, and remain statistically efficient for medium-sized samples. Moreover, we show that, contrary to procedures using EM or imputation, they are robust to the missing data mechanism, including difficult MNAR settings such as self-masking.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
             <span class="title">DiCoDiLe: Distributed Convolutional Dictionary Learning </span>
             <span style="width:2em;"></span>
 
@@ -150,6 +611,128 @@ $(function(){
             </div>
             <div class="details">
                 Convolutional dictionary learning (CDL) estimates shift invariant basis adapted to multidimensional data. CDL has proven useful for image denoising or inpainting, as well as for pattern discovery on multivariate signals. As estimated patterns can be positioned anywhere in signals or images, optimization techniques face the difficulty of working in extremely high dimensions with millions of pixels or time samples, contrarily to standard patch-based dictionary learning. To address this optimization problem, this work proposes a distributed and asynchronous algorithm, employing locally greedy coordinate descent and an asynchronous locking mechanism that does not require a central server. This algorithm can be used to distribute the computation on a number of workers which scales linearly with the encoded signal's size. Experiments confirm the scaling properties which allows us to learn patterns on large scales images from the Hubble Space Telescope.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">International electronic health record-derived COVID-19 clinical course profiles: the 4CE consortium </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://www.nature.com/articles/s41746-020-00308-0.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Gabriel A Brat, Griffin M Weber, Nils Gehlenborg, Paul Avillach, Nathan P Palmer, Luca Chiovato, James Cimino, Lemuel R Waitman, Gilbert S Omenn, Alberto Malovini, Jason H Moore, Brett K Beaulieu-Jones, Valentina Tibollo, Shawn N Murphy, Sehi L’Yi, Mark S Keller, Riccardo Bellazzi, David A Hanauer, Arnaud Serret-Larmande, Alba Gutierrez-Sacristan, John J Holmes, Douglas S Bell, Kenneth D Mandl, Robert W Follett, Jeffrey G Klann, Douglas A Murad, Luigia Scudeller, Mauro Bucalo, et al.,</span>
+            <span class="date">Aug 2020,</span>
+
+                <span><i>Npj Digital Medicine</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub26"/>
+        <label class="btn display-status" for="pub26">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                We leveraged the largely untapped resource of electronic health record data to address critical clinical and epidemiological questions about Coronavirus Disease 2019 (COVID-19). To do this, we formed an international consortium (4CE) of 96 hospitals across five countries (www.covidclinical.net). Contributors utilized the Informatics for Integrating Biology and the Bedside (i2b2) or Observational Medical Outcomes Partnership (OMOP) platforms to map to a common data model.
+            </div>
+            <div class="details">
+                We leveraged the largely untapped resource of electronic health record data to address critical clinical and epidemiological questions about Coronavirus Disease 2019 (COVID-19). To do this, we formed an international consortium (4CE) of 96 hospitals across five countries (www.covidclinical.net). Contributors utilized the Informatics for Integrating Biology and the Bedside (i2b2) or Observational Medical Outcomes Partnership (OMOP) platforms to map to a common data model. The group focused on temporal changes in key laboratory test values. Harmonized data were analyzed locally and converted to a shared aggregate form for rapid analysis and visualization of regional differences and global commonalities. Data covered 27,584 COVID-19 cases with 187,802 laboratory tests. Case counts and laboratory trajectories were concordant with existing literature. Laboratory tests at the time of diagnosis showed hospital-level differences equivalent to country-level variation across the consortium partners. Despite the limitations of decentralized data generation, we established a framework to capture the trajectory of COVID-19 disease in patients and their response to interventions.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Extraction of Nystagmus Patterns from Eye-Tracker Data with Convolutional Sparse Coding </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2011.14962.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Clément Lalanne, Maxence Rateaux, Laurent Oudre, Matthieu Robert, Thomas Moreau,</span>
+            <span class="date">Jul 2020,</span>
+
+                <span class="conference">In proceedings of <i>Annual International Conference of the IEEE Engineering in Medicine &amp; Biology Society (EMBC)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub17"/>
+        <label class="btn display-status" for="pub17">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                The analysis of the Nystagmus waveforms from eye-tracking records is crucial for the clinical interpretation of this pathological movement. A major issue to automatize this analysis is the presence of natural eye movements and eye blink artefacts that are mixed with the signal of interest. We propose a method based on Convolutional Dictionary Learning that is able to automatically highlight the Nystagmus waveforms, separating the natural motion from the pathological movements.
+            </div>
+            <div class="details">
+                The analysis of the Nystagmus waveforms from eye-tracking records is crucial for the clinical interpretation of this pathological movement. A major issue to automatize this analysis is the presence of natural eye movements and eye blink artefacts that are mixed with the signal of interest. We propose a method based on Convolutional Dictionary Learning that is able to automatically highlight the Nystagmus waveforms, separating the natural motion from the pathological movements. We show on simulated signals that our method can indeed improve the pattern recovery rate and provide clinical examples to illustrate how this algorithm performs.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Hydroxychloroquine with or without azithromycin and in-hospital mortality or discharge in patients hospitalized for COVID-19 infection: a cohort study of 4,642 in-patients in France </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://www.medrxiv.org/content/10.1101/2020.06.16.20132597.abstract">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Emilie Sbidian, Julie Josse, Guillaume Lemaitre, Imke Meyer, Mélodie Bernaux, Alexandre Gramfort, Nathanaël Lapidus, Nicolas Paris, Antoine Neuraz, Ivan Lerner, Nicolas Garcelon, Bastien Rance, Olivier Grisel, Thomas Moreau, Ali Bellamine, Pierre Wolkenstein, Gaël Varoquaux, Eric Caumes, Marc Lavielle, Armand Mekontso Dessap, Etienne Audureau, AP-HP Covid CDR Initiative,</span>
+            <span class="date">Jun 2020,</span>
+
+                <span><i>preprint MedArxiv</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub19"/>
+        <label class="btn display-status" for="pub19">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                To assess the clinical effectiveness of oral hydroxychloroquine (HCQ) with or without azithromycin (AZI) in preventing death or leading to hospital discharge.  Design Retrospective cohort study.
+            </div>
+            <div class="details">
+                <b>Objective:</b> To assess the clinical effectiveness of oral hydroxychloroquine (HCQ) with or without azithromycin (AZI) in preventing death or leading to hospital discharge.<br/><br/>
+
+Design Retrospective cohort study.<br/><br/>
+
+<b>Setting:</b> An analysis of data from electronic medical records and administrative claim data from the French Assistance Publique - Hôpitaux de Paris (AP-HP) data warehouse, in 39 public hospitals, Ile-de-France, France.<br/><br/>
+
+<b>Participants:</b> All adult inpatients with at least one PCR-documented SARS-CoV-2 RNA from a nasopharyngeal sample between February 1st, 2020 and April 6th, 2020 were eligible for analysis. The study population was restricted to patients who did not receive COVID-19 treatments assessed in ongoing trials, including antivirals and immunosuppressive drugs. End of follow-up was defined as the date of death, discharge home, day 28 after admission, whichever occurred first, or administrative censoring on May 4, 2020.<br/><br/>
+
+<b>Intervention:</b> Patients were further classified into 3 groups: (i) receiving HCQ alone, (ii) receiving HCQ together with AZI, and (iii) receiving neither HCQ nor AZI. Exposure to a HCQ/AZI combination was defined as a simultaneous prescription of the 2 treatments (more or less one day).<br/><br/>
+
+<b>Main outcome measures:</b> The primary outcome was all-cause 28-day mortality as a time-to-event endpoint under a competing risks survival analysis framework. The secondary outcome was 28-day discharge home. Augmented inverse probability of treatment weighted (AIPTW) estimates of the average treatment effect (ATE) were computed to account for confounding.<br/><br/>
+
+<b>Results:</b> A total of 4,642 patients (mean age: 66.1 ± 18; males: 2,738 (59%)) were included, of whom 623 (13.4%) received HCQ alone, 227 (5.9%) received HCQ plus AZI, and 3,792 (81.7%) neither drug. Patients receiving ‘HCQ alone’ or ‘HCQ plus AZI’ were more likely younger, males, current smokers and overall presented with slightly more co-morbidities (obesity, diabetes, any chronic pulmonary diseases, liver diseases), while no major difference was apparent in biological parameters. After accounting for confounding, no statistically significant difference was observed between the ‘HCQ’ and ‘Neither drug’ groups for 28-day mortality: AIPTW absolute difference in ATE was +1.24% (−5.63 to 8.12), ratio in ATE 1.05 (0.77 to 1.33). 28-day discharge rates were statistically significantly higher in the ‘HCQ’ group: AIPTW absolute difference in ATE (+11.1% [3.30 to 18.9]), ratio in ATE (1.25 [1.07 to 1.42]). As for the ‘HCQ+AZI’ vs neither drug, trends for significant differences and ratios in AIPTW ATE were found suggesting higher mortality rates in the former group (difference in ATE +9.83% [-0.51 to 20.17], ratio in ATE 1.40 [0.98 to 1.81];p=0.062).<br/><br/>
+
+<b>Conclusions:</b> Using a large non-selected population of inpatients hospitalized for COVID-19 infection in 39 hospitals in France and robust methodological approaches, we found no evidence for efficacy of HCQ or HCQ combined with AZI on 28-day mortality. Our results suggested a possible excess risk of mortality associated with HCQ combined with AZI, but not with HCQ alone. Significantly higher rates of discharge home were observed in patients treated by HCQ, a novel finding warranting further confirmation in replicative studies. Altogether, our findings further support the need to complete currently undergoing randomized clinical trials.<br/><br/>
             </div>
         </div>
     </div>
