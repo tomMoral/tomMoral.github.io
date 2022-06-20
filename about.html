@@ -122,32 +122,37 @@ $(function(){
     </div>
             <div class="talk">
         <div class="talk_item">
-            <span class="title">Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
+            <span class="title">SHINE: Sharing the Inverse Estimate for bi-level optimization </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/22-06-CSD_conv-DL_for_MEEG.pdf">
+            <a href="/talks/22-06-20_CS_shine.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
 
 
             <br>
-            <span class="date">02 Jun 2022,</span>
-            <span class="conference">At <i>CSD, ENS ULM, Paris</i></span>
+            <span class="date">20 Jun 2022,</span>
+            <span class="conference">At <i>Curves & Surfaces - Arcachon, France</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk22"/>
-        <label class="btn display-status" for="talk22">
+        <input type="checkbox" class="btnCtrl" id="talk23"/>
+        <label class="btn display-status" for="talk23">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. An emerging community aims at extracting these patterns efficiently in a non-supervised way, e.g., using Convolutional Dictionary Learning (CDL).
+                In recent years, bi-level optimization has raised much interest in the machine learning community, in particular for hyper-parameters optimization and implicit deep learning. This type of problems is often tackled using first-order that requires the computation of the gradient whose expression can be obtained using the implicit function theorem.
             </div>
             <div class="details">
-                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. An emerging community aims at extracting these patterns efficiently in a non-supervised way, e.g., using Convolutional Dictionary Learning (CDL). Using low rank atoms, mulit-variate CDL is able to learn not only prototypical temporal waveforms, but also associated spatial patterns so their origin can be localized in the brain, which leads to an event-based description of the data. Given these events and patterns, a natural question is to estimate how their occurrences are modulated by certain cognitive tasks and experimental manipulations. To address it, we consider a Point-Process (PP) approach. While PP have been used in neuroscience in the past, in particular for single cell recordings (spike trains), techniques such as CDL makes them amenable to human studies based on EEG/MEG signals. We develop a novel statistical PP model – coined driven temporal point processes (DriPP) – where the intensity function of the PP model is linked to a deterministic point process corresponding to stimulation events. Results on MEG datasets demonstrate that our methodology allows to reveal event-related neural responses – both evoked or induced – and isolate non-task specific temporal patterns.
+                In recent years, bi-level optimization has raised much interest in the machine learning community, in particular for hyper-parameters optimization and implicit deep learning. This type of problems is often tackled using first-order that requires the computation of the gradient whose expression can be obtained using the implicit function theorem. The computation of this gradient requires the computation of matrix-vector products involving the inverse of a large matrix which is computationally demanding.</br>
+</br>
+In our work, we propose a novel strategy coined SHINE to tackle this computational bottleneck when the inner problem can be solved with a quasi-Newton algorithm. The main idea is to use the quasi-Newton matrices estimated from the resolution of the inner problem to efficiently approximate the inverse matrix in the direction needed for the gradient computation. We prove that under some restrictive conditions, this strategy gives a consistent estimate of the true gradient.</br>
+In addition, by modifying the quasi-Newton updates, we provide theoretical guarantees that our method asymptotically estimates the true implicit gradient under weaker hypothesis.</br>
+</br>
+We empirically study this approach in many settings, ranging from hyperparameter optimization to large Multiscale Deep Equilibrium models applied to CIFAR and ImageNet. We show that it reduces the computational cost of the backward pass by up to two orders of magnitude. All this is achieved while retaining the excellent performance of the original models in hyperparameter optimization and on CIFAR, and giving encouraging and competitive results on ImageNet.
             </div>
         </div>
     </div>

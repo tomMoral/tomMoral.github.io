@@ -76,6 +76,44 @@ $(function(){
 
         <div class="talk">
         <div class="talk_item">
+            <span class="title">SHINE: Sharing the Inverse Estimate for bi-level optimization </span>
+            <span style="width:2em;"></span>
+
+            <a href="/talks/22-06-20_CS_shine.pdf">
+
+                <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+            </a>
+
+
+            <br>
+            <span class="date">20 Jun 2022,</span>
+            <span class="conference">At <i>Curves & Surfaces - Arcachon, France</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk23"/>
+        <label class="btn display-status" for="talk23">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                In recent years, bi-level optimization has raised much interest in the machine learning community, in particular for hyper-parameters optimization and implicit deep learning. This type of problems is often tackled using first-order that requires the computation of the gradient whose expression can be obtained using the implicit function theorem.
+            </div>
+            <div class="details">
+                In recent years, bi-level optimization has raised much interest in the machine learning community, in particular for hyper-parameters optimization and implicit deep learning. This type of problems is often tackled using first-order that requires the computation of the gradient whose expression can be obtained using the implicit function theorem. The computation of this gradient requires the computation of matrix-vector products involving the inverse of a large matrix which is computationally demanding.</br>
+</br>
+In our work, we propose a novel strategy coined SHINE to tackle this computational bottleneck when the inner problem can be solved with a quasi-Newton algorithm. The main idea is to use the quasi-Newton matrices estimated from the resolution of the inner problem to efficiently approximate the inverse matrix in the direction needed for the gradient computation. We prove that under some restrictive conditions, this strategy gives a consistent estimate of the true gradient.</br>
+In addition, by modifying the quasi-Newton updates, we provide theoretical guarantees that our method asymptotically estimates the true implicit gradient under weaker hypothesis.</br>
+</br>
+We empirically study this approach in many settings, ranging from hyperparameter optimization to large Multiscale Deep Equilibrium models applied to CIFAR and ImageNet. We show that it reduces the computational cost of the backward pass by up to two orders of magnitude. All this is achieved while retaining the excellent performance of the original models in hyperparameter optimization and on CIFAR, and giving encouraging and competitive results on ImageNet.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
             <span class="title">Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
             <span style="width:2em;"></span>
 
