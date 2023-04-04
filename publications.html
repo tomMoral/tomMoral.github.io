@@ -77,6 +77,196 @@ $(function(){
     
     <div class="publication">
         <div class="project_item">
+            <span class="title">Using convolutional dictionary learning to detect task-related neuromagnetic transients and ageing trends in a large open-access dataset </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://www.sciencedirect.com/science/article/pii/S1053811922009302/pdfft?isDTMRedir=true&amp;download=true">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Lindsey Power, Cédric Allain, Thomas Moreau, Alexandre Gramfort, Timothy Bardouille,</span>
+            <span class="date">Feb 2023,</span>
+
+                <span><i>NeuroImage</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub36"/>
+        <label class="btn display-status" for="pub36">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Human neuromagnetic activity is characterised by a complex combination of transient bursts with varying spatial and temporal characteristics. The characteristics of these transient bursts change during task performance and normal ageing in ways that can inform about underlying cortical sources. Many methods have been proposed to detect transient bursts, with the most successful ones being those that employ multi-channel, data-driven approaches to minimize bias in...
+            </div>
+            <div class="details">
+                Human neuromagnetic activity is characterised by a complex combination of transient bursts with varying spatial and temporal characteristics. The characteristics of these transient bursts change during task performance and normal ageing in ways that can inform about underlying cortical sources. Many methods have been proposed to detect transient bursts, with the most successful ones being those that employ multi-channel, data-driven approaches to minimize bias in the detection procedure. There has been little research, however, into the application of these data-driven methods to large datasets for group-level analyses. In the current work, we apply a data-driven convolutional dictionary learning (CDL) approach to detect neuromagnetic transient bursts in a large group of healthy participants from the Cam-CAN dataset. CDL was used to extract repeating spatiotemporal motifs in 538 participants between the ages of 18-88 during a sensorimotor task. Motifs were then clustered across participants based on similarity, and relevant task-related clusters were analysed for age-related trends in their spatiotemporal characteristics. Seven task-related motifs resembling known transient burst types were identified through this analysis, including beta, mu, and alpha type bursts. All burst types showed positive trends in their activation levels with age that could be explained by increasing burst rate with age. This work validated the data-driven CDL approach for transient burst detection on a large dataset and identified robust information about the complex characteristics of human brain signals and how they change with age.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">A framework for bilevel optimization that enables stochastic and global variance reduction algorithms </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openreview.net/forum?id=wlEOsQ917F">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/benchopt/benchmark_bilevel">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Mathieu Dagréou, Pierre Ablin, Samuel Vaiter, Thomas Moreau,</span>
+            <span class="date">Nov 2022,</span>
+
+                <span class="conference">In proceedings of <i>Advances in Neural Information Processing System (NeurIPS)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub32"/>
+        <label class="btn display-status" for="pub32">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Bilevel optimization, the problem of minimizing a value function which involves the arg-minimum of another function, appears in many areas of machine learning. In a large scale setting where the number of samples is huge, it is crucial to develop stochastic methods, which only use a few samples at a time to progress. However, computing the gradient of the value function involves solving a linear system, which makes it difficult to derive unbiased stochastic estimates. To overcome...
+            </div>
+            <div class="details">
+                Bilevel optimization, the problem of minimizing a value function which involves the arg-minimum of another function, appears in many areas of machine learning. In a large scale setting where the number of samples is huge, it is crucial to develop stochastic methods, which only use a few samples at a time to progress. However, computing the gradient of the value function involves solving a linear system, which makes it difficult to derive unbiased stochastic estimates. To overcome this problem we introduce a novel framework, in which the solution of the inner problem, the solution of the linear system, and the main variable evolve at the same time. These directions are written as a sum, making it straightforward to derive unbiased estimates. The simplicity of our approach allows us to develop global variance reduction algorithms, where the dynamics of all variables is subject to variance reduction. We demonstrate that SABA, an adaptation of the celebrated SAGA algorithm in our framework, has convergence rate, and that it achieves linear convergence under Polyak-Lojasciewicz assumption. This is the first stochastic algorithm for bilevel optimization that verifies either of these properties. Numerical experiments validate the usefulness of our method.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Deep invariant networks with differentiable augmentation layers </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openreview.net/pdf?id=nxw9_ny7_H">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Cédric Rommel, Thomas Moreau, Alexandre Gramfort,</span>
+            <span class="date">Nov 2022,</span>
+
+                <span class="conference">In proceedings of <i>Advances in Neural Information Processing System (NeurIPS)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub33"/>
+        <label class="btn display-status" for="pub33">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Designing learning systems which are invariant to certain data transformations is critical in machine learning. Practitioners can typically enforce a desired invariance on the trained model through the choice of a network architecture, e.g. using convolutions for translations, or using data augmentation. Yet, enforcing true invariance in the network can be difficult, and data invariances are not always known a piori. State-of-the-art methods for learning data augmentation policies requires...
+            </div>
+            <div class="details">
+                Designing learning systems which are invariant to certain data transformations is critical in machine learning. Practitioners can typically enforce a desired invariance on the trained model through the choice of a network architecture, e.g. using convolutions for translations, or using data augmentation. Yet, enforcing true invariance in the network can be difficult, and data invariances are not always known a piori. State-of-the-art methods for learning data augmentation policies require held-out data and are based on bilevel optimization problems, which are complex to solve and often computationally demanding. In this work we investigate new ways of learning invariances only from the training data. Using learnable augmentation layers built directly in the network, we demonstrate that our method is very versatile. It can incorporate any type of differentiable augmentation and be applied to a broad class of learning problems beyond computer vision. We provide empirical evidence showing that our approach is easier and faster to train than modern automatic data augmentation techniques based on bilevel optimization, while achieving comparable results. Experiments show that while the invariances transferred to a model through automatic data augmentation are limited by the model expressivity, the invariance yielded by our approach is insensitive to it by design.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Benchopt: Reproducible, efficient and collaborative optimization benchmarks </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/a30769d9b62c9b94b72e21e0ca73f338-Paper-Conference.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/benchopt/benchopt">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Thomas Moreau, Mathurin Massias, Alexandre Gramfort, et al.,</span>
+            <span class="date">Nov 2022,</span>
+
+                <span class="conference">In proceedings of <i>Advances in Neural Information Processing System (NeurIPS)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub34"/>
+        <label class="btn display-status" for="pub34">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Numerical validation is at the core of machine learning research as it allows us to assess the actual impact of new methods, and to confirm the agreement between theory and practice. Yet, the rapid development of the field poses several challenges: researchers are confronted with a profusion of methods to compare, limited transparency and consensus on best practices, as well as tedious re-implementation work. As a result, validation is often very partial, which can lead to wrong...
+            </div>
+            <div class="details">
+                Numerical validation is at the core of machine learning research as it allows us to assess the actual impact of new methods, and to confirm the agreement between theory and practice. Yet, the rapid development of the field poses several challenges: researchers are confronted with a profusion of methods to compare, limited transparency and consensus on best practices, as well as tedious re-implementation work. As a result, validation is often very partial, which can lead to wrong conclusions that slow down the progress of research. We propose Benchopt, a collaborative framework to automatize, publish and reproduce optimization benchmarks in machine learning across programming languages and hardware architectures. Benchopt simplifies benchmarking for the community by providing an off-the-shelf tool for running, sharing and extending experiments. To demonstrate its broad usability, we showcase benchmarks on three standard ML tasks: -regularized logistic regression, Lasso and ResNet18 training for image classification. These benchmarks highlight key practical findings that give a more nuanced view of state-of-the-art for these problems, showing that for practical evaluation, the devil is in the details.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Data augmentation for learning predictive models on EEG: a systematic comparison </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://hal.science/hal-03853329/">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Cédric Rommel, Joseph Paillard, Thomas Moreau, Alexandre Gramfort,</span>
+            <span class="date">Nov 2022,</span>
+
+                <span><i>Journal of Neural Engineering</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub35"/>
+        <label class="btn display-status" for="pub35">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                <i>Objective.</i> The use of deep learning for electroencephalography (EEG) classification tasks has been rapidly growing in the last years, yet its application has been limited by the relatively small size of EEG datasets. Data augmentation, which consists in artificially increasing the size of the dataset during training, can be employed to alleviate this problem. While a few augmentation transformations for EEG data have been proposed in the literature, their positive impact on...
+            </div>
+            <div class="details">
+                <i>Objective.</i> The use of deep learning for electroencephalography (EEG) classification tasks has been rapidly growing in the last years, yet its application has been limited by the relatively small size of EEG datasets. Data augmentation, which consists in artificially increasing the size of the dataset during training, can be employed to alleviate this problem. While a few augmentation transformations for EEG data have been proposed in the literature, their positive impact on performance is often evaluated on a single dataset and compared to one or two competing augmentation methods. This work proposes to better validate the existing data augmentation approaches through a unified and exhaustive analysis.<br/>
+<i>Approach.</i> We compare quantitatively 13 different augmentations with two different predictive tasks, datasets and models, using three different types of experiments. Main results. We demonstrate that employing the adequate data augmentations can bring up to 45% accuracy improvements in low data regimes compared to the same model trained without any augmentation. Our experiments also show that there is no single best augmentation strategy, as the good augmentations differ on each task.<br/>
+<i>Significance.</i> Our results highlight the best data augmentations to consider for sleep stage classification and motor imagery brain–computer interfaces. More broadly, it demonstrates that EEG classification tasks benefit from adequate data augmentation.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
             <span class="title">SHINE: SHaring the INverse Estimate from the forward pass for bi-level optimization and implicit models </span>
             <span style="width:2em;"></span>
 
