@@ -76,6 +76,92 @@ $(function(){
 
         <div class="talk">
         <div class="talk_item">
+            <span class="title">Modeling Brain Waveforms with Convolutional Dictionary Learning and Point Processes </span>
+            <span style="width:2em;"></span>
+
+
+            <br>
+            <span class="date">25 Apr 2023,</span>
+            <span class="conference">At <i>Ockham seminar, Lyon, France</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk26"/>
+        <label class="btn display-status" for="talk26">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. An emerging community aims at extracting these patterns efficiently in a non-supervised way, e.g., using Convolutional Dictionary Learning (CDL). Using low-rank atoms, multivariate CDL is ...
+            </div>
+            <div class="details">
+                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. An emerging community aims at extracting these patterns efficiently in a non-supervised way, e.g., using Convolutional Dictionary Learning (CDL). Using low-rank atoms, multivariate CDL is able to learn not only prototypical temporal waveforms but also associated spatial patterns so their origin can be localized in the brain, which leads to an event-based description of the data. Given these events and patterns, a natural question is to estimate how their occurrences are modulated by certain cognitive tasks and experimental manipulations. To address it, we consider a Point-Process (PP) approach. While PPs have been used in neuroscience in the past, in particular for single-cell recordings (spike trains), techniques such as CDL makes them amenable to human studies based on EEG/MEG signals. We develop a novel statistical PP model – coined driven temporal point processes (DriPP) – where the intensity function of the PP model is linked to a deterministic point process corresponding to stimulation events. Results on MEG datasets demonstrate that our methodology allows revealing event-related neural responses – both evoked or induced – and isolates non-task-specific temporal patterns.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
+            <span class="title">What guarantees for Unrolled Algorithms in Unsupervised Inverse Problems </span>
+            <span style="width:2em;"></span>
+
+
+            <br>
+            <span class="date">06 Apr 2023,</span>
+            <span class="conference">At <i>MIT, Cambridge, USA</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk25"/>
+        <label class="btn display-status" for="talk25">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Inverse problems are ubiquitous in observational science such as imaging, neurosciences or astrophysics. They consist in recovering a signal given noisy observations through a measurement operator. To solve such problems, Machine learning approaches have been proposed based on algorithm unrolling. With such techniques, classical optimization algorithms used to solve inverse problems can be seen as differentiable procedure with parameters that can be learned.In this talk, ...
+            </div>
+            <div class="details">
+                Inverse problems are ubiquitous in observational science such as imaging, neurosciences, or astrophysics. They consist in recovering a signal given noisy observations through a measurement operator. To solve such problems, Machine learning approaches have been proposed based on algorithm unrolling. With such techniques, classical optimization algorithms used to solve inverse problems can be seen as differentiable procedures with parameters that can be learned.</br>
+</br>
+In this talk, I will focus on the understudied case where no ground truth is available for the problem, i.e., the signal itself can never be observed, only its degraded measurements. First, I will present results that aim at understanding what unrolled algorithms learn when used to solve an optimization problem. In particular, results from [Ablin et al., 2019, Learning step sizes for unfolded sparse coding] show that learned algorithms cannot go faster than the original algorithm asymptotically, only improving the first iterations. This shows that unrolling should mostly be used with a low number of iterations. Then, I will show how algorithm unrolling can be used in conjunction with dictionaries to learn a data-driven structure on the inverse problem solution. For this problem also, we show in [Malézieux et al., 2022, Understanding approximate and unrolled dictionary learning for pattern recovery] that using a few unrolled iterations can provide benefit for learning dictionary while too many iterations can be harmful.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
+            <span class="title"><tt>Benchopt</tt>: Reproducible, efficient and collaborative optimization benchmarks </span>
+            <span style="width:2em;"></span>
+
+
+            <br>
+            <span class="date">15 Feb 2023,</span>
+            <span class="conference">At <i>Reproducible research conference, MVA, ENS Paris-Saclay, France</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk27"/>
+        <label class="btn display-status" for="talk27">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Numerical validation is at the core of machine learning research as it allows us to assess the actual impact of new methods and to confirm the agreement between theory and practice. Yet, the rapid development of the field poses several challenges: researchers are confronted with a profusion of methods to compare, limited transparency and consensus on best practices, as well as tedious re-implementation work. As a result, validation is often very partial, which can lead to wrong ...
+            </div>
+            <div class="details">
+                Numerical validation is at the core of machine learning research as it allows us to assess the actual impact of new methods and to confirm the agreement between theory and practice. Yet, the rapid development of the field poses several challenges: researchers are confronted with a profusion of methods to compare, limited transparency and consensus on best practices, as well as tedious re-implementation work. As a result, validation is often very partial, which can lead to wrong conclusions that slow down the progress of research. In order to solve this, efficient frameworks and tools are required to make the ML benchmarks easily reproducible and extendable. In this talk, I will discuss what are the constraints to producing reproducible research benchmarks. I will also present Benchopt, a collaborative framework to automate, reproduce and publish benchmarks in machine learning, as well as the necessary steps to go from individual research code to reproducible and maintained open-source software.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
             <span class="title">Convolutional Sparse Coding for Electromagnetic Brain Signals </span>
             <span style="width:2em;"></span>
 
