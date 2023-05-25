@@ -77,6 +77,114 @@ $(function(){
     
     <div class="publication">
         <div class="project_item">
+            <span class="title">FaDIn: Fast Discretized Inference for Hawkes Processes with General Parametric Kernels </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://hal.science/hal-03811810">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Guillaume Staerman, Cédric Allain, Alexandre Gramfort &amp; Thomas Moreau,</span>
+            <span class="date">Jul 2023,</span>
+
+                <span class="conference">In proceedings of <i>International Conference on Machine Learning (ICML)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub39"/>
+        <label class="btn display-status" for="pub39">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Temporal point processes (TPP) are a natural tool for modeling event-based data. Among all TPP models, Hawkes processes have proven to be the most widely used, mainly due to their simplicity and computational ease when considering exponential or non-parametric kernels. Although non-parametric kernels are an option, such models require large datasets. While exponential kernels are more data efficient and relevant for certain applications where events immediately trigger more events, they are...
+            </div>
+            <div class="details">
+                Temporal point processes (TPP) are a natural tool for modeling event-based data. Among all TPP models, Hawkes processes have proven to be the most widely used, mainly due to their simplicity and computational ease when considering exponential or non-parametric kernels. Although non-parametric kernels are an option, such models require large datasets. While exponential kernels are more data efficient and relevant for certain applications where events immediately trigger more events, they are ill-suited for applications where latencies need to be estimated, such as in neuroscience. This work aims to offer an efficient solution to TPP inference using general parametric kernels with finite support. The developed solution consists of a fast L2 gradient-based solver leveraging a discretized version of the events. After supporting the use of discretization theoretically, the statistical and computational efficiency of the novel approach is demonstrated through various numerical experiments. Finally, the effectiveness of the method is evaluated by modeling the occurrence of stimuli-induced patterns from brain signals recorded with magnetoencephalography (MEG). Given the use of general parametric kernels, results show that the proposed approach leads to a more plausible estimation of pattern latency compared to the state-of-the-art.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Sliced-Wasserstein on Symmetric Positive Definite Matrices for M/EEG Signals </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/abs/2303.05798">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Clément Bonet, Benoît Malézieux, Alain Rakotomamonjy, Lucas Drumetz, Thomas Moreau, Matthieu Kowalski, Nicolas Courty,</span>
+            <span class="date">Jul 2023,</span>
+
+                <span class="conference">In proceedings of <i>International Conference on Machine Learning (ICML)</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub38"/>
+        <label class="btn display-status" for="pub38">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                When dealing with electro or magnetoencephalography records, many supervised prediction tasks are solved by working with covariance matrices to summarize the signals. Learning with these matrices requires using Riemanian geometry to account for their structure. In this paper, we propose a new method to deal with distributions of covariance matrices and demonstrate its computational efficiency on M/EEG multivariate time series. More specifically, we define a Sliced-Wasserstein distance between...
+            </div>
+            <div class="details">
+                When dealing with electro or magnetoencephalography records, many supervised prediction tasks are solved by working with covariance matrices to summarize the signals. Learning with these matrices requires using Riemanian geometry to account for their structure. In this paper, we propose a new method to deal with distributions of covariance matrices and demonstrate its computational efficiency on M/EEG multivariate time series. More specifically, we define a Sliced-Wasserstein distance between measures of symmetric positive definite matrices that comes with strong theoretical guarantees. Then, we take advantage of its properties and kernel methods to apply this distance to brain-age prediction from MEG data and compare it to state-of-the-art algorithms based on Riemannian geometry. Finally, we show that it is an efficient surrogate to the Wasserstein distance in domain adaptation for Brain Computer Interface applications.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Test like you Train in Implicit Deep Learning </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/abs/2305.15042">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Zaccharie Ramzi, Pierre Ablin, Gabriel Peyré, Thomas Moreau,</span>
+            <span class="date">May 2023,</span>
+
+                <span><i>preprint preprint</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub37"/>
+        <label class="btn display-status" for="pub37">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Implicit deep learning has recently gained popularity with applications ranging from meta-learning to Deep Equilibrium Networks (DEQs). In its general formulation, it relies on expressing some components of deep learning pipelines implicitly, typically via a root equation called the inner problem. In practice, the solution of the inner problem is approximated during training with an iterative procedure, usually with a fixed number of inner iterations. During inference, the inner problem...
+            </div>
+            <div class="details">
+                Implicit deep learning has recently gained popularity with applications ranging from meta-learning to Deep Equilibrium Networks (DEQs). In its general formulation, it relies on expressing some components of deep learning pipelines implicitly, typically via a root equation called the inner problem. In practice, the solution of the inner problem is approximated during training with an iterative procedure, usually with a fixed number of inner iterations. During inference, the inner problem needs to be solved with new data. A popular belief is that increasing the number of inner iterations compared to the one used during training yields better performance. In this paper, we question such an assumption and provide a detailed theoretical analysis in a simple setting. We demonstrate that overparametrization plays a key role: increasing the number of iterations at test time cannot improve performance for overparametrized networks. We validate our theory on an array of implicit deep-learning problems. DEQs, which are typically overparametrized, do not benefit from increasing the number of iterations at inference while meta-learning, which is typically not overparametrized, benefits from it.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
             <span class="title">Using convolutional dictionary learning to detect task-related neuromagnetic transients and ageing trends in a large open-access dataset </span>
             <span style="width:2em;"></span>
 

@@ -77,10 +77,44 @@ $(function(){
 
     <div class="project">
     <div class="project_item">
-        <span class="title">BenchOpt 1.1 </span>
+        <span class="title">Loky </span>
+        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <span class="date">Apr 2023</span>
+        <div class="logo">
+            <img src="/images/logo_loky.png" style="height: 100%;"/>
+        </div>
+
+    </div>
+
+    <input type="checkbox" class="btnCtrl" id="proj1"/>
+    <label class="btn display-status" for="proj1">
+        <i class="fa fa-plus-circle plus"></i>
+        <i class="fa fa-minus-circle minus"></i>
+    </label>
+    <div class="description">
+        <span class="summary">
+            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of <span class="highlightcode">concurrent.futures</span>.
+        </span>
+        <div class="details">
+            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of  <span class="highlightcode">concurrent.futures</span>. It features:</br>
+<ul> <li> <b>Deadlock free implementation</b>: one of the major concern in standard <span class="highlightcode">multiprocessing</span> and <span class="highlightcode">concurrent.futures</span> libraries is the ability of the <span class="highlightcode">Pool/Executor</span> to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.</li></br>
+<li><b>Consistent spawn behavior</b>: All processes are started using <span class="highlightcode">fork/exec</span> on POSIX systems. This ensures safer interactions with third party libraries.</li></br>
+<li><b>Reusable executor</b>: strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.</li></ul></br>
+</br>
+<i>python, multiprocessing, parallel computing</i>
+        </div>
+    </div>
+</div>
+
+
+    <div class="project">
+    <div class="project_item">
+        <span class="title">BenchOpt </span>
         <a href="https://github.com/benchopt/benchopt.git"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-        <span class="date">Apr 2021</span>
-        <div class="logo"></div>
+        <span class="date">Nov 2022</span>
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/benchopt/communication_materials/main/posters/images/logo_benchopt.png" style="height: 100%;"/>
+        </div>
 
     </div>
 
@@ -104,9 +138,34 @@ BenchOpt is written in Python but it is available with many programming language
 
     <div class="project">
     <div class="project_item">
-        <span class="title">Joblib 0.14 </span>
+        <span class="title">Dicodile </span>
+        <a href="https://github.com/tomMoral/dicodile"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <span class="date">Nov 2022</span>
+        <div class="logo"></div>
+
+    </div>
+
+    <input type="checkbox" class="btnCtrl" id="proj8"/>
+    <label class="btn display-status" for="proj8">
+        <i class="fa fa-plus-circle plus"></i>
+        <i class="fa fa-minus-circle minus"></i>
+    </label>
+    <div class="description">
+        <span class="summary">
+            Package to run distributed convolutional sparse coding for very large signals.
+        </span>
+        <div class="details">
+            Package to run distributed convolutional sparse coding for very large signals.
+        </div>
+    </div>
+</div>
+
+
+    <div class="project">
+    <div class="project_item">
+        <span class="title">Joblib </span>
         <a href="https://github.com/joblib/joblib"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-        <span class="date">Oct 2019</span>
+        <span class="date">Sep 2022</span>
         <div class="logo">
             <img src="https://joblib.readthedocs.io/en/latest/_static/joblib_logo.svg" style="height: 100%;"/>
         </div>
@@ -135,31 +194,24 @@ Starting 2017, I have been involved in Joblib development, first to integrate lo
 
     <div class="project">
     <div class="project_item">
-        <span class="title">Loky </span>
-        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-        <span class="date">Aug 2018</span>
-        <div class="logo">
-            <img src="/images/logo_loky.png" style="height: 100%;"/>
-        </div>
+        <span class="title">alphacsc </span>
+        <a href="https://github.com/alphacsc/alphacsc"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <span class="date">May 2022</span>
+        <div class="logo"></div>
 
     </div>
 
-    <input type="checkbox" class="btnCtrl" id="proj1"/>
-    <label class="btn display-status" for="proj1">
+    <input type="checkbox" class="btnCtrl" id="proj7"/>
+    <label class="btn display-status" for="proj7">
         <i class="fa fa-plus-circle plus"></i>
         <i class="fa fa-minus-circle minus"></i>
     </label>
     <div class="description">
         <span class="summary">
-            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of <span class="highlightcode">concurrent.futures</span>.
+            alphcsc is a library to perform shift-invariant sparse dictionary learning, also known as convolutional sparse coding (CSC), on time-series data.
         </span>
         <div class="details">
-            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of  <span class="highlightcode">concurrent.futures</span>. It features:</br>
-<ul> <li> <b>Deadlock free implementation</b>: one of the major concern in standard <span class="highlightcode">multiprocessing</span> and <span class="highlightcode">concurrent.futures</span> libraries is the ability of the <span class="highlightcode">Pool/Executor</span> to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.</li></br>
-<li><b>Consistent spawn behavior</b>: All processes are started using <span class="highlightcode">fork/exec</span> on POSIX systems. This ensures safer interactions with third party libraries.</li></br>
-<li><b>Reusable executor</b>: strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.</li></ul></br>
-</br>
-<i>python, multiprocessing, parallel computing</i>
+            alphcsc is a library to perform shift-invariant sparse dictionary learning, also known as convolutional sparse coding (CSC), on time-series data.
         </div>
     </div>
 </div>

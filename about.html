@@ -88,35 +88,35 @@ $(function(){
         
     <div class="publication">
         <div class="project_item">
-            <span class="title">Using convolutional dictionary learning to detect task-related neuromagnetic transients and ageing trends in a large open-access dataset </span>
+            <span class="title">FaDIn: Fast Discretized Inference for Hawkes Processes with General Parametric Kernels </span>
             <span style="width:2em;"></span>
 
-            <a href="https://www.sciencedirect.com/science/article/pii/S1053811922009302/pdfft?isDTMRedir=true&amp;download=true">
+            <a href="https://hal.science/hal-03811810">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
 
 
 
             <br>
-            <span class="authors">Lindsey Power, Cédric Allain, Thomas Moreau, Alexandre Gramfort, Timothy Bardouille,</span>
-            <span class="date">Feb 2023,</span>
+            <span class="authors">Guillaume Staerman, Cédric Allain, Alexandre Gramfort &amp; Thomas Moreau,</span>
+            <span class="date">Jul 2023,</span>
 
-                <span><i>NeuroImage</i></span>
+                <span class="conference">In proceedings of <i>International Conference on Machine Learning (ICML)</i></span>
 
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="pub36"/>
-        <label class="btn display-status" for="pub36">
+        <input type="checkbox" class="btnCtrl" id="pub39"/>
+        <label class="btn display-status" for="pub39">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Human neuromagnetic activity is characterised by a complex combination of transient bursts with varying spatial and temporal characteristics. The characteristics of these transient bursts change during task performance and normal ageing in ways that can inform about underlying cortical sources. Many methods have been proposed to detect transient bursts, with the most successful ones being those that employ multi-channel, data-driven approaches to minimize bias in...
+                Temporal point processes (TPP) are a natural tool for modeling event-based data. Among all TPP models, Hawkes processes have proven to be the most widely used, mainly due to their simplicity and computational ease when considering exponential or non-parametric kernels. Although non-parametric kernels are an option, such models require large datasets. While exponential kernels are more data efficient and relevant for certain applications where events immediately trigger more events, they are...
             </div>
             <div class="details">
-                Human neuromagnetic activity is characterised by a complex combination of transient bursts with varying spatial and temporal characteristics. The characteristics of these transient bursts change during task performance and normal ageing in ways that can inform about underlying cortical sources. Many methods have been proposed to detect transient bursts, with the most successful ones being those that employ multi-channel, data-driven approaches to minimize bias in the detection procedure. There has been little research, however, into the application of these data-driven methods to large datasets for group-level analyses. In the current work, we apply a data-driven convolutional dictionary learning (CDL) approach to detect neuromagnetic transient bursts in a large group of healthy participants from the Cam-CAN dataset. CDL was used to extract repeating spatiotemporal motifs in 538 participants between the ages of 18-88 during a sensorimotor task. Motifs were then clustered across participants based on similarity, and relevant task-related clusters were analysed for age-related trends in their spatiotemporal characteristics. Seven task-related motifs resembling known transient burst types were identified through this analysis, including beta, mu, and alpha type bursts. All burst types showed positive trends in their activation levels with age that could be explained by increasing burst rate with age. This work validated the data-driven CDL approach for transient burst detection on a large dataset and identified robust information about the complex characteristics of human brain signals and how they change with age.
+                Temporal point processes (TPP) are a natural tool for modeling event-based data. Among all TPP models, Hawkes processes have proven to be the most widely used, mainly due to their simplicity and computational ease when considering exponential or non-parametric kernels. Although non-parametric kernels are an option, such models require large datasets. While exponential kernels are more data efficient and relevant for certain applications where events immediately trigger more events, they are ill-suited for applications where latencies need to be estimated, such as in neuroscience. This work aims to offer an efficient solution to TPP inference using general parametric kernels with finite support. The developed solution consists of a fast L2 gradient-based solver leveraging a discretized version of the events. After supporting the use of discretization theoretically, the statistical and computational efficiency of the novel approach is demonstrated through various numerical experiments. Finally, the effectiveness of the method is evaluated by modeling the occurrence of stimuli-induced patterns from brain signals recorded with magnetoencephalography (MEG). Given the use of general parametric kernels, results show that the proposed approach leads to a more plausible estimation of pattern latency compared to the state-of-the-art.
             </div>
         </div>
     </div>
@@ -149,26 +149,31 @@ $(function(){
 
         <div class="project">
     <div class="project_item">
-        <span class="title">BenchOpt 1.1 </span>
-        <a href="https://github.com/benchopt/benchopt.git"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-        <span class="date">Apr 2021</span>
-        <div class="logo"></div>
+        <span class="title">Loky </span>
+        <a href="https://github.com/tomMoral/loky"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        <span class="date">Apr 2023</span>
+        <div class="logo">
+            <img src="/images/logo_loky.png" style="height: 100%;"/>
+        </div>
 
     </div>
 
-    <input type="checkbox" class="btnCtrl" id="proj6"/>
-    <label class="btn display-status" for="proj6">
+    <input type="checkbox" class="btnCtrl" id="proj1"/>
+    <label class="btn display-status" for="proj1">
         <i class="fa fa-plus-circle plus"></i>
         <i class="fa fa-minus-circle minus"></i>
     </label>
     <div class="description">
         <span class="summary">
-            Benchmarking tool for optimization.
+            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of <span class="highlightcode">concurrent.futures</span>.
         </span>
         <div class="details">
-            BenchOpt is a package to simplify, make more transparent and more reproducible the comparisons of optimization algorithms.</br>
+            The aim of this project is to provide a robust, cross-platform and cross-version implementation of the <span class="highlightcode">ProcessPoolExecutor</span> class of  <span class="highlightcode">concurrent.futures</span>. It features:</br>
+<ul> <li> <b>Deadlock free implementation</b>: one of the major concern in standard <span class="highlightcode">multiprocessing</span> and <span class="highlightcode">concurrent.futures</span> libraries is the ability of the <span class="highlightcode">Pool/Executor</span> to handle crashes of worker processes. This library intends to fix those possible deadlocks and send back meaningful errors.</li></br>
+<li><b>Consistent spawn behavior</b>: All processes are started using <span class="highlightcode">fork/exec</span> on POSIX systems. This ensures safer interactions with third party libraries.</li></br>
+<li><b>Reusable executor</b>: strategy to avoid respawning a complete executor every time. A singleton pool can be reused (and dynamically resized if necessary) across consecutive calls to limit spawning and shutdown overhead. The worker processes can be shutdown automatically after a configurable idling timeout to free system resources.</li></ul></br>
 </br>
-BenchOpt is written in Python but it is available with many programming languages. So far it has been tested with Python, R, Julia and compiled binaries written in C/C++ available via a terminal command. If it can be installed via conda it should just work!
+<i>python, multiprocessing, parallel computing</i>
         </div>
     </div>
 </div>
