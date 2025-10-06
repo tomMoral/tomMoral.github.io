@@ -1,0 +1,341 @@
+
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Thomas Moreau</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<!--[if lt IE 9]>
+<script src="http://dpkingma.com/wordpress/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script src="https://use.fontawesome.com/ae904b9937.js"></script>
+
+
+
+<link rel="shortcut icon" href="/images/favicon.png">
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" href="/css/academicons.css"/>
+<script type="text/javascript" src="/javascript/lib.js"></script>
+<!-- highlight current page in navigation -->
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).parent().addClass('current-menu-item');
+    }
+  });
+});
+</script>
+
+</head>
+
+<body class="home">
+<div id="sidebar">
+    <header id="masthead" class="site-header" role="banner">
+        <hgroup>
+            <img class="profile_img" src="https://s.gravatar.com/avatar/1c7c7939d1173cd6f455ce4313e831c5?s=150&r=x" />
+            <div class="info">
+                <h2 class="site-title"><a href="/about">Thomas Moreau</a></h2>
+                <h4 class="site-description">Parietal - Inria Saclay</h4>
+                <h5 class="email"> thomas.moreau [AT] inria.fr</h5>
+            </div>
+        </hgroup>
+
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <div class="menu-menu-1-container"><ul id="menu-nav" class="menu-nav">
+                <li class="nav-menu-item"><a href="/about">About</a></li>
+                <li class="nav-menu-item"><a href="/publications">Publications</a></li>
+                <li class="nav-menu-item"><a href="/talks">Talks and Videos</a></li>
+                <li class="nav-menu-item"><a href="/oss">Open Source Software</a></li>
+                <li class="nav-menu-item"><a href="/peoples">Peoples</a></li>
+                <li class="nav-menu-item"><a href="/grants">Grants</a></li>
+            </ul></div>
+        </nav><!-- #site-navigation -->
+        <div id="social-media">
+            <a href="https://github.com/tomMoral">
+                <i class="fa fa-github fa-3x"></i></a>
+            <a href="https://scholar.google.fr/citations?user=HEO_PsAAAAAJ">
+                <i class="ai ai-google-scholar ai-3x"></i></a>
+            <a href="https://stackoverflow.com/story/tomMoral">
+                <i class="fa fa-stack-overflow fa-3x"></i></a>
+            <a href="https://linkedin.com/in/tomMoral">
+                <i class="fa fa-linkedin fa-3x"></i></a>
+        </div>
+    </header><!-- #masthead -->
+</div>
+</div>
+
+<div id="page">
+    <div class="page-content">
+    <article class="inner-text">
+    <header class="entry-header">
+        <h1 class="entry-title"> BenchArk - An efficient and robust benchmarking suite for AI </h1>
+    </header>
+
+    <div class="entry-content">
+        <h3>Description</h3>
+        <p>Numerical evaluation of novel methods, a.k.a. benchmarking, is a pillar of the scientific method in machine learning. However, due to practical and statistical obstacles, the reproducibility of published results is currently insufficient: many details can invalidate numerical comparisons, from insufficient uncertainty quantification to improper methodology. In 2022, the <span class="highlightcode">benchopt</span> initiative provided an open source Python package together with a framework to seamlessly run, reuse, share and publish benchmarks in numerical optimization. In this project, we aim at bringing <span class="highlightcode">benchopt</span> to the whole machine learning community, making it a new standard in benchmarking by empowering researchers and practitioners with efficient and valid benchmarking methods. Our goal is to ensure reproducibility and consistency in model evaluation. We will federate the machine learning community to develop informative and statistically valid benchmarks, while providing methods to reduce identified hurdles in implementing such practices. The results of the project will be integrated in the open source <span class="highlightcode">benchopt</span> library.</p>
+        
+        <h3>Funded Participants</h3>
+        
+            <span class="person">Céléstin Eve</span>
+        
+            <span class="person">Jad Yehya</span>
+        
+            <span class="person">Hippolyte Verninas</span>
+        
+        <h3>Publications</h3>
+        
+            
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">SKADA-Bench: Benchmarking Unsupervised Domain Adaptation Methods with Realistic Validation </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openreview.net/forum?id=k9F63DV3Qe">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/scikit-adaptation/skada-bench">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Yanis Lalou, Théo Gnassounou, Antoine Collas, Antoine de Mathelin, Oleksii Kachaiev, Ambroise Odonnat, Alexandre Gramfort, Thomas Moreau, Rémi Flamary,</span>
+            <span class="date">Jul 2025,</span>
+
+                <span><i>TMLR</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub42"/>
+        <label class="btn display-status" for="pub42">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Unsupervised Domain Adaptation (DA) consists of adapting a model trained on a labeled source domain to perform well on an unlabeled target domain with some data distribution shift. While many methods have been proposed in the literature, fair and realistic evaluation remains an open question, particularly due to methodological difficulties in selecting hyperparameters in the unsupervised setting. With SKADA-Bench, we propose a framework to evaluate DA methods and present a fair ...
+            </div>
+            <div class="details">
+                Unsupervised Domain Adaptation (DA) consists of adapting a model trained on a labeled source domain to perform well on an unlabeled target domain with some data distribution shift. While many methods have been proposed in the literature, fair and realistic evaluation remains an open question, particularly due to methodological difficulties in selecting hyperparameters in the unsupervised setting. With SKADA-Bench, we propose a framework to evaluate DA methods and present a fair evaluation of existing shallow algorithms, including reweighting, mapping, and subspace alignment. Realistic hyperparameter selection is performed with nested cross-validation and various unsupervised model selection scores, on both simulated datasets with controlled shifts and real-world datasets across diverse modalities, such as images, text, biomedical, and tabular data with specific feature extraction. Our benchmark highlights the importance of realistic validation and provides practical guidance for real-life applications, with key insights into the choice and impact of model selection approaches. SKADA-Bench is open-source, reproducible, and can be easily extended with novel DA methods, datasets, and model selection criteria without requiring re-evaluating competitors. SKADA-Bench is available on GitHub at https://github.com/scikit-adaptation/skada-bench.
+            </div>
+        </div>
+    </div>
+        
+            
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">RoseCDL: Robust and scalable convolutional dictionary learning for rare-event detection </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2509.07523">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Jad Yehya, Mansour Benbakoura, Cédric Allain, Benoit Malezieux, Matthieu Kowalski, Thomas Moreau,</span>
+            <span class="date">Sep 2025,</span>
+
+                <span><i>preprint /</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub44"/>
+        <label class="btn display-status" for="pub44">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this ...
+            </div>
+            <div class="details">
+                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this paper, we introduce RoseCDL, a scalable and robust CDL algorithm designed for unsupervised rare event detection in long signals. RoseCDL combines stochastic windowing for efficient training on large datasets with inline outlier detection to enhance robustness and isolate anomalous patterns. This reframes CDL as a practical tool for event discovery and characterization in real-world signals, extending its role beyond traditional tasks like compression or denoising.
+            </div>
+        </div>
+    </div>
+        
+            
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">The largest EEG-based BCI reproducibility study for open science: the MOABB benchmark </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2404.15319">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/NeuroTechX/moabb">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Sylvain Chevallier, Igor Carrara, Bruno Aristimunha, Pierre Guetschel, Sara Sedlar, Bruna Lopes, Sebastien Velut, Salim Khazem, Thomas Moreau,</span>
+            <span class="date">Apr 2024,</span>
+
+                <span><i>preprint /</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub53"/>
+        <label class="btn display-status" for="pub53">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Motivated by the challenge of seamless cross-dataset transfer in EEG signal processing, this article presents an exploratory study on the use of Joint Embedding Predictive Architectures (JEPAs). In recent years, self-supervised learning has emerged as a promising approach for transfer learning in various domains. However, its application to EEG signals remains largely unexplored. In this article, we introduce Signal-JEPA for representing EEG recordings which includes a novel domain-specific ...
+            </div>
+            <div class="details">
+                Motivated by the challenge of seamless cross-dataset transfer in EEG signal processing, this article presents an exploratory study on the use of Joint Embedding Predictive Architectures (JEPAs). In recent years, self-supervised learning has emerged as a promising approach for transfer learning in various domains. However, its application to EEG signals remains largely unexplored. In this article, we introduce Signal-JEPA for representing EEG recordings which includes a novel domain-specific spatial block masking strategy and three novel architectures for downstream classification. The study is conducted on a 54 subjects dataset and the downstream performance of the models is evaluated on three different BCI paradigms: motor imagery, ERP and SSVEP. Our study provides preliminary evidence for the potential of JEPAs in EEG signal encoding. Notably, our results highlight the importance of spatial filtering for accurate downstream classification and reveal an influence of the length of the pre-training examples but not of the mask size on the downstream performance.
+            </div>
+        </div>
+    </div>
+        
+            
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">How to compute Hessian-vector products? </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://iclr-blogposts.github.io/2024/blog/bench-hvp/">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/MatDag/bench_hvp">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Mathieu Dagréou, Pierre Ablin, Samuel Vaiter, Thomas Moreau,</span>
+            <span class="date">May 2024,</span>
+
+                <span class="conference">In proceedings of <i>Blogpost Track at ICLR</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub55"/>
+        <label class="btn display-status" for="pub55">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                The product between the Hessian of a function and a vector, the Hessian-vector product (HVP), is a fundamental quantity to study the variation of a function. It is ubiquitous in traditional optimization and machine learning. However, the computation of HVPs is often considered prohibitive in the context of deep learning, driving practitioners to use proxy quantities to evaluate the loss geometry. Standard automatic differentiation theory predicts that the computational complexity of an HVP...
+            </div>
+            <div class="details">
+                The product between the Hessian of a function and a vector, the Hessian-vector product (HVP), is a fundamental quantity to study the variation of a function. It is ubiquitous in traditional optimization and machine learning. However, the computation of HVPs is often considered prohibitive in the context of deep learning, driving practitioners to use proxy quantities to evaluate the loss geometry. Standard automatic differentiation theory predicts that the computational complexity of an HVP is of the same order of magnitude as the complexity of computing a gradient. The goal of this blog post is to provide a practical counterpart to this theoretical result, showing that modern automatic differentiation frameworks, JAX and PyTorch, allow for efficient computation of these HVPs in standard deep learning cost functions.
+            </div>
+        </div>
+    </div>
+        
+            
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Deep Learning sur les signaux M/EEG: Adaptez votre modèle, pas votre prétraitement </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://gretsi.fr/data/colloque/pdf/2025_levy1559.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Jarod Lévy, Hubert Jacob Banville, Jean-Rémi King, Svetlana Pinet, Jérémy Rapin, Stéphane D’Ascoli, Thomas Moreau,</span>
+            <span class="date">Aug 2025,</span>
+
+                <span class="conference">In proceedings of <i>GRETSI</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub57"/>
+        <label class="btn display-status" for="pub57">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                This study investigates the impact of preprocessing EEG (electroencephalography) and MEG (magnetoencephalography) signals on the performance of deep learning models. Our results show that minimal preprocessing significantly reduces computational cost while maintaining performance comparable to more complex approaches, across datasets and models. Our observations suggest that model choice has a more decisive influence on the outcome than the complexity of the applied preprocessing.
+            </div>
+            <div class="details">
+                This study investigates the impact of preprocessing EEG (electroencephalography) and MEG (magnetoencephalography) signals on the performance of deep learning models. Our results show that minimal preprocessing significantly reduces computational cost while maintaining performance comparable to more complex approaches, across datasets and models. Our observations suggest that model choice has a more decisive influence on the outcome than the complexity of the applied preprocessing.
+            </div>
+        </div>
+    </div>
+        
+            
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">De l’importance de la validation croisée </span>
+            <span style="width:2em;"></span>
+
+            <a href="Célestin Eve, Thomas Moreau, Gaël Varoquaux">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/ceelestin/benchmark_regression">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Célestin Eve, Thomas Moreau, Gaël Varoquaux,</span>
+            <span class="date">Aug 2025,</span>
+
+                <span class="conference">In proceedings of <i>GRETSI</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub58"/>
+        <label class="btn display-status" for="pub58">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Benchmarking machine learning algorithms is crucial for scientific progress. Cross-validation, a common evaluation tool, enables repeated performance comparisons across dataset subsets. This study investigates how validation procedures–non-cross-validation, repeated k-fold, and random permutation–affect algorithm ranking reliability and computational cost on a simulated dataset. We analyze the impact of the number of splits on these factors. Results indicate that procedures with equal splits ...
+            </div>
+            <div class="details">
+                Benchmarking machine learning algorithms is crucial for scientific progress. Cross-validation, a common evaluation tool, enables repeated performance comparisons across dataset subsets. This study investigates how validation procedures–non-cross-validation, repeated k-fold, and random permutation–affect algorithm ranking reliability and computational cost on a simulated dataset. We analyze the impact of the number of splits on these factors. Results indicate that procedures with equal splits yield similar performance, diminishing returns from increasing splits occurring slower than expected.
+            </div>
+        </div>
+    </div>
+        
+
+    </div>
+</article>
+    </div>
+</div><!-- #page -->
+
+<div style="display:none">
+</div>
+
+</body>
+
+<script type="text/javascript">
+    window.onresize = function(){
+        var sidebar = document.getElementById("sidebar");
+        var page = document.getElementById("page");
+        page.style.setProperty("min-height", sidebar.clientHeight);
+    }
+    window.onresize()
+</script>
+</html>
