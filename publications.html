@@ -48,6 +48,8 @@ $(function(){
                 <li class="nav-menu-item"><a href="/publications">Publications</a></li>
                 <li class="nav-menu-item"><a href="/talks">Talks and Videos</a></li>
                 <li class="nav-menu-item"><a href="/oss">Open Source Software</a></li>
+                <li class="nav-menu-item"><a href="/peoples">Peoples</a></li>
+                <li class="nav-menu-item"><a href="/grants">Grants</a></li>
             </ul></div>
         </nav><!-- #site-navigation -->
         <div id="social-media">
@@ -73,6 +75,654 @@ $(function(){
 
 	<div class="entry-content">
 
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Flexible Parametric Inference for Space-Time Hawkes Processes </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2406.06849">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Emilia Siviero, Guillaume Staerman, Stephan Clémençon, Thomas Moreau,</span>
+            <span class="date">Oct 2025,</span>
+
+                <span class="conference">In proceedings of <i>DSAA</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub52"/>
+        <label class="btn display-status" for="pub52">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Many modern spatio-temporal data sets, in sociology, epidemiology or seismology, for example, exhibit self-exciting characteristics, triggering and clustering behaviors both at the same time, that a suitable Hawkes space-time process can accurately capture. This paper aims to develop a fast and flexible parametric inference technique to recover the parameters of the kernel functions involved in the intensity function of a space-time Hawkes process based on such data. Our statistical ...
+            </div>
+            <div class="details">
+                Many modern spatio-temporal data sets, in sociology, epidemiology or seismology, for example, exhibit self-exciting characteristics, triggering and clustering behaviors both at the same time, that a suitable Hawkes space-time process can accurately capture. This paper aims to develop a fast and flexible parametric inference technique to recover the parameters of the kernel functions involved in the intensity function of a space-time Hawkes process based on such data. Our statistical approach combines three key ingredients: 1) kernels with finite support are considered, 2) the space-time domain is appropriately discretized, and 3) (approximate) precomputations are used. The inference technique we propose then consists of a l2 gradient-based solver that is fast and statistically accurate. In addition to describing the algorithmic aspects, numerical experiments have been carried out on synthetic and real spatio-temporal data, providing solid empirical evidence of the relevance of the proposed methodology.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">From Score Matching to Diffusion: A Fine-Grained Error Analysis in the Gaussian Setting </span>
+            <span style="width:2em;"></span>
+
+            <a href="Samuel Hurault, Matthieu Terris, Thomas Moreau, Gabriel Peyré">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Samuel Hurault, Thomas Moreau, Gabriel Peyré,</span>
+            <span class="date">Oct 2025,</span>
+
+                <span><i>preprint /</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub47"/>
+        <label class="btn display-status" for="pub47">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Sampling from an unknown distribution, accessible only through discrete samples, is a fundamental problem at the core of generative AI. The current state-of-the-art methods follow a two-step process: first, estimating the score function (the gradient of a smoothed log-distribution) and then applying a diffusion-based sampling algorithm -- such as Langevin or Diffusion models. The resulting distribution's correctness can be impacted by four major factors: the generalization and ...
+            </div>
+            <div class="details">
+                Sampling from an unknown distribution, accessible only through discrete samples, is a fundamental problem at the core of generative AI. The current state-of-the-art methods follow a two-step process: first, estimating the score function (the gradient of a smoothed log-distribution) and then applying a diffusion-based sampling algorithm -- such as Langevin or Diffusion models. The resulting distribution's correctness can be impacted by four major factors: the generalization and optimization errors in score matching, and the discretization and minimal noise amplitude in the diffusion. In this paper, we make the sampling error explicit when using a diffusion sampler in the Gaussian setting. We provide a sharp analysis of the Wasserstein sampling error that arises from these four error sources. This allows us to rigorously track how the anisotropy of the data distribution (encoded by its power spectrum) interacts with key parameters of the end-to-end sampling method, including the number of initial samples, the stepsizes in both score matching and diffusion, and the noise amplitude. Notably, we show that the Wasserstein sampling error can be expressed as a kernel-type norm of the data power spectrum, where the specific kernel depends on the method parameters. This result provides a foundation for further analysis of the tradeoffs involved in optimizing sampling accuracy.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Harnessing operating room signals to estimate mean arterial pressure with AnesthNet </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://www.nature.com/articles/s41598-025-12341-8.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Jade Perdereau, Jona Joachim, Fabrice Vallée, Jérôme Cartailler, Thomas Moreau,</span>
+            <span class="date">Sep 2025,</span>
+
+                <span><i>Scientific Reports</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub43"/>
+        <label class="btn display-status" for="pub43">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Monitoring mean arterial pressure (MAP) is essential for ensuring safe general anesthesia. Current practices rely either on non-invasive cuff measurements, which suffer from poor temporal resolution, or invasive arterial lines, which provide excellent accuracy and resolution but carry a significant risk of complications. Therefore, identifying alternatives to arterial lines in the operating rooms is a pressing need. Despite the importance of this issue in the community, clinically viable ...
+            </div>
+            <div class="details">
+                Monitoring mean arterial pressure (MAP) is essential for ensuring safe general anesthesia. Current practices rely either on non-invasive cuff measurements, which suffer from poor temporal resolution, or invasive arterial lines, which provide excellent accuracy and resolution but carry a significant risk of complications. Therefore, identifying alternatives to arterial lines in the operating rooms is a pressing need. Despite the importance of this issue in the community, clinically viable non-invasive MAP monitoring methods have yet to emerge. Existing approaches often encounter reproducibility issues, notably on large, open-source databases, and are not always optimized for real-time predictions. To address these limitations, this study introduces AnesthNet, a deep learning architecture designed for MAP estimation, using data exclusively from non-invasive and routine sensors such as photoplethysmography, ECG, and cuff oscillometer. AnesthNet was evaluated against the best-performing state-of-the-art deep learning architectures, using international standards to assess their performance on two of the largest datasets to date: VitalDB (2,833 patients) and LaribDB (5,060 patients). AnesthNet achieved superior performances, reaching an MAE of 4.6 (± 4.7) mmHg on VitalDB and 3.8 (± 5.7) mmHg on LaribDB. Our model also outperformed other architectures for different delays in cuff values and yielded no significant latency during inference, meeting clinical real-time requirements.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">RoseCDL: Robust and scalable convolutional dictionary learning for rare-event detection </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2509.07523">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Jad Yehya, Mansour Benbakoura, Cédric Allain, Benoit Malezieux, Matthieu Kowalski, Thomas Moreau,</span>
+            <span class="date">Sep 2025,</span>
+
+                <span><i>preprint /</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub44"/>
+        <label class="btn display-status" for="pub44">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this ...
+            </div>
+            <div class="details">
+                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this paper, we introduce RoseCDL, a scalable and robust CDL algorithm designed for unsupervised rare event detection in long signals. RoseCDL combines stochastic windowing for efficient training on large datasets with inline outlier detection to enhance robustness and isolate anomalous patterns. This reframes CDL as a practical tool for event discovery and characterization in real-world signals, extending its role beyond traditional tasks like compression or denoising.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Simulation-Based Inference: A Practical Guide </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2508.12939">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Michael Deistler, Jan Boelts, Peter Steinbach, Guy Moss, Thomas Moreau, Manuel Gloeckler, Pedro LC Rodrigues, Julia Linhart, Janne K Lappalainen, Benjamin Kurt Miller, Pedro J Gonçalves, Jan-Matthis Lueckmann, Cornelius Schröder, Jakob H Macke,</span>
+            <span class="date">Aug 2025,</span>
+
+                <span><i>preprint /</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub45"/>
+        <label class="btn display-status" for="pub45">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                A central challenge in many areas of science and engineering is to identify model parameters that are consistent with prior knowledge and empirical data. Bayesian inference offers a principled framework for this task, but can be computationally prohibitive when models are defined by stochastic simulators. Simulation-based Inference (SBI) is a suite of methods developed to overcome this limitation, which has enabled scientific discoveries in fields such as particle physics, astrophysics, and ...
+            </div>
+            <div class="details">
+                A central challenge in many areas of science and engineering is to identify model parameters that are consistent with prior knowledge and empirical data. Bayesian inference offers a principled framework for this task, but can be computationally prohibitive when models are defined by stochastic simulators. Simulation-based Inference (SBI) is a suite of methods developed to overcome this limitation, which has enabled scientific discoveries in fields such as particle physics, astrophysics, and neuroscience. The core idea of SBI is to train neural networks on data generated by a simulator, without requiring access to likelihood evaluations. Once trained, inference is amortized: The neural network can rapidly perform Bayesian inference on empirical observations without requiring additional training or simulations. In this tutorial, we provide a practical guide for practitioners aiming to apply SBI methods. We outline a structured SBI workflow and offer practical guidelines and diagnostic tools for every stage of the process -- from setting up the simulator and prior, choosing and training inference networks, to performing inference and validating the results. We illustrate these steps through examples from astrophysics, psychophysics, and neuroscience. This tutorial empowers researchers to apply state-of-the-art SBI methods, facilitating efficient parameter inference for scientific discovery.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Deep Learning sur les signaux M/EEG: Adaptez votre modèle, pas votre prétraitement </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://gretsi.fr/data/colloque/pdf/2025_levy1559.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Jarod Lévy, Hubert Jacob Banville, Jean-Rémi King, Svetlana Pinet, Jérémy Rapin, Stéphane D’Ascoli, Thomas Moreau,</span>
+            <span class="date">Aug 2025,</span>
+
+                <span class="conference">In proceedings of <i>GRETSI</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub57"/>
+        <label class="btn display-status" for="pub57">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                This study investigates the impact of preprocessing EEG (electroencephalography) and MEG (magnetoencephalography) signals on the performance of deep learning models. Our results show that minimal preprocessing significantly reduces computational cost while maintaining performance comparable to more complex approaches, across datasets and models. Our observations suggest that model choice has a more decisive influence on the outcome than the complexity of the applied preprocessing.
+            </div>
+            <div class="details">
+                This study investigates the impact of preprocessing EEG (electroencephalography) and MEG (magnetoencephalography) signals on the performance of deep learning models. Our results show that minimal preprocessing significantly reduces computational cost while maintaining performance comparable to more complex approaches, across datasets and models. Our observations suggest that model choice has a more decisive influence on the outcome than the complexity of the applied preprocessing.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">De l’importance de la validation croisée </span>
+            <span style="width:2em;"></span>
+
+            <a href="Célestin Eve, Thomas Moreau, Gaël Varoquaux">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/ceelestin/benchmark_regression">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Célestin Eve, Thomas Moreau, Gaël Varoquaux,</span>
+            <span class="date">Aug 2025,</span>
+
+                <span class="conference">In proceedings of <i>GRETSI</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub58"/>
+        <label class="btn display-status" for="pub58">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Benchmarking machine learning algorithms is crucial for scientific progress. Cross-validation, a common evaluation tool, enables repeated performance comparisons across dataset subsets. This study investigates how validation procedures–non-cross-validation, repeated k-fold, and random permutation–affect algorithm ranking reliability and computational cost on a simulated dataset. We analyze the impact of the number of splits on these factors. Results indicate that procedures with equal splits ...
+            </div>
+            <div class="details">
+                Benchmarking machine learning algorithms is crucial for scientific progress. Cross-validation, a common evaluation tool, enables repeated performance comparisons across dataset subsets. This study investigates how validation procedures–non-cross-validation, repeated k-fold, and random permutation–affect algorithm ranking reliability and computational cost on a simulated dataset. We analyze the impact of the number of splits on these factors. Results indicate that procedures with equal splits yield similar performance, diminishing returns from increasing splits occurring slower than expected.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">SKADA-Bench: Benchmarking Unsupervised Domain Adaptation Methods with Realistic Validation </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openreview.net/forum?id=k9F63DV3Qe">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/scikit-adaptation/skada-bench">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Yanis Lalou, Théo Gnassounou, Antoine Collas, Antoine de Mathelin, Oleksii Kachaiev, Ambroise Odonnat, Alexandre Gramfort, Thomas Moreau, Rémi Flamary,</span>
+            <span class="date">Jul 2025,</span>
+
+                <span><i>TMLR</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub42"/>
+        <label class="btn display-status" for="pub42">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Unsupervised Domain Adaptation (DA) consists of adapting a model trained on a labeled source domain to perform well on an unlabeled target domain with some data distribution shift. While many methods have been proposed in the literature, fair and realistic evaluation remains an open question, particularly due to methodological difficulties in selecting hyperparameters in the unsupervised setting. With SKADA-Bench, we propose a framework to evaluate DA methods and present a fair ...
+            </div>
+            <div class="details">
+                Unsupervised Domain Adaptation (DA) consists of adapting a model trained on a labeled source domain to perform well on an unlabeled target domain with some data distribution shift. While many methods have been proposed in the literature, fair and realistic evaluation remains an open question, particularly due to methodological difficulties in selecting hyperparameters in the unsupervised setting. With SKADA-Bench, we propose a framework to evaluate DA methods and present a fair evaluation of existing shallow algorithms, including reweighting, mapping, and subspace alignment. Realistic hyperparameter selection is performed with nested cross-validation and various unsupervised model selection scores, on both simulated datasets with controlled shifts and real-world datasets across diverse modalities, such as images, text, biomedical, and tabular data with specific feature extraction. Our benchmark highlights the importance of realistic validation and provides practical guidance for real-life applications, with key insights into the choice and impact of model selection approaches. SKADA-Bench is open-source, reproducible, and can be easily extended with novel DA methods, datasets, and model selection criteria without requiring re-evaluating competitors. SKADA-Bench is available on GitHub at https://github.com/scikit-adaptation/skada-bench.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">FiRe: Fixed-points of restoration priors for solving inverse problems </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Terris_FiRe_Fixed-points_of_Restoration_Priors_for_Solving_Inverse_Problems_CVPR_2025_paper.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/matthieutrs/fire">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Matthieu Terris, Ulugbek Kamilov, Thomas Moreau,</span>
+            <span class="date">Jun 2025,</span>
+
+                <span class="conference">In proceedings of <i>CVPR</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub48"/>
+        <label class="btn display-status" for="pub48">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Selecting an appropriate prior to compensate for information loss due to the measurement operator is a fundamental challenge in imaging inverse problems. Implicit priors based on denoising neural networks have become central to widely-used frameworks such as Plug-and-Play (PnP) algorithms. In this work, we introduce Fixed-points of Restoration (FiRe) priors as a new framework for expanding the notion of priors in PnP to general restoration models beyond traditional denoising models. The ...
+            </div>
+            <div class="details">
+                Selecting an appropriate prior to compensate for information loss due to the measurement operator is a fundamental challenge in imaging inverse problems. Implicit priors based on denoising neural networks have become central to widely-used frameworks such as Plug-and-Play (PnP) algorithms. In this work, we introduce Fixed-points of Restoration (FiRe) priors as a new framework for expanding the notion of priors in PnP to general restoration models beyond traditional denoising models. The key insight behind FiRe is that smooth images emerge as fixed points of the composition of a degradation operator with the corresponding restoration model. This enables us to derive an explicit formula for our implicit prior by quantifying invariance of images under this composite operation. Adopting this fixed-point perspective, we show how various restoration networks can effectively serve as priors for solving inverse problems. The FiRe framework further enables ensemble-like combinations of multiple restoration models as well as acquisition-informed restoration networks, all within a unified optimization approach. Experimental results validate the effectiveness of FiRe across various inverse problems, establishing a new paradigm for incorporating pretrained restoration models into PnP-like algorithms.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">DeepInverse: A Python package for solving imaging inverse problems with deep learning </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2505.20160">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/deepinv/deepinv">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Julián Tachella, Matthieu Terris, Samuel Hurault, Andrew Wang, Dongdong Chen, Minh-Hai Nguyen, Maxime Song, Thomas Davies, Leo Davy, Jonathan Dong, Paul Escande, Johannes Hertrich, Zhiyuan Hu, Tobías I Liaudat, Nils Laurent, Brett Levac, Mathurin Massias, Thomas Moreau, Thibaut Modrzyk, Brayan Monroy, Sebastian Neumayer, Jérémy Scanvic, Florian Sarron, Victor Sechaud, Georg Schramm, Romain Vo, Pierre Weiss,</span>
+            <span class="date">May 2025,</span>
+
+                <span><i>preprint /</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub46"/>
+        <label class="btn display-status" for="pub46">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                DeepInverse is an open-source PyTorch-based library for solving imaging inverse problems. The library covers all crucial steps in image reconstruction from the efficient implementation of forward operators (e.g., optics, MRI, tomography), to the definition and resolution of variational problems and the design and training of advanced neural network architectures. In this paper, we describe the main functionality of the library and discuss the main design choices.
+            </div>
+            <div class="details">
+                DeepInverse is an open-source PyTorch-based library for solving imaging inverse problems. The library covers all crucial steps in image reconstruction from the efficient implementation of forward operators (e.g., optics, MRI, tomography), to the definition and resolution of variational problems and the design and training of advanced neural network architectures. In this paper, we describe the main functionality of the library and discuss the main design choices.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Unmixing Noise from Hawkes Process to Model Learned Physiological Events </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://proceedings.mlr.press/v258/loison25a.html">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/mind-inria/fadin">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Virginie Loison, Guillaume Staerman, Thomas Moreau,</span>
+            <span class="date">May 2025,</span>
+
+                <span class="conference">In proceedings of <i>AISTAT</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub41"/>
+        <label class="btn display-status" for="pub41">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Physiological signal analysis often involves identifying events crucial to understanding biological dynamics. Traditional methods rely on handcrafted procedures or supervised learning, presenting challenges such as expert dependence, lack of robustness, and the need for extensive labeled data. Data-driven methods like Convolutional Dictionary Learning (CDL) offer an alternative but tend to produce spurious detections. This work introduces UNHaP (Unmix Noise from Hawkes Processes), a novel ...
+            </div>
+            <div class="details">
+                Physiological signal analysis often involves identifying events crucial to understanding biological dynamics. Traditional methods rely on handcrafted procedures or supervised learning, presenting challenges such as expert dependence, lack of robustness, and the need for extensive labeled data. Data-driven methods like Convolutional Dictionary Learning (CDL) offer an alternative but tend to produce spurious detections. This work introduces UNHaP (Unmix Noise from Hawkes Processes), a novel approach addressing the joint learning of temporal structures in events and the removal of spurious detections. Leveraging marked Hawkes processes, UNHaP distinguishes between events of interest and spurious ones. By treating the event detection output as a mixture of structured and unstructured events, UNHaP efficiently unmixes these processes and estimates their parameters. This approach significantly enhances the understanding of event distributions while minimizing false detection rates.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">sbi reloaded: a toolkit for simulation-based inference workflows </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://joss.theoj.org/papers/10.21105/joss.07754">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://sbi.readthedocs.io/en/latest/">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Jan Boelts, Michael Deistler, Manuel Gloeckler, Álvaro Tejero-Cantero, Jan-Matthis Lueckmann, Guy Moss, Peter Steinbach, Thomas Moreau, Fabio Muratore, Julia Linhart, Conor Durkan, Julius Vetter, Benjamin Kurt Miller, Maternus Herold, Abolfazl Ziaeemehr, Matthijs Pals, Theo Gruner, Sebastian Bischoff, Nastya Krouglova, Richard Gao, Janne K Lappalainen, Bálint Mucsányi, Felix Pei, Auguste Schulz, Zinovia Stefanidi, Pedro Rodrigues, Cornelius Schröder, Faried Abu Zaid, Jonas Beck, et al.,</span>
+            <span class="date">Apr 2025,</span>
+
+                <span><i>JOSS</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub50"/>
+        <label class="btn display-status" for="pub50">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Scientists and engineers use simulators to model empirically observed phenomena. However, tuning the parameters of a simulator to ensure its outputs match observed data presents a significant challenge. Simulation-based inference (SBI) addresses this by enabling Bayesian inference for simulators, identifying parameters that match observed data and align with prior knowledge. Unlike traditional Bayesian inference, SBI only needs access to simulations from the model and does not require ...
+            </div>
+            <div class="details">
+                Scientists and engineers use simulators to model empirically observed phenomena. However, tuning the parameters of a simulator to ensure its outputs match observed data presents a significant challenge. Simulation-based inference (SBI) addresses this by enabling Bayesian inference for simulators, identifying parameters that match observed data and align with prior knowledge. Unlike traditional Bayesian inference, SBI only needs access to simulations from the model and does not require evaluations of the likelihood-function. In addition, SBI algorithms do not require gradients through the simulator, allow for massive parallelization of simulations, and can perform inference for different observations without further simulations or training, thereby amortizing inference. Over the past years, we have developed, maintained, and extended `sbi`, a PyTorch-based package that implements Bayesian SBI algorithms based on neural networks. The `sbi` toolkit implements a wide range of inference methods, neural network architectures, sampling methods, and diagnostic tools. In addition, it provides well-tested default settings but also offers flexibility to fully customize every step of the simulation-based inference workflow. Taken together, the `sbi` toolkit enables scientists and engineers to apply state-of-the-art SBI methods to black-box simulators, opening up new possibilities for aligning simulations with empirically observed data.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Convolutional Sparse Coding for Time Series Via a Penalty: An Efficient Algorithm With Statistical Guarantees </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/sam.70000">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Charles Truong, Thomas Moreau,</span>
+            <span class="date">Dec 2024,</span>
+
+                <span><i>Statistical Analysis and Data Mining</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub49"/>
+        <label class="btn display-status" for="pub49">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Identifying characteristic patterns in time series, such as heartbeats or brain responses to a stimulus, is critical to understanding the physical or physiological phenomena monitored with sensors. Convolutional sparse coding (CSC) methods, which aim to approximate signals by a sparse combination of short signal templates (also called atoms), are well-suited for this task. However, enforcing sparsity leads to non-convex and untractable optimization problems. This article proposes finding the ...
+            </div>
+            <div class="details">
+                Identifying characteristic patterns in time series, such as heartbeats or brain responses to a stimulus, is critical to understanding the physical or physiological phenomena monitored with sensors. Convolutional sparse coding (CSC) methods, which aim to approximate signals by a sparse combination of short signal templates (also called atoms), are well-suited for this task. However, enforcing sparsity leads to non-convex and untractable optimization problems. This article proposes finding the optimal solution to the original and non-convex CSC problem when the atoms do not overlap. Specifically, we show that the reconstruction error satisfies a simple recursive relationship in this setting, which leads to an efficient detection algorithm. We prove that our method correctly estimates the number of patterns and their localization, up to a detection margin that depends on a certain measure of the signal-to-noise ratio. In a thorough empirical study, with simulated and real-world physiological data sets, our method is shown to be more accurate than existing algorithms at detecting the patterns' onsets.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Analysis and Synthesis Denoisers for Forward-Backward Plug-and-Play Algorithms </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2411.13276">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/tomMoral/dictionary-based_denoisers_FBPnP">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Matthieu Kowalski, Benoît Malézieux, Thomas Moreau, Audrey Repetti,</span>
+            <span class="date">Nov 2024,</span>
+
+                <span><i>preprint /</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub51"/>
+        <label class="btn display-status" for="pub51">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                In this work we study the behavior of the forward-backward (FB) algorithm when the proximity operator is replaced by a sub-iterative procedure to approximate a Gaussian denoiser, in a Plug-and-Play (PnP) fashion. In particular, we consider both analysis and synthesis Gaussian denoisers within a dictionary framework, obtained by unrolling dual-FB iterations or FB iterations, respectively. We analyze the associated minimization problems as well as the asymptotic behavior of the resulting ...
+            </div>
+            <div class="details">
+                In this work we study the behavior of the forward-backward (FB) algorithm when the proximity operator is replaced by a sub-iterative procedure to approximate a Gaussian denoiser, in a Plug-and-Play (PnP) fashion. In particular, we consider both analysis and synthesis Gaussian denoisers within a dictionary framework, obtained by unrolling dual-FB iterations or FB iterations, respectively. We analyze the associated minimization problems as well as the asymptotic behavior of the resulting FB-PnP iterations. In particular, we show that the synthesis Gaussian denoising problem can be viewed as a proximity operator. For each case, analysis and synthesis, we show that the FB-PnP algorithms solve the same problem whether we use only one or an infinite number of sub-iteration to solve the denoising problem at each iteration. To this aim, we show that each "one sub-iteration" strategy within the FB-PnP can be interpreted as a primal-dual algorithm when a warm-restart strategy is used. We further present similar results when using a Moreau-Yosida smoothing of the global problem, for an arbitrary number of sub-iterations. Finally, we provide numerical simulations to illustrate our theoretical results. In particular we first consider a toy compressive sensing example, as well as an image restoration problem in a deep dictionary framework.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">S-JEPA: towards seamless cross-dataset transfer through dynamic spatial attention </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://diglib.tugraz.at/download.php?id=66f6c39b8dd2d">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+            <br>
+            <span class="authors">Pierre Guetschel, Thomas Moreau, Michael Tangermann,</span>
+            <span class="date">Sep 2024,</span>
+
+                <span class="conference">In proceedings of <i>Graz Brain-Computer Interface Conference</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub54"/>
+        <label class="btn display-status" for="pub54">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Motivated by the challenge of seamless cross-dataset transfer in EEG signal processing, this article presents an exploratory study on the use of Joint Embedding Predictive Architectures (JEPAs). In recent years, self-supervised learning has emerged as a promising approach for transfer learning in various domains. However, its application to EEG signals remains largely unexplored. In this article, we introduce Signal-JEPA for representing EEG recordings which includes a novel domain-specific ...
+            </div>
+            <div class="details">
+                Motivated by the challenge of seamless cross-dataset transfer in EEG signal processing, this article presents an exploratory study on the use of Joint Embedding Predictive Architectures (JEPAs). In recent years, self-supervised learning has emerged as a promising approach for transfer learning in various domains. However, its application to EEG signals remains largely unexplored. In this article, we introduce Signal-JEPA for representing EEG recordings which includes a novel domain-specific spatial block masking strategy and three novel architectures for downstream classification. The study is conducted on a 54 subjects dataset and the downstream performance of the models is evaluated on three different BCI paradigms: motor imagery, ERP and SSVEP. Our study provides preliminary evidence for the potential of JEPAs in EEG signal encoding. Notably, our results highlight the importance of spatial filtering for accurate downstream classification and reveal an influence of the length of the pre-training examples but not of the mask size on the downstream performance.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">Equivariant plug-and-play image reconstruction </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Terris_Equivariant_Plug-and-Play_Image_Reconstruction_CVPR_2024_paper.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/matthieutrs/EquivariantPnP">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Matthieu Terris, Thomas Moreau, Nelly Pustelnik, Julian Tachella,</span>
+            <span class="date">Jun 2024,</span>
+
+                <span class="conference">In proceedings of <i>CVPR</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub56"/>
+        <label class="btn display-status" for="pub56">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Plug-and-play algorithms constitute a popular framework for solving inverse imaging problems that rely on the implicit definition of an image prior via a denoiser. These algorithms can leverage powerful pre-trained denoisers to solve a wide range of imaging tasks circumventing the necessity to train models on a per-task basis. Unfortunately plug-and-play methods often show unstable behaviors hampering their promise of versatility and leading to suboptimal quality of reconstructed images. In ...
+            </div>
+            <div class="details">
+                Plug-and-play algorithms constitute a popular framework for solving inverse imaging problems that rely on the implicit definition of an image prior via a denoiser. These algorithms can leverage powerful pre-trained denoisers to solve a wide range of imaging tasks circumventing the necessity to train models on a per-task basis. Unfortunately plug-and-play methods often show unstable behaviors hampering their promise of versatility and leading to suboptimal quality of reconstructed images. In this work we show that enforcing equivariance to certain groups of transformations (rotations reflections and/or translations) on the denoiser strongly improves the stability of the algorithm as well as its reconstruction quality. We provide a theoretical analysis that illustrates the role of equivariance on better performance and stability. We present a simple algorithm that enforces equivariance on any existing denoiser by simply applying a random transformation to the input of the denoiser and the inverse transformation to the output at each iteration of the algorithm. Experiments on multiple imaging modalities and denoising networks show that the equivariant plug-and-play algorithm improves both the reconstruction performance and the stability compared to their non-equivariant counterparts.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">How to compute Hessian-vector products? </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://iclr-blogposts.github.io/2024/blog/bench-hvp/">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/MatDag/bench_hvp">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Mathieu Dagréou, Pierre Ablin, Samuel Vaiter, Thomas Moreau,</span>
+            <span class="date">May 2024,</span>
+
+                <span class="conference">In proceedings of <i>Blogpost Track at ICLR</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub55"/>
+        <label class="btn display-status" for="pub55">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                The product between the Hessian of a function and a vector, the Hessian-vector product (HVP), is a fundamental quantity to study the variation of a function. It is ubiquitous in traditional optimization and machine learning. However, the computation of HVPs is often considered prohibitive in the context of deep learning, driving practitioners to use proxy quantities to evaluate the loss geometry. Standard automatic differentiation theory predicts that the computational complexity of an HVP...
+            </div>
+            <div class="details">
+                The product between the Hessian of a function and a vector, the Hessian-vector product (HVP), is a fundamental quantity to study the variation of a function. It is ubiquitous in traditional optimization and machine learning. However, the computation of HVPs is often considered prohibitive in the context of deep learning, driving practitioners to use proxy quantities to evaluate the loss geometry. Standard automatic differentiation theory predicts that the computational complexity of an HVP is of the same order of magnitude as the complexity of computing a gradient. The goal of this blog post is to provide a practical counterpart to this theoretical result, showing that modern automatic differentiation frameworks, JAX and PyTorch, allow for efficient computation of these HVPs in standard deep learning cost functions.
+            </div>
+        </div>
+    </div>
 
     
     <div class="publication">
@@ -106,6 +756,46 @@ $(function(){
             </div>
             <div class="details">
                 Bilevel optimization problems, which are problems where two optimization problems are nested, have more and more applications in machine learning. In many practical cases, the upper and the lower objectives correspond to empirical risk minimization problems and therefore have a sum structure. In this context, we propose a bilevel extension of the celebrated SARAH algorithm. We demonstrate that the algorithm requires O((n+m)^{1/2}ε^{−1}) gradient computations to achieve ε-stationarity with n+m the total number of samples, which improves over all previous bilevel algorithms. Moreover, we provide a lower bound on the number of oracle calls required to get an approximate stationary point of the objective function of the bilevel problem. This lower bound is attained by our algorithm, which is therefore optimal in terms of sample complexity.
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="publication">
+        <div class="project_item">
+            <span class="title">The largest EEG-based BCI reproducibility study for open science: the MOABB benchmark </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2404.15319">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/NeuroTechX/moabb">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+            <br>
+            <span class="authors">Sylvain Chevallier, Igor Carrara, Bruno Aristimunha, Pierre Guetschel, Sara Sedlar, Bruna Lopes, Sebastien Velut, Salim Khazem, Thomas Moreau,</span>
+            <span class="date">Apr 2024,</span>
+
+                <span><i>preprint /</i></span>
+
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub53"/>
+        <label class="btn display-status" for="pub53">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Motivated by the challenge of seamless cross-dataset transfer in EEG signal processing, this article presents an exploratory study on the use of Joint Embedding Predictive Architectures (JEPAs). In recent years, self-supervised learning has emerged as a promising approach for transfer learning in various domains. However, its application to EEG signals remains largely unexplored. In this article, we introduce Signal-JEPA for representing EEG recordings which includes a novel domain-specific ...
+            </div>
+            <div class="details">
+                Motivated by the challenge of seamless cross-dataset transfer in EEG signal processing, this article presents an exploratory study on the use of Joint Embedding Predictive Architectures (JEPAs). In recent years, self-supervised learning has emerged as a promising approach for transfer learning in various domains. However, its application to EEG signals remains largely unexplored. In this article, we introduce Signal-JEPA for representing EEG recordings which includes a novel domain-specific spatial block masking strategy and three novel architectures for downstream classification. The study is conducted on a 54 subjects dataset and the downstream performance of the models is evaluated on three different BCI paradigms: motor imagery, ERP and SSVEP. Our study provides preliminary evidence for the potential of JEPAs in EEG signal encoding. Notably, our results highlight the importance of spatial filtering for accurate downstream classification and reveal an influence of the length of the pre-training examples but not of the mask size on the downstream performance.
             </div>
         </div>
     </div>

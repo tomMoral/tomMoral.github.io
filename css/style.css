@@ -81,8 +81,8 @@ a{
 }
 #page{
 	background-color: white;
-	/*width: 75%;
-	min-width: 900px;*/
+	width: 90%;
+	/* min-width: 900px;*/
 	min-height: 100%;
 	vertical-align: top;
 	margin-right: 5%;
@@ -102,23 +102,41 @@ a{
 	}
 	#page .fa{
 		color: black;
-}
+	}
 
 .entry-content{
 	width: 95%;
 	padding-top: 1em;
 }
 
+.section_title{
+	color: rgb(42, 61, 117);
+	text-decoration: underline;
+}
+
 
 /*------------------------------------------------------
 						List of projects
 -------------------------------------------------------*/
-.publication, .project, .talk{
+.publication, .project, .talk, .grant{
 	background-color: rgba(128, 128, 128, .1);
 	margin: 1em;
 	padding: 1em;
 	width: 95%;
 	display: list-item;
+}
+.person{
+	display: list-item;
+	padding-top: .4em;
+}
+.subject, .funder{
+	font-style: italic;
+	padding-left: 2em;
+}
+.advisors{
+	font-style: italic;
+	padding-left: 2em;
+	padding-bottom: .2em;
 }
 .project_item{
 	width: 100%;
@@ -131,7 +149,10 @@ a{
 	font-style: italic;
 }
 
-.project .date{
+.position{
+	margin-left: 1ex;
+}
+.date{
 	margin-left: 5em;
 }
 .display-status{
@@ -215,7 +236,7 @@ a{
 		min-width: 200px;
 	}
 
-	.project, .talk, .publication{
+	.project, .talk, .publication, .student{
 		margin: 1em 0em 1em 0em;
 	}
 

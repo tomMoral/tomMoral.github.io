@@ -37,9 +37,8 @@ async def sync_images():
     fs = []
     for im in images:
         f_im = os.path.join("images", im)
-        print(f_im)
         fs += [sync_static_files(f_im)]
-    await asyncio.wait(fs)
+    await asyncio.gather(*fs)
 
 
 async def main():
@@ -52,6 +51,10 @@ async def main():
                          "talks.html"),
         await fetch_page(session, 'http://127.0.0.1:8000/oss/',
                          "oss.html"),
+        await fetch_page(session, 'http://127.0.0.1:8000/grants/',
+                         "grants.html"),
+        await fetch_page(session, 'http://127.0.0.1:8000/peoples/',
+                         "people.html"),
         await sync_static_files("css/style.css"),
         await sync_static_files("javascript/lib.js"),
         await sync_images()
