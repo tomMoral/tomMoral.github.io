@@ -78,6 +78,231 @@ $(function(){
 
         <div class="talk">
         <div class="talk_item">
+            <span class="title">Filling the gaps: a story of priors and conditional probabilities </span>
+            <span style="width:2em;"></span>
+
+            <a href="/talks/25-09-28_priors_imaging.pdf">
+
+                <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+            </a>
+
+
+            <br>
+            <span class="date">28 Sep 2025,</span>
+            <span class="conference">At <i>Inverse Problem and Imaging - CIRM, Luminy, France</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk38"/>
+        <label class="btn display-status" for="talk38">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Inverse problems are often ill-posed: incomplete measurements, noise, and ambiguity mean that we must rely on priors to reconstruct meaningful solutions. In the first part of this talk, I will present recent work that analyzes the limitations and challenges of these approaches when solving unsupervised inverse problems—how the choice of priors can bias reconstructions, how conditional models interact with measurement operators, and what this reveals about the fundamental difficulty of filling...
+            </div>
+            <div class="details">
+                Inverse problems are often ill-posed: incomplete measurements, noise, and ambiguity mean that we must rely on priors to reconstruct meaningful solutions. In the first part of this talk, I will present recent work that analyzes the limitations and challenges of these approaches when solving unsupervised inverse problems—how the choice of priors can bias reconstructions, how conditional models interact with measurement operators, and what this reveals about the fundamental difficulty of filling in missing information.</br>
+</br>
+Building on this perspective, I will then introduce FIRE (Fixed point Restoration), a framework that addresses these challenges by defining implicit priors not just through denoisers but through general restoration models. The key idea is to characterize natural signals as fixed points of a degradation–restoration cycle, enabling a principled and flexible way to integrate pretrained networks into inverse problem solvers. This fixed-point view not only broadens the class of usable priors but also leads to robust, algorithms with strong empirical performance.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
+            <span class="title">L’IA en santé : promesses, réalités et vigilance </span>
+            <span style="width:2em;"></span>
+
+            <a href="/talks/25-06-03_data-day_AI4Health.pdf">
+
+                <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+            </a>
+
+
+            <br>
+            <span class="date">03 Jun 2025,</span>
+            <span class="conference">At <i>AMDAC Ministère de la santé - Journée de la donnée</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk37"/>
+        <label class="btn display-status" for="talk37">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Dans cette présentation, je donne un panorama de l'utilisation possible de l'IA en santé, ainsi que des enjeux qui y sont liés.
+            </div>
+            <div class="details">
+                Dans cette présentation, je donne un panorama de l'utilisation possible de l'IA en santé, ainsi que des enjeux qui y sont liés.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
+            <span class="title">Event-based representations for Electromagnetic Brain Signals </span>
+            <span style="width:2em;"></span>
+
+
+            <br>
+            <span class="date">27 Mar 2025,</span>
+            <span class="conference">At <i>Inria Paris - HDR</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk32"/>
+        <label class="btn display-status" for="talk32">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of certain types of events and their distribution in the signal. The events are characterized by their temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. Given these events and patterns, a natural question is to estimate how their occurrences are...
+            </div>
+            <div class="details">
+                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of certain types of events and their distribution in the signal.</br>
+The events are characterized by their temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. Given these events and patterns, a natural question is to estimate how their occurrences are modulated by certain cognitive tasks and experimental manipulations.</br>
+</br>
+In this talk, I will present techniques aimed at extracting events as recurrent patterns using Convolutional Dictionary Learning (CDL). Then, I will present contributions to the analysis of event-related neural responses using point-process models. While PP has been used in neuroscience in the past, in particular for single cell recordings (spike trains), techniques such as CDL makes them amenable to human studies based on EEG/MEG signals.</br>
+</br>
+A particular focus is set on developing methods that scale to the large dimensionality of the data in the neuroscience context, with efficient optimization procedures. Results on MEG datasets demonstrate that our methodology allows to reveal event-related neural responses – both evoked or induced – and isolate non-task specific temporal patterns.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
+            <span class="title">Unrolling algorithms for inverse problems: the critical role of warm starts in bilevel optimization </span>
+            <span style="width:2em;"></span>
+
+
+            <br>
+            <span class="date">07 Jan 2025,</span>
+            <span class="conference">At <i>Imaging in Paris Seminar, france</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk35"/>
+        <label class="btn display-status" for="talk35">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                gorithm unrolling, a method that parameterizes classical optimization algorithms as differentiable procedures, has emerged as a powerful tool for solving inverse problems. These unrolled methods allow for the learning of problem-specific parameters, often leading to improved performance in the early iterations of optimization.  In this talk, I explore the links between algorithm unrolling and bilevel optimization. First, I will discuss results that highlight the asymptotic limitations of ...
+            </div>
+            <div class="details">
+                Algorithm unrolling, a method that parameterizes classical optimization algorithms as differentiable procedures, has emerged as a powerful tool for solving inverse problems. These unrolled methods allow for the learning of problem-specific parameters, often leading to improved performance in the early iterations of optimization.</br>
+</br>
+In this talk, I explore the links between algorithm unrolling and bilevel optimization. First, I will discuss results that highlight the asymptotic limitations of unrolled algorithms. These findings emphasize the advantages of using unrolling with a limited number of iterations. I will then discuss some of my recent works on combining unrolled algorithms with dictionary learning to capture data-driven structures in inverse problem solutions. These results highlight the non robustness of the gradient estimation obtained with unrolling. A possible way to limit this drawback is to rely on warm starting, which has been known to be critical to derive converging bilevel optimization algorithms. This offers new insights into designing efficient and robust plug-and-play algorithms based on unrolled denoisers for solving challenging inverse problems.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
+            <span class="title">Tutorial benchopt </span>
+            <span style="width:2em;"></span>
+
+
+            <br>
+            <span class="date">27 Sep 2024,</span>
+            <span class="conference">At <i>MAP5, Paris, France</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk36"/>
+        <label class="btn display-status" for="talk36">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                In this talk, I will walk you through how to get started with <span class="highlightcode">benchopt</span>, a tool to create, run and reuse benchmarks in ML and optimization.
+            </div>
+            <div class="details">
+                In this talk, I will walk you through how to get started with <span class="highlightcode">benchopt</span>, a tool to create, run and reuse benchmarks in ML and optimization.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
+            <span class="title">Event-based representations for Electromagnetic Brain Signals </span>
+            <span style="width:2em;"></span>
+
+
+            <br>
+            <span class="date">11 Sep 2024,</span>
+            <span class="conference">At <i>Huawei Noah Ark, Boulogne, France</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk34"/>
+        <label class="btn display-status" for="talk34">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of certain types of events and their distribution in the signal. The events are characterized by their temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. Given these events and patterns, a natural question is to estimate how their occurrences are ...
+            </div>
+            <div class="details">
+                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of certain types of events and their distribution in the signal.</br>
+The events are characterized by their temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. Given these events and patterns, a natural question is to estimate how their occurrences are modulated by certain cognitive tasks and experimental manipulations.</br>
+</br>
+In this talk, I will present techniques aimed at extracting events as recurrent patterns using Convolutional Dictionary Learning (CDL). Then, I will present contributions to the analysis of event-related neural responses using point-process models. While PP has been used in neuroscience in the past, in particular for single cell recordings (spike trains), techniques such as CDL makes them amenable to human studies based on EEG/MEG signals.</br>
+</br>
+A particular focus is set on developing methods that scale to the large dimensionality of the data in the neuroscience context, with efficient optimization procedures. Results on MEG datasets demonstrate that our methodology allows to reveal event-related neural responses – both evoked or induced – and isolate non-task specific temporal patterns.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
+            <span class="title">Event-based representations for Electromagnetic Brain Signals </span>
+            <span style="width:2em;"></span>
+
+
+            <br>
+            <span class="date">10 Jun 2024,</span>
+            <span class="conference">At <i>ML and brain day, Lyon, France</i></span>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="talk33"/>
+        <label class="btn display-status" for="talk33">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of certain types of events and their distribution in the signal. The events are characterized by their temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. Given these events and patterns, a natural question is to estimate how their occurrences are ...
+            </div>
+            <div class="details">
+                The quantitative analysis of non-invasive electrophysiology signals from electroencephalography (EEG) and magnetoencephalography (MEG) boils down to the identification of certain types of events and their distribution in the signal.</br>
+The events are characterized by their temporal patterns such as evoked responses, transient bursts of neural oscillations but also blinks or heartbeats for data cleaning. Given these events and patterns, a natural question is to estimate how their occurrences are modulated by certain cognitive tasks and experimental manipulations.</br>
+</br>
+In this talk, I will present techniques aimed at extracting events as recurrent patterns using Convolutional Dictionary Learning (CDL). Then, I will present contributions to the analysis of event-related neural responses using point-process models. While PP has been used in neuroscience in the past, in particular for single cell recordings (spike trains), techniques such as CDL makes them amenable to human studies based on EEG/MEG signals.</br>
+</br>
+A particular focus is set on developing methods that scale to the large dimensionality of the data in the neuroscience context, with efficient optimization procedures. Results on MEG datasets demonstrate that our methodology allows to reveal event-related neural responses – both evoked or induced – and isolate non-task specific temporal patterns.
+            </div>
+        </div>
+    </div>
+
+
+        <div class="talk">
+        <div class="talk_item">
             <span class="title">A journey through unrolling for inverse problems </span>
             <span style="width:2em;"></span>
 

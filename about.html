@@ -124,35 +124,34 @@ $(function(){
     </div>
             <div class="talk">
         <div class="talk_item">
-            <span class="title">A journey through unrolling for inverse problems </span>
+            <span class="title">Filling the gaps: a story of priors and conditional probabilities </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/24-04-10_IIP_unrolling.pdf">
+            <a href="/talks/25-09-28_priors_imaging.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
 
 
             <br>
-            <span class="date">10 Apr 2024,</span>
-            <span class="conference">At <i>CIMS - Imaging inverse problems and generating models -- Edinburgh</i></span>
+            <span class="date">28 Sep 2025,</span>
+            <span class="conference">At <i>Inverse Problem and Imaging - CIRM, Luminy, France</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk28"/>
-        <label class="btn display-status" for="talk28">
+        <input type="checkbox" class="btnCtrl" id="talk38"/>
+        <label class="btn display-status" for="talk38">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Inverse problems are ubiquitous in observational science such as imaging, neurosciences or astrophysics. They consist in recovering a signal given noisy observations through a measurement operator. To solve such problems, Machine learning approaches have been proposed based on algorithm unrolling. With such techniques, classical optimization algorithms used to solve inverse problems can be seen as differentiable procedures with parameters that can be learned.  In this talk,  I will ...
+                Inverse problems are often ill-posed: incomplete measurements, noise, and ambiguity mean that we must rely on priors to reconstruct meaningful solutions. In the first part of this talk, I will present recent work that analyzes the limitations and challenges of these approaches when solving unsupervised inverse problems—how the choice of priors can bias reconstructions, how conditional models interact with measurement operators, and what this reveals about the fundamental difficulty of filling...
             </div>
             <div class="details">
-                Inverse problems are ubiquitous in observational science such as imaging, neurosciences or astrophysics. They consist in recovering a signal given noisy observations through a measurement operator. To solve such problems, Machine learning approaches have been proposed based on algorithm unrolling. With such techniques, classical optimization algorithms used to solve inverse problems can be seen as differentiable procedures with parameters that can be learned.</br>
+                Inverse problems are often ill-posed: incomplete measurements, noise, and ambiguity mean that we must rely on priors to reconstruct meaningful solutions. In the first part of this talk, I will present recent work that analyzes the limitations and challenges of these approaches when solving unsupervised inverse problems—how the choice of priors can bias reconstructions, how conditional models interact with measurement operators, and what this reveals about the fundamental difficulty of filling in missing information.</br>
 </br>
-In this talk,  I will present results that aim at understanding what unrolled algorithms learn and their link to the original associated bilevel problem. Based on results from [Ablin et al 2019], I show that in the smooth case, the gradient of the unrolled problem aligns with the ones of the original problem. Then, I will present contributions from [Malézieux et al. 2022] that show that in the non-smooth case, the jacobian estimation is unstable and too many iterations can be harmful.</br>
-Finally, I will present recent results from [Ramzi et al. 2023] showing that when unrolled networks are learned with fixed number of iteration, it is not beneficial to use more iteration at test time.
+Building on this perspective, I will then introduce FIRE (Fixed point Restoration), a framework that addresses these challenges by defining implicit priors not just through denoisers but through general restoration models. The key idea is to characterize natural signals as fixed points of a degradation–restoration cycle, enabling a principled and flexible way to integrate pretrained networks into inverse problem solvers. This fixed-point view not only broadens the class of usable priors but also leads to robust, algorithms with strong empirical performance.
             </div>
         </div>
     </div>
