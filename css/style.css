@@ -125,9 +125,17 @@ a{
 	width: 95%;
 	display: list-item;
 }
+.authors{
+	max-width: 80%;
+}
 .person{
 	display: list-item;
 	padding-top: .4em;
+}
+.project_person{
+	display: list-item;
+	padding-top: .4em;
+	margin-left: 5%;
 }
 .subject, .funder{
 	font-style: italic;
@@ -139,14 +147,11 @@ a{
 	padding-bottom: .2em;
 }
 .project_item{
-	width: 100%;
+	width: 98%;
 }
 .title{
 	font-weight: bold;
 	color: rgba(0, 57, 158, 0.7);
-}
-.authors{
-	font-style: italic;
 }
 
 .position{
@@ -172,6 +177,18 @@ a{
 	float: right;
 	height: 4em;
 	width: 4em;
+}
+
+.filler {
+  flex-grow: 1;        /* take up leftover space */
+  /* optionally show a visual separator */
+  text-align: center;
+  color: #888;
+}
+
+.filler::before {
+  content: "·";        /* dot or whatever symbol */
+  margin: 0 0.5em;
 }
 
 /*----------------------------------------------

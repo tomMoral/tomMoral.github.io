@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/home/tom/.local/miniconda/bin/python
 import asyncio
 import aiohttp
 import aiofiles as aiof
