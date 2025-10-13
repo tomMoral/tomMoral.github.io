@@ -132,12 +132,6 @@ a{
 .person{
 	width: 50%;
 }
-/* .engineer{
-	background-color: antiquewhite;
-}
-.phd{
-	background-color: lavender;
-} */
 .phd { background-color: #D7E8DF; color: #2E4E4D; }
 .postdoc { background-color: #D9E2F2; color: #2E4E4D; }
 .engineer { background-color: #F2E6D9; color: #2E4E4D; }
@@ -154,6 +148,7 @@ a{
 }
 .advisors{
 	font-style: italic;
+	margin-top: .5em;
 	padding-left: 2em;
 	padding-bottom: .2em;
 }
@@ -166,7 +161,12 @@ a{
 }
 
 .position{
-	margin-left: 1ex;
+	margin-left: 3ex;
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 12px;
+	font-size: 0.8em;
+	font-weight: 500;
 }
 .date{
 	margin-left: 5em;
