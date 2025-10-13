@@ -59,7 +59,7 @@ async def main():
         await fetch_page(session, 'http://127.0.0.1:8000/grants/',
                          "grants.html"),
         await fetch_page(session, 'http://127.0.0.1:8000/peoples/',
-                         "people.html"),
+                         "peoples.html"),
         await sync_static_files("css/style.css"),
         await sync_static_files("javascript/lib.js"),
         await sync_images()
