@@ -118,20 +118,31 @@ a{
 /*------------------------------------------------------
 						List of projects
 -------------------------------------------------------*/
-.publication, .project, .talk, .grant{
+.publication, .project, .talk, .grant, .person{
 	background-color: rgba(128, 128, 128, .1);
 	margin: 1em;
 	padding: 1em;
 	width: 95%;
 	display: list-item;
+	border-radius: 6px;
 }
 .authors{
 	max-width: 80%;
 }
 .person{
-	display: list-item;
-	padding-top: .4em;
+	width: 50%;
 }
+/* .engineer{
+	background-color: antiquewhite;
+}
+.phd{
+	background-color: lavender;
+} */
+.phd { background-color: #D7E8DF; color: #2E4E4D; }
+.postdoc { background-color: #D9E2F2; color: #2E4E4D; }
+.engineer { background-color: #F2E6D9; color: #2E4E4D; }
+.intern { background-color: #F0DDE5; color: #2E4E4D; }
+
 .project_person{
 	display: list-item;
 	padding-top: .4em;
@@ -189,6 +200,7 @@ a{
 .filler::before {
   content: "·";        /* dot or whatever symbol */
   margin: 0 0.5em;
+  color: transparent;      /* same color as .filler */
 }
 
 /*----------------------------------------------
