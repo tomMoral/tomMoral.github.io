@@ -58,8 +58,8 @@ async def main():
                          "oss.html"),
         await fetch_page(session, 'http://127.0.0.1:8000/grants/',
                          "grants.html"),
-        await fetch_page(session, 'http://127.0.0.1:8000/peoples/',
-                         "peoples.html"),
+        await fetch_page(session, 'http://127.0.0.1:8000/people/',
+                         "people.html"),
         await sync_static_files("css/style.css"),
         await sync_static_files("javascript/lib.js"),
         await sync_images()
