@@ -130,35 +130,34 @@ $(function(){
             <div class="talk">
         <div class="talk_item">
             <div class="info" style="display: flex;">
-            <span class="title">Filling the gaps: a story of priors and conditional probabilities </span>
+            <span class="title">Optimizing the optimized: bilevel learning and hypergradient computation </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/25-09-28_priors_imaging.pdf">
+            <a href="/talks/25-11-18_mlataussois_bilevel-unrolling.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
 
 
             <span class="filler"></span>
-            <span class="date">28 Sep 2025,</span>
+            <span class="date">18 Nov 2025,</span>
             </div>
-            <span class="conference">At <i>Inverse Problem and Imaging - CIRM, Luminy</i></span>
+            <span class="conference">At <i><a href="https://mlataussois.sciencesconf.org/">ML at Aussois</a></i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk38"/>
-        <label class="btn display-status" for="talk38">
+        <input type="checkbox" class="btnCtrl" id="talk39"/>
+        <label class="btn display-status" for="talk39">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Inverse problems are often ill-posed: incomplete measurements, noise, and ambiguity mean that we must rely on priors to reconstruct meaningful solutions. In the first part of this talk, I will present recent work that analyzes the limitations and challenges of these approaches when solving unsupervised inverse problems—how the choice of priors can bias reconstructions, how conditional models interact with measurement operators, and what this reveals about the fundamental difficulty of filling...
+                Bi-level optimization has emerged as principled framework for model selection in settings where the model output is obtained through an optimization problem—common in imaging, inverse problems, and physics-based models. In this talk, I will introduce the bi-level optimization paradigm and its relevance in machine learning and inverse problems, as well as the concept of unrolling for computing hypergradients. I will then provide practical insights on recent results, focusing on advances for ...
             </div>
             <div class="details">
-                Inverse problems are often ill-posed: incomplete measurements, noise, and ambiguity mean that we must rely on priors to reconstruct meaningful solutions. In the first part of this talk, I will present recent work that analyzes the limitations and challenges of these approaches when solving unsupervised inverse problems—how the choice of priors can bias reconstructions, how conditional models interact with measurement operators, and what this reveals about the fundamental difficulty of filling in missing information.</br>
-</br>
-Building on this perspective, I will then introduce FIRE (Fixed point Restoration), a framework that addresses these challenges by defining implicit priors not just through denoisers but through general restoration models. The key idea is to characterize natural signals as fixed points of a degradation–restoration cycle, enabling a principled and flexible way to integrate pretrained networks into inverse problem solvers. This fixed-point view not only broadens the class of usable priors but also leads to robust, algorithms with strong empirical performance.
+                Bi-level optimization has emerged as principled framework for model selection in settings where the model output is obtained through an optimization problem—common in imaging, inverse problems, and physics-based models.</br>
+In this talk, I will introduce the bi-level optimization paradigm and its relevance in machine learning and inverse problems, as well as the concept of unrolling for computing hypergradients. I will then provide practical insights on recent results, focusing on advances for bi-level solvers such as SOBA, and theoretical and empirical results on unrolled networks. Throughout, I’ll emphasize the interplay between optimization, learning, and algorithmic structure.
             </div>
         </div>
     </div>
