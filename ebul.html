@@ -131,7 +131,7 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
-            <span class="title">Unmixing Noise from Hawkes Process to Model Learned Physiological Events </span>
+            <span class="title">UNHaP: Unmixing Noise from Hawkes Processes </span>
             <span style="width:2em;"></span>
 
             <a href="https://proceedings.mlr.press/v258/loison25a.html">
@@ -166,6 +166,88 @@ $(function(){
             </div>
             <div class="details">
                 Physiological signal analysis often involves identifying events crucial to understanding biological dynamics. Traditional methods rely on handcrafted procedures or supervised learning, presenting challenges such as expert dependence, lack of robustness, and the need for extensive labeled data. Data-driven methods like Convolutional Dictionary Learning (CDL) offer an alternative but tend to produce spurious detections. This work introduces UNHaP (Unmix Noise from Hawkes Processes), a novel approach addressing the joint learning of temporal structures in events and the removal of spurious detections. Leveraging marked Hawkes processes, UNHaP distinguishes between events of interest and spurious ones. By treating the event detection output as a mixture of structured and unstructured events, UNHaP efficiently unmixes these processes and estimates their parameters. This approach significantly enhances the understanding of event distributions while minimizing false detection rates.
+            </div>
+        </div>
+    </div>
+
+        
+            
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">Harnessing operating room signals to estimate mean arterial pressure with AnesthNet </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://www.nature.com/articles/s41598-025-12341-8.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2025</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Jade Perdereau, Jona Joachim, Fabrice Vallée, Jérôme Cartailler, Thomas Moreau</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>Scientific Reports</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub43"/>
+        <label class="btn display-status" for="pub43">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Monitoring mean arterial pressure (MAP) is essential for ensuring safe general anesthesia. Current practices rely either on non-invasive cuff measurements, which suffer from poor temporal resolution, or invasive arterial lines, which provide excellent accuracy and resolution but carry a significant risk of complications. Therefore, identifying alternatives to arterial lines in the operating rooms is a pressing need. Despite the importance of this issue in the community, clinically viable ...
+            </div>
+            <div class="details">
+                Monitoring mean arterial pressure (MAP) is essential for ensuring safe general anesthesia. Current practices rely either on non-invasive cuff measurements, which suffer from poor temporal resolution, or invasive arterial lines, which provide excellent accuracy and resolution but carry a significant risk of complications. Therefore, identifying alternatives to arterial lines in the operating rooms is a pressing need. Despite the importance of this issue in the community, clinically viable non-invasive MAP monitoring methods have yet to emerge. Existing approaches often encounter reproducibility issues, notably on large, open-source databases, and are not always optimized for real-time predictions. To address these limitations, this study introduces AnesthNet, a deep learning architecture designed for MAP estimation, using data exclusively from non-invasive and routine sensors such as photoplethysmography, ECG, and cuff oscillometer. AnesthNet was evaluated against the best-performing state-of-the-art deep learning architectures, using international standards to assess their performance on two of the largest datasets to date: VitalDB (2,833 patients) and LaribDB (5,060 patients). AnesthNet achieved superior performances, reaching an MAE of 4.6 (± 4.7) mmHg on VitalDB and 3.8 (± 5.7) mmHg on LaribDB. Our model also outperformed other architectures for different delays in cuff values and yielded no significant latency during inference, meeting clinical real-time requirements.
+            </div>
+        </div>
+    </div>
+
+        
+            
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">RoseCDL: Robust and scalable convolutional dictionary learning for rare-event detection </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2509.07523">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2025</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Jad Yehya, Mansour Benbakoura, Cédric Allain, Benoit Malezieux, Matthieu Kowalski, Thomas Moreau</span>
+                <span class="filler"></span>
+                <span class="venue">preprint  <i>Arxiv</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub44"/>
+        <label class="btn display-status" for="pub44">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this ...
+            </div>
+            <div class="details">
+                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this paper, we introduce RoseCDL, a scalable and robust CDL algorithm designed for unsupervised rare event detection in long signals. RoseCDL combines stochastic windowing for efficient training on large datasets with inline outlier detection to enhance robustness and isolate anomalous patterns. This reframes CDL as a practical tool for event discovery and characterization in real-world signals, extending its role beyond traditional tasks like compression or denoising.
             </div>
         </div>
     </div>
@@ -217,10 +299,10 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
-            <span class="title">Flexible Parametric Inference for Space-Time Hawkes Processes </span>
+            <span class="title">Numerically Efficient Parametric Inference for Learning Space-Time Hawkes Processes </span>
             <span style="width:2em;"></span>
 
-            <a href="https://arxiv.org/pdf/2406.06849">
+            <a href="https://openreview.net/pdf?id=VqfvOXyTPj">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
 
@@ -293,6 +375,88 @@ $(function(){
             </div>
             <div class="details">
                 Motivated by the challenge of seamless cross-dataset transfer in EEG signal processing, this article presents an exploratory study on the use of Joint Embedding Predictive Architectures (JEPAs). In recent years, self-supervised learning has emerged as a promising approach for transfer learning in various domains. However, its application to EEG signals remains largely unexplored. In this article, we introduce Signal-JEPA for representing EEG recordings which includes a novel domain-specific spatial block masking strategy and three novel architectures for downstream classification. The study is conducted on a 54 subjects dataset and the downstream performance of the models is evaluated on three different BCI paradigms: motor imagery, ERP and SSVEP. Our study provides preliminary evidence for the potential of JEPAs in EEG signal encoding. Notably, our results highlight the importance of spatial filtering for accurate downstream classification and reveal an influence of the length of the pre-training examples but not of the mask size on the downstream performance.
+            </div>
+        </div>
+    </div>
+
+        
+            
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">S-JEPA: towards seamless cross-dataset transfer through dynamic spatial attention </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://diglib.tugraz.at/download.php?id=66f6c39b8dd2d">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2024</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Pierre Guetschel, Thomas Moreau, Michael Tangermann</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>Graz Brain-Computer Interface Conference</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub54"/>
+        <label class="btn display-status" for="pub54">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Motivated by the challenge of seamless cross-dataset transfer in EEG signal processing, this article presents an exploratory study on the use of Joint Embedding Predictive Architectures (JEPAs). In recent years, self-supervised learning has emerged as a promising approach for transfer learning in various domains. However, its application to EEG signals remains largely unexplored. In this article, we introduce Signal-JEPA for representing EEG recordings which includes a novel domain-specific ...
+            </div>
+            <div class="details">
+                Motivated by the challenge of seamless cross-dataset transfer in EEG signal processing, this article presents an exploratory study on the use of Joint Embedding Predictive Architectures (JEPAs). In recent years, self-supervised learning has emerged as a promising approach for transfer learning in various domains. However, its application to EEG signals remains largely unexplored. In this article, we introduce Signal-JEPA for representing EEG recordings which includes a novel domain-specific spatial block masking strategy and three novel architectures for downstream classification. The study is conducted on a 54 subjects dataset and the downstream performance of the models is evaluated on three different BCI paradigms: motor imagery, ERP and SSVEP. Our study provides preliminary evidence for the potential of JEPAs in EEG signal encoding. Notably, our results highlight the importance of spatial filtering for accurate downstream classification and reveal an influence of the length of the pre-training examples but not of the mask size on the downstream performance.
+            </div>
+        </div>
+    </div>
+
+        
+            
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">Deep Learning sur les signaux M/EEG: Adaptez votre modèle, pas votre prétraitement </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://gretsi.fr/data/colloque/pdf/2025_levy1559.pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2025</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Jarod Lévy, Hubert Jacob Banville, Jean-Rémi King, Svetlana Pinet, Jérémy Rapin, Stéphane D’Ascoli, Thomas Moreau</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>GRETSI</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub57"/>
+        <label class="btn display-status" for="pub57">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                This study investigates the impact of preprocessing EEG (electroencephalography) and MEG (magnetoencephalography) signals on the performance of deep learning models. Our results show that minimal preprocessing significantly reduces computational cost while maintaining performance comparable to more complex approaches, across datasets and models. Our observations suggest that model choice has a more decisive influence on the outcome than the complexity of the applied preprocessing.
+            </div>
+            <div class="details">
+                This study investigates the impact of preprocessing EEG (electroencephalography) and MEG (magnetoencephalography) signals on the performance of deep learning models. Our results show that minimal preprocessing significantly reduces computational cost while maintaining performance comparable to more complex approaches, across datasets and models. Our observations suggest that model choice has a more decisive influence on the outcome than the complexity of the applied preprocessing.
             </div>
         </div>
     </div>
