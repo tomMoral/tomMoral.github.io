@@ -130,34 +130,36 @@ $(function(){
             <div class="talk">
         <div class="talk_item">
             <div class="info" style="display: flex;">
-            <span class="title">Optimizing the optimized: bilevel learning and hypergradient computation </span>
+            <span class="title">Reproducibility and frugality in AI benchmarking: lessons from Benchopt </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/25-11-18_mlataussois_bilevel-unrolling.pdf">
+            <a href="/talks/25-11-27_OSDays_benchopt.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
 
 
             <span class="filler"></span>
-            <span class="date">18 Nov 2025,</span>
+            <span class="date">27 Nov 2025,</span>
             </div>
-            <span class="conference">At <i><a href="https://mlataussois.sciencesconf.org/">ML at Aussois</a></i></span>
+            <span class="conference">At <i>OSDays</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk39"/>
-        <label class="btn display-status" for="talk39">
+        <input type="checkbox" class="btnCtrl" id="talk40"/>
+        <label class="btn display-status" for="talk40">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Bi-level optimization has emerged as principled framework for model selection in settings where the model output is obtained through an optimization problem—common in imaging, inverse problems, and physics-based models. In this talk, I will introduce the bi-level optimization paradigm and its relevance in machine learning and inverse problems, as well as the concept of unrolling for computing hypergradients. I will then provide practical insights on recent results, focusing on advances for ...
+                Research and development in modern AI are primarily driven by empirical work, benchmarking new methods to evaluate relative performance. However, the statistical variability inherent in evaluation processes is often poorly accounted for, leading to a validation crisis in which genuine advances are difficult to discern. This talk will explore the concept of reproducibility for AI benchmarking, and and discuss recent work on the “validation crisis” — showing how cross-validation can ...
             </div>
             <div class="details">
-                Bi-level optimization has emerged as principled framework for model selection in settings where the model output is obtained through an optimization problem—common in imaging, inverse problems, and physics-based models.</br>
-In this talk, I will introduce the bi-level optimization paradigm and its relevance in machine learning and inverse problems, as well as the concept of unrolling for computing hypergradients. I will then provide practical insights on recent results, focusing on advances for bi-level solvers such as SOBA, and theoretical and empirical results on unrolled networks. Throughout, I’ll emphasize the interplay between optimization, learning, and algorithmic structure.
+                Research and development in modern AI are primarily driven by empirical work, benchmarking new methods to evaluate relative performance.</br>
+However, the statistical variability inherent in evaluation processes is often poorly accounted for, leading to a validation crisis in which genuine advances are difficult to discern.</br>
+This talk will explore the concept of reproducibility for AI benchmarking, and and discuss recent work on the “validation crisis” — showing how cross-validation can drastically improve the robustness of algorithm rankings.</br>
+I will also present Benchopt, a framework designed to facilitate reproducible, reusable and extendable benchmarking of optimization and AI algorithms, which is a key component in addressing these crisis while also accounting for the need for frugality in modern AI research.
             </div>
         </div>
     </div>
