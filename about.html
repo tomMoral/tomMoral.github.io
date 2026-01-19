@@ -130,36 +130,34 @@ $(function(){
             <div class="talk">
         <div class="talk_item">
             <div class="info" style="display: flex;">
-            <span class="title">Reproducibility and frugality in AI benchmarking: lessons from Benchopt </span>
+            <span class="title">Filling the gaps: a story of priors and conditional probabilities </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/25-11-27_OSDays_benchopt.pdf">
+            <a href="/talks/26-01-19_L2S_filling-the-gap.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
 
 
             <span class="filler"></span>
-            <span class="date">27 Nov 2025,</span>
+            <span class="date">19 Jan 2026,</span>
             </div>
-            <span class="conference">At <i>OSDays</i></span>
+            <span class="conference">At <i>Séminaire SCUBE - L2S - Saclay</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk40"/>
-        <label class="btn display-status" for="talk40">
+        <input type="checkbox" class="btnCtrl" id="talk41"/>
+        <label class="btn display-status" for="talk41">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Research and development in modern AI are primarily driven by empirical work, benchmarking new methods to evaluate relative performance. However, the statistical variability inherent in evaluation processes is often poorly accounted for, leading to a validation crisis in which genuine advances are difficult to discern. This talk will explore the concept of reproducibility for AI benchmarking, and and discuss recent work on the “validation crisis” — showing how cross-validation can ...
+                Inverse problems are often ill-posed: incomplete measurements, noise, and ambiguity mean that we must rely on priors to reconstruct meaningful solutions. In the first part of this talk, I will present recent work that analyzes the limitations and challenges of these approaches when solving unsupervised inverse problems—how the choice of priors can bias reconstructions, how conditional models interact with measurement operators, and what this reveals about the fundamental difficulty of ...
             </div>
             <div class="details">
-                Research and development in modern AI are primarily driven by empirical work, benchmarking new methods to evaluate relative performance.</br>
-However, the statistical variability inherent in evaluation processes is often poorly accounted for, leading to a validation crisis in which genuine advances are difficult to discern.</br>
-This talk will explore the concept of reproducibility for AI benchmarking, and and discuss recent work on the “validation crisis” — showing how cross-validation can drastically improve the robustness of algorithm rankings.</br>
-I will also present Benchopt, a framework designed to facilitate reproducible, reusable and extendable benchmarking of optimization and AI algorithms, which is a key component in addressing these crisis while also accounting for the need for frugality in modern AI research.
+                Inverse problems are often ill-posed: incomplete measurements, noise, and ambiguity mean that we must rely on priors to reconstruct meaningful solutions. In the first part of this talk, I will present recent work that analyzes the limitations and challenges of these approaches when solving unsupervised inverse problems—how the choice of priors can bias reconstructions, how conditional models interact with measurement operators, and what this reveals about the fundamental difficulty of filling in missing information.</br>
+Building on this perspective, I will then introduce FIRE (Fixed point Restoration), a framework that addresses these challenges by defining implicit priors not just through denoisers but through general restoration models. The key idea is to characterize natural signals as fixed points of a degradation–restoration cycle, enabling a principled and flexible way to integrate pretrained networks into inverse problem solvers. This fixed-point view not only broadens the class of usable priors but also leads to robust, algorithms with strong empirical performance.
             </div>
         </div>
     </div>
