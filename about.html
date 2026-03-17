@@ -92,37 +92,41 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
-            <span class="title">Numerically Efficient Parametric Inference for Learning Space-Time Hawkes Processes </span>
+            <span class="title">RoseCDL: Robust and scalable convolutional dictionary learning for rare-event detection </span>
             <span style="width:2em;"></span>
 
-            <a href="https://openreview.net/pdf?id=VqfvOXyTPj">
+            <a href="https://openreview.net/forum?id=4XMkOFxxfb">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
 
 
+            <a href="https://github.com/tomMoral/RoseCDL">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
 
                 <span class="filler"></span>
-                <span class="date">2025</span>
+                <span class="date">2026</span>
             </div>
             <div class="info" style="display: flex;">
-                <span class="authors">Emilia Siviero, Guillaume Staerman, Stephan Clémençon, Thomas Moreau</span>
+                <span class="authors">Jad Yehya, Mansour Benbakoura, Cédric Allain, Benoit Malezieux, Matthieu Kowalski, Thomas Moreau</span>
                 <span class="filler"></span>
-                <span class="venue">In  <i>DSAA</i></span>
+                <span class="venue">In  <i>AISTATS</i></span>
             </div>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="pub52"/>
-        <label class="btn display-status" for="pub52">
+        <input type="checkbox" class="btnCtrl" id="pub44"/>
+        <label class="btn display-status" for="pub44">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Many modern spatio-temporal data sets, in sociology, epidemiology or seismology, for example, exhibit self-exciting characteristics, triggering and clustering behaviors both at the same time, that a suitable Hawkes space-time process can accurately capture. This paper aims to develop a fast and flexible parametric inference technique to recover the parameters of the kernel functions involved in the intensity function of a space-time Hawkes process based on such data. Our statistical ...
+                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this ...
             </div>
             <div class="details">
-                Many modern spatio-temporal data sets, in sociology, epidemiology or seismology, for example, exhibit self-exciting characteristics, triggering and clustering behaviors both at the same time, that a suitable Hawkes space-time process can accurately capture. This paper aims to develop a fast and flexible parametric inference technique to recover the parameters of the kernel functions involved in the intensity function of a space-time Hawkes process based on such data. Our statistical approach combines three key ingredients: 1) kernels with finite support are considered, 2) the space-time domain is appropriately discretized, and 3) (approximate) precomputations are used. The inference technique we propose then consists of a l2 gradient-based solver that is fast and statistically accurate. In addition to describing the algorithmic aspects, numerical experiments have been carried out on synthetic and real spatio-temporal data, providing solid empirical evidence of the relevance of the proposed methodology.
+                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this paper, we introduce RoseCDL, a scalable and robust CDL algorithm designed for unsupervised rare event detection in long signals. RoseCDL combines stochastic windowing for efficient training on large datasets with inline outlier detection to enhance robustness and isolate anomalous patterns. This reframes CDL as a practical tool for event discovery and characterization in real-world signals, extending its role beyond traditional tasks like compression or denoising.
             </div>
         </div>
     </div>
@@ -130,34 +134,37 @@ $(function(){
             <div class="talk">
         <div class="talk_item">
             <div class="info" style="display: flex;">
-            <span class="title">Filling the gaps: a story of priors and conditional probabilities </span>
+            <span class="title">Reproducibility in AI benchmarking: lessons from Benchopt </span>
             <span style="width:2em;"></span>
 
-            <a href="/talks/26-01-19_L2S_filling-the-gap.pdf">
+            <a href="/talks/26-03-17_MalGa_benchopt.pdf">
 
                 <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
             </a>
 
 
             <span class="filler"></span>
-            <span class="date">19 Jan 2026,</span>
+            <span class="date">17 Mar 2026,</span>
             </div>
-            <span class="conference">At <i>Séminaire SCUBE - L2S - Saclay</i></span>
+            <span class="conference">At <i>MalGA seminar, Genova</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk41"/>
-        <label class="btn display-status" for="talk41">
+        <input type="checkbox" class="btnCtrl" id="talk43"/>
+        <label class="btn display-status" for="talk43">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Inverse problems are often ill-posed: incomplete measurements, noise, and ambiguity mean that we must rely on priors to reconstruct meaningful solutions. In the first part of this talk, I will present recent work that analyzes the limitations and challenges of these approaches when solving unsupervised inverse problems—how the choice of priors can bias reconstructions, how conditional models interact with measurement operators, and what this reveals about the fundamental difficulty of ...
+                Research and development in modern AI are primarily driven by empirical work, benchmarking new methods to evaluate relative performance. However, the statistical variability inherent in evaluation processes is often poorly accounted for, leading to a validation crisis in which genuine advances are difficult to discern. This talk will explore the concept of reproducibility for AI benchmarking, and and discuss recent work on the “validation crisis” — showing how cross-validation can ...
             </div>
             <div class="details">
-                Inverse problems are often ill-posed: incomplete measurements, noise, and ambiguity mean that we must rely on priors to reconstruct meaningful solutions. In the first part of this talk, I will present recent work that analyzes the limitations and challenges of these approaches when solving unsupervised inverse problems—how the choice of priors can bias reconstructions, how conditional models interact with measurement operators, and what this reveals about the fundamental difficulty of filling in missing information.</br>
-Building on this perspective, I will then introduce FIRE (Fixed point Restoration), a framework that addresses these challenges by defining implicit priors not just through denoisers but through general restoration models. The key idea is to characterize natural signals as fixed points of a degradation–restoration cycle, enabling a principled and flexible way to integrate pretrained networks into inverse problem solvers. This fixed-point view not only broadens the class of usable priors but also leads to robust, algorithms with strong empirical performance.
+                Research and development in modern AI are primarily driven by empirical work, benchmarking new methods to evaluate relative performance.</br>
+However, the statistical variability inherent in evaluation processes is often poorly accounted for, leading to a validation crisis in which genuine advances are difficult to discern.</br>
+This talk will explore the concept of reproducibility for AI benchmarking, and and discuss recent work on the “validation crisis” — showing how cross-validation can drastically improve the robustness of algorithm rankings.</br>
+</br>
+I will also present Benchopt, a framework designed to facilitate reproducible, reusable and extendable benchmarking of optimization and AI algorithms, which is a key component in addressing these crisis while also accounting for the need for frugality in modern AI research.
             </div>
         </div>
     </div>

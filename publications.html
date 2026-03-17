@@ -81,6 +81,51 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
+            <span class="title">RoseCDL: Robust and scalable convolutional dictionary learning for rare-event detection </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://openreview.net/forum?id=4XMkOFxxfb">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/tomMoral/RoseCDL">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+                <span class="filler"></span>
+                <span class="date">2026</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Jad Yehya, Mansour Benbakoura, Cédric Allain, Benoit Malezieux, Matthieu Kowalski, Thomas Moreau</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>AISTATS</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub44"/>
+        <label class="btn display-status" for="pub44">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this ...
+            </div>
+            <div class="details">
+                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this paper, we introduce RoseCDL, a scalable and robust CDL algorithm designed for unsupervised rare event detection in long signals. RoseCDL combines stochastic windowing for efficient training on large datasets with inline outlier detection to enhance robustness and isolate anomalous patterns. This reframes CDL as a practical tool for event discovery and characterization in real-world signals, extending its role beyond traditional tasks like compression or denoising.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
             <span class="title">Numerically Efficient Parametric Inference for Learning Space-Time Hawkes Processes </span>
             <span style="width:2em;"></span>
 
@@ -194,47 +239,6 @@ $(function(){
             </div>
             <div class="details">
                 Monitoring mean arterial pressure (MAP) is essential for ensuring safe general anesthesia. Current practices rely either on non-invasive cuff measurements, which suffer from poor temporal resolution, or invasive arterial lines, which provide excellent accuracy and resolution but carry a significant risk of complications. Therefore, identifying alternatives to arterial lines in the operating rooms is a pressing need. Despite the importance of this issue in the community, clinically viable non-invasive MAP monitoring methods have yet to emerge. Existing approaches often encounter reproducibility issues, notably on large, open-source databases, and are not always optimized for real-time predictions. To address these limitations, this study introduces AnesthNet, a deep learning architecture designed for MAP estimation, using data exclusively from non-invasive and routine sensors such as photoplethysmography, ECG, and cuff oscillometer. AnesthNet was evaluated against the best-performing state-of-the-art deep learning architectures, using international standards to assess their performance on two of the largest datasets to date: VitalDB (2,833 patients) and LaribDB (5,060 patients). AnesthNet achieved superior performances, reaching an MAE of 4.6 (± 4.7) mmHg on VitalDB and 3.8 (± 5.7) mmHg on LaribDB. Our model also outperformed other architectures for different delays in cuff values and yielded no significant latency during inference, meeting clinical real-time requirements.
-            </div>
-        </div>
-    </div>
-
-
-    
-
-    <div class="publication">
-        <div class="project_item">
-            <div class="info" style="display: flex;">
-            <span class="title">RoseCDL: Robust and scalable convolutional dictionary learning for rare-event detection </span>
-            <span style="width:2em;"></span>
-
-            <a href="https://arxiv.org/pdf/2509.07523">
-                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-            </a>
-
-
-
-                <span class="filler"></span>
-                <span class="date">2025</span>
-            </div>
-            <div class="info" style="display: flex;">
-                <span class="authors">Jad Yehya, Mansour Benbakoura, Cédric Allain, Benoit Malezieux, Matthieu Kowalski, Thomas Moreau</span>
-                <span class="filler"></span>
-                <span class="venue">preprint  <i>Arxiv</i></span>
-            </div>
-
-        </div>
-
-        <input type="checkbox" class="btnCtrl" id="pub44"/>
-        <label class="btn display-status" for="pub44">
-            <i class="fa fa-plus-circle plus"></i>
-            <i class="fa fa-minus-circle minus"></i>
-        </label>
-        <div class="description">
-            <div class="summary">
-                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this ...
-            </div>
-            <div class="details">
-                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this paper, we introduce RoseCDL, a scalable and robust CDL algorithm designed for unsupervised rare event detection in long signals. RoseCDL combines stochastic windowing for efficient training on large datasets with inline outlier detection to enhance robustness and isolate anomalous patterns. This reframes CDL as a practical tool for event discovery and characterization in real-world signals, extending its role beyond traditional tasks like compression or denoising.
             </div>
         </div>
     </div>
@@ -469,7 +473,7 @@ $(function(){
             <span class="title">DeepInverse: A Python package for solving imaging inverse problems with deep learning </span>
             <span style="width:2em;"></span>
 
-            <a href="https://arxiv.org/pdf/2505.20160">
+            <a href="https://joss.theoj.org/papers/10.21105/joss.08923">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
 
@@ -485,7 +489,7 @@ $(function(){
             <div class="info" style="display: flex;">
                 <span class="authors">Julián Tachella, Matthieu Terris, Samuel Hurault, Andrew Wang, Dongdong Chen, Minh-Hai Nguyen, Maxime Song, Thomas Davies, Leo Davy, Jonathan Dong, Paul Escande, Johannes Hertrich, Zhiyuan Hu, Tobías I Liaudat, Nils Laurent, Brett Levac, Mathurin Massias, Thomas Moreau, Thibaut Modrzyk, Brayan Monroy, Sebastian Neumayer, Jérémy Scanvic, Florian Sarron, Victor Sechaud, Georg Schramm, Romain Vo, Pierre Weiss</span>
                 <span class="filler"></span>
-                <span class="venue">preprint  <i>Arxiv</i></span>
+                <span class="venue">In  <i>JOSS</i></span>
             </div>
 
         </div>
