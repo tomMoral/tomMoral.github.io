@@ -126,6 +126,92 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
+            <span class="title">Where Prior Learning Can and Can’t Work in Unsupervised Inverse Problems </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://ieeexplore.ieee.org/document/11487988">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2026</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Benoît Malézieux; Florent Michel; Thomas Moreau; Matthieu Kowalski</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>TSP</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub61"/>
+        <label class="btn display-status" for="pub61">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Linear inverse problems consist of recovering a signal from noisy, incomplete (or compressed) observations in a lower-dimensional space. Many recent methods approach this by learning a prior from data to compensate for the loss of information, typically using paired clean and degraded examples. However, such supervised approaches are not applicable in unsupervised settings, where no ground truth signals are available. This work focuses on the case where the prior takes the form of a ...
+            </div>
+            <div class="details">
+                Linear inverse problems consist of recovering a signal from noisy, incomplete (or compressed) observations in a lower-dimensional space. Many recent methods approach this by learning a prior from data to compensate for the loss of information, typically using paired clean and degraded examples. However, such supervised approaches are not applicable in unsupervised settings, where no ground truth signals are available. This work focuses on the case where the prior takes the form of a learned dictionary and sparse codes. We provide a theoretical and empirical analysis of the limitations of such unsupervised prior learning. We first show that learning a dictionary is fundamentally unfeasible when observations are obtained through a single measurement operator. Multiple operators make recovery possible, provided they are diverse enough to span the whole signal space. We further study the role of weak structural priors, either introduced via optimization constraints or deep learning architectures, and empirically demonstrate that they outperform handcrafted priors only when they are well adapted to the inverse problem at hand.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">Analysis and Synthesis Denoisers for Forward-Backward Plug-and-Play Algorithms </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/pdf/2411.13276">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+            <a href="https://github.com/tomMoral/dictionary-based_denoisers_FBPnP">
+                <i class="fa fa-github-alt" aria-hidden="true"></i>
+            </a>
+
+
+                <span class="filler"></span>
+                <span class="date">2026</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Matthieu Kowalski, Benoît Malézieux, Thomas Moreau, Audrey Repetti</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>SIAM Journal on Imaging Sciences</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub51"/>
+        <label class="btn display-status" for="pub51">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                In this work we study the behavior of the forward-backward (FB) algorithm when the proximity operator is replaced by a sub-iterative procedure to approximate a Gaussian denoiser, in a Plug-and-Play (PnP) fashion. In particular, we consider both analysis and synthesis Gaussian denoisers within a dictionary framework, obtained by unrolling dual-FB iterations or FB iterations, respectively. We analyze the associated minimization problems as well as the asymptotic behavior of the resulting ...
+            </div>
+            <div class="details">
+                In this work we study the behavior of the forward-backward (FB) algorithm when the proximity operator is replaced by a sub-iterative procedure to approximate a Gaussian denoiser, in a Plug-and-Play (PnP) fashion. In particular, we consider both analysis and synthesis Gaussian denoisers within a dictionary framework, obtained by unrolling dual-FB iterations or FB iterations, respectively. We analyze the associated minimization problems as well as the asymptotic behavior of the resulting FB-PnP iterations. In particular, we show that the synthesis Gaussian denoising problem can be viewed as a proximity operator. For each case, analysis and synthesis, we show that the FB-PnP algorithms solve the same problem whether we use only one or an infinite number of sub-iteration to solve the denoising problem at each iteration. To this aim, we show that each "one sub-iteration" strategy within the FB-PnP can be interpreted as a primal-dual algorithm when a warm-restart strategy is used. We further present similar results when using a Moreau-Yosida smoothing of the global problem, for an arbitrary number of sub-iterations. Finally, we provide numerical simulations to illustrate our theoretical results. In particular we first consider a toy compressive sensing example, as well as an image restoration problem in a deep dictionary framework.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
             <span class="title">Numerically Efficient Parametric Inference for Learning Space-Time Hawkes Processes </span>
             <span style="width:2em;"></span>
 
@@ -636,51 +722,6 @@ $(function(){
             </div>
             <div class="details">
                 Identifying characteristic patterns in time series, such as heartbeats or brain responses to a stimulus, is critical to understanding the physical or physiological phenomena monitored with sensors. Convolutional sparse coding (CSC) methods, which aim to approximate signals by a sparse combination of short signal templates (also called atoms), are well-suited for this task. However, enforcing sparsity leads to non-convex and untractable optimization problems. This article proposes finding the optimal solution to the original and non-convex CSC problem when the atoms do not overlap. Specifically, we show that the reconstruction error satisfies a simple recursive relationship in this setting, which leads to an efficient detection algorithm. We prove that our method correctly estimates the number of patterns and their localization, up to a detection margin that depends on a certain measure of the signal-to-noise ratio. In a thorough empirical study, with simulated and real-world physiological data sets, our method is shown to be more accurate than existing algorithms at detecting the patterns' onsets.
-            </div>
-        </div>
-    </div>
-
-
-    
-
-    <div class="publication">
-        <div class="project_item">
-            <div class="info" style="display: flex;">
-            <span class="title">Analysis and Synthesis Denoisers for Forward-Backward Plug-and-Play Algorithms </span>
-            <span style="width:2em;"></span>
-
-            <a href="https://arxiv.org/pdf/2411.13276">
-                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-            </a>
-
-
-            <a href="https://github.com/tomMoral/dictionary-based_denoisers_FBPnP">
-                <i class="fa fa-github-alt" aria-hidden="true"></i>
-            </a>
-
-
-                <span class="filler"></span>
-                <span class="date">2024</span>
-            </div>
-            <div class="info" style="display: flex;">
-                <span class="authors">Matthieu Kowalski, Benoît Malézieux, Thomas Moreau, Audrey Repetti</span>
-                <span class="filler"></span>
-                <span class="venue">preprint  <i>Arxiv</i></span>
-            </div>
-
-        </div>
-
-        <input type="checkbox" class="btnCtrl" id="pub51"/>
-        <label class="btn display-status" for="pub51">
-            <i class="fa fa-plus-circle plus"></i>
-            <i class="fa fa-minus-circle minus"></i>
-        </label>
-        <div class="description">
-            <div class="summary">
-                In this work we study the behavior of the forward-backward (FB) algorithm when the proximity operator is replaced by a sub-iterative procedure to approximate a Gaussian denoiser, in a Plug-and-Play (PnP) fashion. In particular, we consider both analysis and synthesis Gaussian denoisers within a dictionary framework, obtained by unrolling dual-FB iterations or FB iterations, respectively. We analyze the associated minimization problems as well as the asymptotic behavior of the resulting ...
-            </div>
-            <div class="details">
-                In this work we study the behavior of the forward-backward (FB) algorithm when the proximity operator is replaced by a sub-iterative procedure to approximate a Gaussian denoiser, in a Plug-and-Play (PnP) fashion. In particular, we consider both analysis and synthesis Gaussian denoisers within a dictionary framework, obtained by unrolling dual-FB iterations or FB iterations, respectively. We analyze the associated minimization problems as well as the asymptotic behavior of the resulting FB-PnP iterations. In particular, we show that the synthesis Gaussian denoising problem can be viewed as a proximity operator. For each case, analysis and synthesis, we show that the FB-PnP algorithms solve the same problem whether we use only one or an infinite number of sub-iteration to solve the denoising problem at each iteration. To this aim, we show that each "one sub-iteration" strategy within the FB-PnP can be interpreted as a primal-dual algorithm when a warm-restart strategy is used. We further present similar results when using a Moreau-Yosida smoothing of the global problem, for an arbitrary number of sub-iterations. Finally, we provide numerical simulations to illustrate our theoretical results. In particular we first consider a toy compressive sensing example, as well as an image restoration problem in a deep dictionary framework.
             </div>
         </div>
     </div>
