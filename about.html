@@ -92,41 +92,37 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
-            <span class="title">RoseCDL: Robust and scalable convolutional dictionary learning for rare-event detection </span>
+            <span class="title">Geometry-Aware Discretization Error of Diffusion Models </span>
             <span style="width:2em;"></span>
 
-            <a href="https://openreview.net/forum?id=4XMkOFxxfb">
+            <a href="https://arxiv.org/abs/2605.08392">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
 
-
-            <a href="https://github.com/tomMoral/RoseCDL">
-                <i class="fa fa-github-alt" aria-hidden="true"></i>
-            </a>
 
 
                 <span class="filler"></span>
                 <span class="date">2026</span>
             </div>
             <div class="info" style="display: flex;">
-                <span class="authors">Jad Yehya, Mansour Benbakoura, Cédric Allain, Benoit Malezieux, Matthieu Kowalski, Thomas Moreau</span>
+                <span class="authors">Samuel Hurault, Thomas Moreau, Gabriel Peyré</span>
                 <span class="filler"></span>
-                <span class="venue">In  <i>AISTATS</i></span>
+                <span class="venue">preprint  <i>ArXiv</i></span>
             </div>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="pub44"/>
-        <label class="btn display-status" for="pub44">
+        <input type="checkbox" class="btnCtrl" id="pub63"/>
+        <label class="btn display-status" for="pub63">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this ...
+                Practical diffusion sampling is a numerical approximation problem: under a fixed inference budget, one must simulate a reverse-time ODE or SDE using only a limited number of denoising steps, so discretization error is often the dominant source of error. Existing non-asymptotic analyses provide convergence guarantees, but are typically too loose and too insensitive to diffusion parameters to guide practical design: broad families of schedules receive the same rates, which depend on ...
             </div>
             <div class="details">
-                Identifying recurring patterns and rare events in large-scale signals is a fundamental challenge in fields such as astronomy, physical simulations, and biomedical science. Convolutional Dictionary Learning (CDL) offers a powerful framework for modeling local structures in signals, but its use for detecting rare or anomalous events remains largely unexplored. In particular, CDL faces two key challenges in this setting: high computational cost and sensitivity to artifacts and outliers. In this paper, we introduce RoseCDL, a scalable and robust CDL algorithm designed for unsupervised rare event detection in long signals. RoseCDL combines stochastic windowing for efficient training on large datasets with inline outlier detection to enhance robustness and isolate anomalous patterns. This reframes CDL as a practical tool for event discovery and characterization in real-world signals, extending its role beyond traditional tasks like compression or denoising.
+                Practical diffusion sampling is a numerical approximation problem: under a fixed inference budget, one must simulate a reverse-time ODE or SDE using only a limited number of denoising steps, so discretization error is often the dominant source of error. Existing non-asymptotic analyses provide convergence guarantees, but are typically too loose and too insensitive to diffusion parameters to guide practical design: broad families of schedules receive the same rates, which depend on coarse worst-case quantities such as the dimension or the drift Lipschitz constant. We take a less ambitious but more informative route. In the exact-score setting, we derive first-order asymptotic expansions of the Euler-Maruyama weak and Fréchet discretization errors. These formulas hold for general smooth reverse diffusions and become fully explicit under Gaussian data. They show how discretization error adapts to the geometry of the data through the covariance spectrum, and how this geometry interacts with key diffusion parameters, including the diffusion schedules and the diffusion-term coefficient. This yields tractable objectives for geometry-aware parameter optimization. Finally, we show that the qualitative predictions of the Gaussian formulas remain robust across diffusion sampling problems with different geometries, including image generation on different datasets and image posterior sampling.
             </div>
         </div>
     </div>
@@ -134,28 +130,35 @@ $(function(){
             <div class="talk">
         <div class="talk_item">
             <div class="info" style="display: flex;">
-            <span class="title">Reproducibility in AI benchmarking: lessons from Benchopt </span>
+            <span class="title">AI benchmarking infrastructures: lessons from Benchopt </span>
             <span style="width:2em;"></span>
+
+            <a href="/talks/26-05-06_ICMS_benchopt.pdf">
+
+                <img src="/images/slides.png" style="vertical-align:middle;height:1.5em;", alt="slides"/>
+            </a>
 
 
             <span class="filler"></span>
-            <span class="date">21 Apr 2026,</span>
+            <span class="date">06 May 2026,</span>
             </div>
-            <span class="conference">At <i>French-Swedish Workshop on AI, Paris</i></span>
+            <span class="conference">At <i>Imaging inverse problems and generating models workshop, ICMS, Edinburgh</i></span>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="talk44"/>
-        <label class="btn display-status" for="talk44">
+        <input type="checkbox" class="btnCtrl" id="talk45"/>
+        <label class="btn display-status" for="talk45">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Research and development in modern AI are primarily driven by empirical work, benchmarking new methods to evaluate relative performance. I will present Benchopt, a framework designed to facilitate reproducible, reusable and extendable benchmarking of optimization and AI algorithms, which is a key component in addressing these crisis while also accounting for the need for frugality in modern AI research.
+                Research and development in modern AI are primarily driven by empirical work, benchmarking new methods to evaluate relative performance. However, the statistical variability inherent in evaluation processes and long term maintainance objectives aer often poorly accounted for, leading to a validation crisis in which genuine advances are difficult to discern. This talk presents Benchopt, a framework designed to facilitate reproducible, reusable and extendable benchmarking of optimization and ...
             </div>
             <div class="details">
-                Research and development in modern AI are primarily driven by empirical work, benchmarking new methods to evaluate relative performance. I will present Benchopt, a framework designed to facilitate reproducible, reusable and extendable benchmarking of optimization and AI algorithms, which is a key component in addressing these crisis while also accounting for the need for frugality in modern AI research.
+                Research and development in modern AI are primarily driven by empirical work, benchmarking new methods to evaluate relative performance.</br>
+However, the statistical variability inherent in evaluation processes and long term maintainance objectives aer often poorly accounted for, leading to a validation crisis in which genuine advances are difficult to discern.</br>
+This talk presents Benchopt, a framework designed to facilitate reproducible, reusable and extendable benchmarking of optimization and AI algorithms, which is a key component in addressing these crisis while also accounting for the need for frugality in modern AI research.
             </div>
         </div>
     </div>

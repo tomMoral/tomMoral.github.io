@@ -7,7 +7,7 @@ import json
 
 
 EXPORT_DIR = "."
-STATIC_DIR = "../tommoral.django.local/CV/static/CV"
+STATIC_DIR = "../tommoral.local/CV/static/CV"
 
 
 async def fetch_page(session, url, fname=None):
