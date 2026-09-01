@@ -93,10 +93,10 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
-            <span class="title">Geometry-Aware Discretization Error of Diffusion Models </span>
+            <span class="title">Towards a scalable and composable end-to-end workflow for radio-interferometric imaging </span>
             <span style="width:2em;"></span>
 
-            <a href="https://arxiv.org/abs/2605.08392">
+            <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14153/3104445/Towards-a-scalable-and-composable-end-to-end-workflow-for/10.1117/12.3104445.full?tab=ArticleLink">
                 <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             </a>
 
@@ -106,24 +106,24 @@ $(function(){
                 <span class="date">2026</span>
             </div>
             <div class="info" style="display: flex;">
-                <span class="authors">Samuel Hurault, Thomas Moreau, Gabriel Peyré</span>
+                <span class="authors">Baptiste Besnard, Etienne Bonnassieux, Cyril Tasse, Marwane Dalal, Benoit Malézieux, Tobías I. Liaudat, Dinh-Triem Phan, Thomas Moreau, Javier Conejero, Raül Sirvent, Rosa M. Badia, Damien Gratadour</span>
                 <span class="filler"></span>
-                <span class="venue">preprint  <i>ArXiv</i></span>
+                <span class="venue">In  <i>Radio Telescopes, Technologies, and Methods</i></span>
             </div>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="pub63"/>
-        <label class="btn display-status" for="pub63">
+        <input type="checkbox" class="btnCtrl" id="pub64"/>
+        <label class="btn display-status" for="pub64">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                Practical diffusion sampling is a numerical approximation problem: under a fixed inference budget, one must simulate a reverse-time ODE or SDE using only a limited number of denoising steps, so discretization error is often the dominant source of error. Existing non-asymptotic analyses provide convergence guarantees, but are typically too loose and too insensitive to diffusion parameters to guide practical design: broad families of schedules receive the same rates, which depend on ...
+                The Square Kilometer Array (SKA) is designed to produce massive volumes of data in order to achieve its ambitious observational metrics. Handling such data-intensive processing requires efficient, interoperable tools that cover the full radio interferometry workflow from raw data generation to final data products. Developing a robust and realistic end-to-end workflow has therefore become essential to prepare software systems to leverage SKA data efficiently, to optimize processing time and ...
             </div>
             <div class="details">
-                Practical diffusion sampling is a numerical approximation problem: under a fixed inference budget, one must simulate a reverse-time ODE or SDE using only a limited number of denoising steps, so discretization error is often the dominant source of error. Existing non-asymptotic analyses provide convergence guarantees, but are typically too loose and too insensitive to diffusion parameters to guide practical design: broad families of schedules receive the same rates, which depend on coarse worst-case quantities such as the dimension or the drift Lipschitz constant. We take a less ambitious but more informative route. In the exact-score setting, we derive first-order asymptotic expansions of the Euler-Maruyama weak and Fréchet discretization errors. These formulas hold for general smooth reverse diffusions and become fully explicit under Gaussian data. They show how discretization error adapts to the geometry of the data through the covariance spectrum, and how this geometry interacts with key diffusion parameters, including the diffusion schedules and the diffusion-term coefficient. This yields tractable objectives for geometry-aware parameter optimization. Finally, we show that the qualitative predictions of the Gaussian formulas remain robust across diffusion sampling problems with different geometries, including image generation on different datasets and image posterior sampling.
+                The Square Kilometer Array (SKA) is designed to produce massive volumes of data in order to achieve its ambitious observational metrics. Handling such data-intensive processing requires efficient, interoperable tools that cover the full radio interferometry workflow from raw data generation to final data products. Developing a robust and realistic end-to-end workflow has therefore become essential to prepare software systems to leverage SKA data efficiently, to optimize processing time and resource usage while ensuring that data reduction pipelines can meet the data product quality requirements. In this context, we present recent work towards the implementation of a fully composable and pipelined workflow realizing the entire data generation and processing chain at scale for a typical observation sequence with SKA-Low. Thanks to the use of PyCOMPSs resource-optimization features, which ensure efficient use of hardware by distributing tasks and parallelizing applications across computing infrastructures, we show how such a complex workflow can be efficiently orchestrated to run on state-of-the-art supercomputers. The end-to-end workflow includes instances of OSKAR, to run simulations and generate realistic visibilities from a telescope model, a sky model and an observation setup. This synthetic data then undergoes a calibration stage using QuartiCal to correct direction-independent effects and imaging is performed with DDF-pipeline, an iterative tool combining killMS for direction-dependent calibration and DDFacet for deconvolution. Through comprehensive benchmarking, we discuss how this processing chain enables efficient preparation for SKA-scale challenges and provides a flexible platform for integrating future algorithmic developments, and in particular how AI algorithms for solving inverse imaging problems can be incorporated into the workflow to propose alternative reconstruction methods.
             </div>
         </div>
     </div>

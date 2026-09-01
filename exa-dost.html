@@ -81,7 +81,11 @@ $(function(){
         
             <span class="project_person">Mansour Benbakoura, Postdoc</span>
         
+            <span class="project_person">Jad Yehya, PhD</span>
+        
             <span class="project_person">Geraud Ilinca, Intern</span>
+        
+            <span class="project_person">Hippolyte Verninas, PhD</span>
         
         <h3>Publications</h3>
         
@@ -260,6 +264,47 @@ $(function(){
             </div>
             <div class="details">
                 Scientists and engineers use simulators to model empirically observed phenomena. However, tuning the parameters of a simulator to ensure its outputs match observed data presents a significant challenge. Simulation-based inference (SBI) addresses this by enabling Bayesian inference for simulators, identifying parameters that match observed data and align with prior knowledge. Unlike traditional Bayesian inference, SBI only needs access to simulations from the model and does not require evaluations of the likelihood-function. In addition, SBI algorithms do not require gradients through the simulator, allow for massive parallelization of simulations, and can perform inference for different observations without further simulations or training, thereby amortizing inference. Over the past years, we have developed, maintained, and extended `sbi`, a PyTorch-based package that implements Bayesian SBI algorithms based on neural networks. The `sbi` toolkit implements a wide range of inference methods, neural network architectures, sampling methods, and diagnostic tools. In addition, it provides well-tested default settings but also offers flexibility to fully customize every step of the simulation-based inference workflow. Taken together, the `sbi` toolkit enables scientists and engineers to apply state-of-the-art SBI methods to black-box simulators, opening up new possibilities for aligning simulations with empirically observed data.
+            </div>
+        </div>
+    </div>
+
+        
+            
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">Towards a scalable and composable end-to-end workflow for radio-interferometric imaging </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14153/3104445/Towards-a-scalable-and-composable-end-to-end-workflow-for/10.1117/12.3104445.full?tab=ArticleLink">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2026</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Baptiste Besnard, Etienne Bonnassieux, Cyril Tasse, Marwane Dalal, Benoit Malézieux, Tobías I. Liaudat, Dinh-Triem Phan, Thomas Moreau, Javier Conejero, Raül Sirvent, Rosa M. Badia, Damien Gratadour</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>Radio Telescopes, Technologies, and Methods</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub64"/>
+        <label class="btn display-status" for="pub64">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                The Square Kilometer Array (SKA) is designed to produce massive volumes of data in order to achieve its ambitious observational metrics. Handling such data-intensive processing requires efficient, interoperable tools that cover the full radio interferometry workflow from raw data generation to final data products. Developing a robust and realistic end-to-end workflow has therefore become essential to prepare software systems to leverage SKA data efficiently, to optimize processing time and ...
+            </div>
+            <div class="details">
+                The Square Kilometer Array (SKA) is designed to produce massive volumes of data in order to achieve its ambitious observational metrics. Handling such data-intensive processing requires efficient, interoperable tools that cover the full radio interferometry workflow from raw data generation to final data products. Developing a robust and realistic end-to-end workflow has therefore become essential to prepare software systems to leverage SKA data efficiently, to optimize processing time and resource usage while ensuring that data reduction pipelines can meet the data product quality requirements. In this context, we present recent work towards the implementation of a fully composable and pipelined workflow realizing the entire data generation and processing chain at scale for a typical observation sequence with SKA-Low. Thanks to the use of PyCOMPSs resource-optimization features, which ensure efficient use of hardware by distributing tasks and parallelizing applications across computing infrastructures, we show how such a complex workflow can be efficiently orchestrated to run on state-of-the-art supercomputers. The end-to-end workflow includes instances of OSKAR, to run simulations and generate realistic visibilities from a telescope model, a sky model and an observation setup. This synthetic data then undergoes a calibration stage using QuartiCal to correct direction-independent effects and imaging is performed with DDF-pipeline, an iterative tool combining killMS for direction-dependent calibration and DDFacet for deconvolution. Through comprehensive benchmarking, we discuss how this processing chain enables efficient preparation for SKA-scale challenges and provides a flexible platform for integrating future algorithmic developments, and in particular how AI algorithms for solving inverse imaging problems can be incorporated into the workflow to propose alternative reconstruction methods.
             </div>
         </div>
     </div>
