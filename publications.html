@@ -81,6 +81,166 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
+            <span class="title">Crossing the Validation Crisis: Cross-validation Reduces Benchmarking Variance Surprisingly Well </span>
+            <span style="width:2em;"></span>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2026</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Célestin Eve, Gaël Varoquaux, Thomas Moreau</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>NeurIPS</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub65"/>
+        <label class="btn display-status" for="pub65">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Modern machine learning progresses through empirical work, benchmarking new methods to evaluate relative performance. However, the statistical variability inherent to evaluation -- exacerbated by the stochastic nature of many algorithms -- often makes performance estimation unreliable due to the limited test samples available, leading to a validation crisis in which genuine advances are difficult to discern. In this work, we show that cross-validation improves markedly confidence when ...
+            </div>
+            <div class="details">
+                Modern machine learning progresses through empirical work, benchmarking new methods to evaluate relative performance. However, the statistical variability inherent to evaluation -- exacerbated by the stochastic nature of many algorithms -- often makes performance estimation unreliable due to the limited test samples available, leading to a validation crisis in which genuine advances are difficult to discern. In this work, we show that cross-validation improves markedly confidence when evaluating and comparing learning algorithm performances. We introduce the concept of sample gain, which quantifies the virtual data augmentation achieved by using multiple cross-validation splits to reduce benchmarking variance. Experiments on both synthetic and real-world datasets (histopathologic scans and NLP fine-tuning) demonstrate that multiple splits can substantially improve the reliability and stability of performance estimates, with diminishing returns often setting in later than expected. We also introduce a procedure to dynamically early-stop cross-validation by estimating from the first few folds if subsequent folds will bring large sample gains.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">RoPE is Dead, Long Live RoPE: Towards Scalable Data-aware Positional Encodings </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/abs/2609.34556">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2026</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Jarod Lévy, Mathurin Videau, Jad Yehya, Jean-Rémi King, Stéphane d'Ascoli, Thomas Moreau</span>
+                <span class="filler"></span>
+                <span class="venue">preprint  <i>Arxiv</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub67"/>
+        <label class="btn display-status" for="pub67">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Transformers process tokens without any inherent notion of order, making positional encoding a fundamental requirement rather than an architectural refinement. Rotary Position Embedding (RoPE) has become the default positional encoding in modern language models, yet it is heavily biased toward nearby tokens. Existing alternatives have been evaluated under different settings, leaving the literature fragmented and without a clear replacement. We bring structure to this landscape by examining ...
+            </div>
+            <div class="details">
+                Transformers process tokens without any inherent notion of order, making positional encoding a fundamental requirement rather than an architectural refinement. Rotary Position Embedding (RoPE) has become the default positional encoding in modern language models, yet it is heavily biased toward nearby tokens. Existing alternatives have been evaluated under different settings, leaving the literature fragmented and without a clear replacement. We bring structure to this landscape by examining a specific weakness of RoPE: its slow frequency bands, whose wavelengths exceed the training context and expose models to unseen angles during extrapolation. We therefore introduce Data aware RoPE (DaRoPE), which preserves standard RoPE on the fast bands but replaces absolute position on the slow bands with bounded coordinates learned from contextual representations. Therefore, the slow-band geometry depends on the data rather than only on positional distance. We compare representative encodings under matched conditions across synthetic tasks, symbolic music, genomics, neural signals, and language models spanning 124M to 50B parameters. Across these experiments, DaRoPE leads on non-text benchmarks, mitigates recency bias, while remaining best or on par in language modeling and length extrapolation. Moreover, the learned coordinates also make the mechanism interpretable, revealing how attention layers leverage contextual information beyond token distance. Together, these results support DaRoPE as the best overall default among the evaluated methods, when there is no domain-specific reasons to prefer another.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">What Masking Geometry Works Best for EEG Foundation Models? </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/abs/2609.33487">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2026</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Pierre Guetschel, Bruno Aristimunha, Yassine El Ouahidi, Arnaud Delorme, Thomas Moreau, Michael Tangermann</span>
+                <span class="filler"></span>
+                <span class="venue">preprint  <i>Arxiv</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub68"/>
+        <label class="btn display-status" for="pub68">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                EEG foundation models hold promise for scalable brain-signal decoding across clinical and cognitive neuroscience applications, yet their pre-training pipelines remain poorly understood. Among design choices, the masking strategy is particularly critical: it determines what the network must predict and from which context. Yet it has never been ablated in isolation, as each new model bundles a new masking strategy with a new backbone and objective. In this paper, we formalize the design ...
+            </div>
+            <div class="details">
+                EEG foundation models hold promise for scalable brain-signal decoding across clinical and cognitive neuroscience applications, yet their pre-training pipelines remain poorly understood. Among design choices, the masking strategy is particularly critical: it determines what the network must predict and from which context. Yet it has never been ablated in isolation, as each new model bundles a new masking strategy with a new backbone and objective. In this paper, we formalize the design choices for spatio-temporal masking strategies and train various models with a single pipeline under varying masking configurations across two SSL frameworks (MAE and JEPA). We then systematically evaluate the resulting 58 pre-trained models on the 12 datasets of OpenEEGBench under a linear probe. Both frameworks agree on an optimal masking configuration and on shared failure modes. Outside these, performance is robust: 11 MAE and 9 JEPA configurations are statistically indistinguishable from the best. We further identify a novel JEPA-specific failure mode, tagged bias-inflation collapse, invisible to standard detectors.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">Accurate Decoding of Natural Sentences from Non-Invasive Brain Recordings </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/abs/2608.18114">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2026</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Mingfang Zhang, Jarod Lévy, Cedric Rommel, Jérémy Rapin, Corentin Bel, Julie Bonnaire, Daniel Nieto, Pierre Bourdillon, Svetlana Pinet, Stéphane d'Ascoli, Thomas Moreau, Jean-Rémi King</span>
+                <span class="filler"></span>
+                <span class="venue">preprint  <i>Arxiv</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub66"/>
+        <label class="btn display-status" for="pub66">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Restoring communication for people who have lost the ability to speak or move after a brain injury is a major challenge. While intracranial implants now enable high-performing brain-computer-interfaces, non-invasive alternatives are still lagging behind. Here, we present Brain2Qwerty v2, a model that can decode the production of natural sentences solely from real-time magnetoencephalography (MEG) recordings. By collecting 22,000 sentences typed by nine subjects, each recorded for 10 hours, ...
+            </div>
+            <div class="details">
+                Restoring communication for people who have lost the ability to speak or move after a brain injury is a major challenge. While intracranial implants now enable high-performing brain-computer-interfaces, non-invasive alternatives are still lagging behind. Here, we present Brain2Qwerty v2, a model that can decode the production of natural sentences solely from real-time magnetoencephalography (MEG) recordings. By collecting 22,000 sentences typed by nine subjects, each recorded for 10 hours, our model leverages character, word and sentence-level representations to achieve an average word error rate (WER) of 39%. For our best participant, the model accurately decodes half of the sentences with one word error or less. Critically, decoding accuracy log-linearly improves with data volume, suggesting that the performance gap with intracranial approaches could be partially bridged through data scaling. We show that AI enables this performance in three main ways: the substitution of hand-crafted pipelines for event detection with deep learning, the finetuning of large language models to extract semantic representations, and the deployment of AI agents to iteratively refine our decoding pipeline via automated code development. Together, these results show that non-invasive brain-to-text decoding starts to operate at a level of accuracy previously thought exclusive to surgical implants, opening a path toward safe and efficient brain-computer-interfaces.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
             <span class="title">Towards a scalable and composable end-to-end workflow for radio-interferometric imaging </span>
             <span style="width:2em;"></span>
 
@@ -547,10 +707,6 @@ $(function(){
             <span class="title">De l’importance de la validation croisée </span>
             <span style="width:2em;"></span>
 
-            <a href="Célestin Eve, Thomas Moreau, Gaël Varoquaux">
-                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-            </a>
-
 
             <a href="https://github.com/ceelestin/benchmark_regression">
                 <i class="fa fa-github-alt" aria-hidden="true"></i>
@@ -724,7 +880,7 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
-            <span class="title">UNHaP: Unmixing Noise from Hawkes Processes </span>
+            <span class="title">Unmixing Noise from Hawkes Process to Model Learned Physiological Events </span>
             <span style="width:2em;"></span>
 
             <a href="https://proceedings.mlr.press/v258/loison25a.html">
@@ -1062,6 +1218,199 @@ $(function(){
             </div>
             <div class="details">
                 Motivated by the challenge of seamless cross-dataset transfer in EEG signal processing, this article presents an exploratory study on the use of Joint Embedding Predictive Architectures (JEPAs). In recent years, self-supervised learning has emerged as a promising approach for transfer learning in various domains. However, its application to EEG signals remains largely unexplored. In this article, we introduce Signal-JEPA for representing EEG recordings which includes a novel domain-specific spatial block masking strategy and three novel architectures for downstream classification. The study is conducted on a 54 subjects dataset and the downstream performance of the models is evaluated on three different BCI paradigms: motor imagery, ERP and SSVEP. Our study provides preliminary evidence for the potential of JEPAs in EEG signal encoding. Notably, our results highlight the importance of spatial filtering for accurate downstream classification and reveal an influence of the length of the pre-training examples but not of the mask size on the downstream performance.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">Chapter 3 - Regression and Classification </span>
+            <span style="width:2em;"></span>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2024</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors"><b>Thomas Moreau</b>, Demian Wassermann</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>Medical Image Analysis, The MICCAI Society Book Series</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub70"/>
+        <label class="btn display-status" for="pub70">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                
+            </div>
+            <div class="details">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">PAVI: Plate-Amortized Variational Inference </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://arxiv.org/abs/2206.05111">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2023</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Louis Rouillard, Alexandre Le Bris, Thomas Moreau, Demian Wassermann</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>TMLR</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub69"/>
+        <label class="btn display-status" for="pub69">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Given some observed data and a probabilistic generative model, Bayesian inference aims at obtaining the distribution of a model's latent parameters that could have yielded the data. This task is challenging for large population studies where thousands of measurements are performed over a cohort of hundreds of subjects, resulting in a massive latent parameter space. This large cardinality renders off-the-shelf Variational Inference (VI) computationally impractical. In this work, we design ...
+            </div>
+            <div class="details">
+                Given some observed data and a probabilistic generative model, Bayesian inference aims at obtaining the distribution of a model's latent parameters that could have yielded the data. This task is challenging for large population studies where thousands of measurements are performed over a cohort of hundreds of subjects, resulting in a massive latent parameter space. This large cardinality renders off-the-shelf Variational Inference (VI) computationally impractical. In this work, we design structured VI families that can efficiently tackle large population studies. To this end, our main idea is to share the parameterization and learning across the different i.i.d. variables in a generative model -symbolized by the model's plates. We name this concept plate amortization, and illustrate the powerful synergies it entitles, resulting in expressive, parsimoniously parameterized and orders of magnitude faster to train large scale hierarchical variational distributions. We illustrate the practical utility of PAVI through a challenging Neuroimaging example featuring a million latent parameters, demonstrating a significant step towards scalable and expressive Variational Inference.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">L'entropie comme mesure de difficulté des problèmes inverses </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://hal.science/hal-05132642/document">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2023</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Florent Michel, Benoît Malézieux, Matthieu Kowalski, Thomas Moreau</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>GRETSI</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub74"/>
+        <label class="btn display-status" for="pub74">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Dans le contexte du problème inverse, nous proposons une limite inférieure estimable sur la façon dont nous pouvons récupérer le signal d'intérêt avec l'accès à certains échantillons. Cette limite inférieure est basée sur l'entropie conditionnelle et nous proposons une méthode pour la quantifier en haute dimension avec une approche par sections. Nous montrons que cette mesure est corrélée avec la difficulté d'un problème et qu'elle peut être convertie avec une perte de dimension équivalente.
+            </div>
+            <div class="details">
+                Dans le contexte du problème inverse, nous proposons une limite inférieure estimable sur la façon dont nous pouvons récupérer le signal d'intérêt avec l'accès à certains échantillons. Cette limite inférieure est basée sur l'entropie conditionnelle et nous proposons une méthode pour la quantifier en haute dimension avec une approche par sections. Nous montrons que cette mesure est corrélée avec la difficulté d'un problème et qu'elle peut être convertie avec une perte de dimension équivalente.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">FaDIn : Inférence discrétisée efficace pour les processus de Hawkes avec noyaux paramétriques génériques </span>
+            <span style="width:2em;"></span>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2023</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Guillaume Staerman, Cédric Allain, Alexandre Gramfort, Thomas Moreau</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>GRETSI</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub75"/>
+        <label class="btn display-status" for="pub75">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                
+            </div>
+            <div class="details">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">Borne inférieure de complexité et algorithme quasi-optimal pour la minimisation de risque empirique bi-niveaux </span>
+            <span style="width:2em;"></span>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2023</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Mathieu Dagréou, Thomas Moreau, Samuel Vaiter, Pierre Ablin</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>GRETSI</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub76"/>
+        <label class="btn display-status" for="pub76">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                
+            </div>
+            <div class="details">
+                
             </div>
         </div>
     </div>
@@ -1410,6 +1759,117 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
+            <span class="title">Algorithmes stochastiques et réduction de variance grâce à un nouveau cadre pour l'optimisation bi-niveaux </span>
+            <span style="width:2em;"></span>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2022</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Mathieu Dagréou, Pierre Ablin, Samuel Vaiter, Thomas Moreau</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>GRETSI</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub77"/>
+        <label class="btn display-status" for="pub77">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                
+            </div>
+            <div class="details">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">DriPP : Processus ponctuels pilotés pour la modélisation des signaux M/EEG modulés par stimulation </span>
+            <span style="width:2em;"></span>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2022</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Cédric Allain, Alexandre Gramfort, Thomas Moreau</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>GRETSI</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub78"/>
+        <label class="btn display-status" for="pub78">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                
+            </div>
+            <div class="details">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">Apprentissage de dictionnaire par différentiation automatique pour la résolution de problèmes inverses </span>
+            <span style="width:2em;"></span>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2022</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Benoît Malézieux, Thomas Moreau, Matthieu Kowalski</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>GRETSI</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub79"/>
+        <label class="btn display-status" for="pub79">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                
+            </div>
+            <div class="details">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
             <span class="title">SHINE: SHaring the INverse Estimate from the forward pass for bi-level optimization and implicit models </span>
             <span style="width:2em;"></span>
 
@@ -1451,7 +1911,7 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
-            <span class="title">Dictionary and prior learning with unrolled algorithms for unsupervised inverse problems </span>
+            <span class="title">Understanding Approximate and Unrolled Dictionary Learning for Pattern Recovery </span>
             <span style="width:2em;"></span>
 
             <a href="https://openreview.net/forum?id=rI0LYgGeYaw">
@@ -1707,7 +2167,7 @@ These findings suggest that the increased risk of COVID-19–related mortality i
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
-            <span class="title">Leveraging Global Parameters for Flow-based Neural Posterior Estimation </span>
+            <span class="title">HNPE: Leveraging Global Parameters for Neural Posterior Estimation </span>
             <span style="width:2em;"></span>
 
             <a href="https://papers.nips.cc/paper/2021/file/6fbd841e2e4b2938351a4f9b68f12e6b-Paper.pdf">
@@ -1935,7 +2395,7 @@ Diabetes should be considered as an independent risk factor for the severity of 
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
-            <span class="title">NeuMiss networks: differential programming for supervised learning with missing values </span>
+            <span class="title">NeuMiss networks: differentiable programming for supervised learning with missing values </span>
             <span style="width:2em;"></span>
 
             <a href="https://proceedings.neurips.cc/paper/2020/file/42ae1544956fbe6e09242e6cd752444c-Paper.pdf">
@@ -2283,6 +2743,47 @@ Design Retrospective cohort study.<br/><br/>
             </div>
             <div class="details">
                 This article thoroughly describes a data set of 1020 multivariate gait signals collected with two inertial measurement units, from 230 subjects undergoing a fixed protocol: standing still, walking 10 m, turning around, walking back and stopping. In total, 8.5~h of gait time series are distributed. The measured population was composed of healthy subjects as well as patients with neurological or orthopedic disorders. An outstanding feature of this data set is the amount of signal metadata that are provided. In particular, the start and end time stamps of more than 40,000 footsteps are available, as well as a number of contextual information about each trial. This exact data set was used in [Oudre et al., Template-based step detection with inertial measurement units, Sensors 18, 2018] to design and evaluate a step detection procedure.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">fMRI BOLD Signal Decomposition Using a Multivariate Low-Rank Model </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://hal.science/hal-02163497/document">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2019</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Hamza Cherkaoui, Thomas Moreau, Abderrahim Halimi, Philippe Ciuciu</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>EUSIPCO</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub71"/>
+        <label class="btn display-status" for="pub71">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                Standard methodologies for functional Magnetic Resonance Imaging (fMRI) data analysis decompose the observed Blood Oxygenation Level Dependent (BOLD) signals using voxel-wise linear model and perform maximum likelihood estimation to get the parameters associated with the regressors. In task fMRI, the latter are usually defined from the experimental paradigm and some confounds whereas in resting-state acquisitions, a seed-voxel time-course may be used as predictor. Nowadays, most fMRI ...
+            </div>
+            <div class="details">
+                Standard methodologies for functional Magnetic Resonance Imaging (fMRI) data analysis decompose the observed Blood Oxygenation Level Dependent (BOLD) signals using voxel-wise linear model and perform maximum likelihood estimation to get the parameters associated with the regressors. In task fMRI, the latter are usually defined from the experimental paradigm and some confounds whereas in resting-state acquisitions, a seed-voxel time-course may be used as predictor. Nowadays, most fMRI datasets offer resting-state acquisitions, requiring multi-variate approaches (e.g., PCA, ICA, etc) to extract meaningful information in a data-driven manner. Here, we propose a novel low-rank model of fMRI BOLD data but instead of considering a dimension reduction in space as in ICA, our model relies on convolutional sparse coding between the hemodynamic system and a few temporal atoms which code for the neural activity inducing signals. A rank-1 constraint is also associated with each temporal atom to spatially map its influence in the brain. Within a variational framework, the joint estimation of the neural signals and the associated spatial maps is formulated as a non-convex optimization problem. A local minimizer is computed using an efficient alternate minimization algorithm. The proposed approach is first validated on simulations and then applied to task fMRI data for illustration purpose. Its comparison to a state-of-the-art approach suggests that our method is competitive regarding the uncovered neural fingerprints while offering a richer decomposition in time and space.
             </div>
         </div>
     </div>
@@ -2644,6 +3145,47 @@ In this paper we study the reasons for such acceleration. Our mathematical analy
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
+            <span class="title">An Automated Recording Method in Clinical Consultation to Rate the Limp in Lower Limb Osteoarthritis </span>
+            <span style="width:2em;"></span>
+
+            <a href="https://doi.org/10.1371/journal.pone.0164975">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            </a>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2016</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Rémi Barrois-Müller, Thomas Gregory, Laurent Oudre, Thomas Moreau, Charles Truong, Alfredo Aram Pulini, Aliénor Vienne-Jumeau, Christophe Labourdette, Nicolas Vayatis, Stéphane Buffat, Alain Yelnik, Catherine de Waele, Serge Laporte, Pierre-Paul Vidal, Damien Ricard</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>PLoS ONE</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub72"/>
+        <label class="btn display-status" for="pub72">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                
+            </div>
+            <div class="details">
+                
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
             <span class="title">Distributed Convolutional Sparse Coding via Message Passing Interface </span>
             <span style="width:2em;"></span>
 
@@ -2753,6 +3295,43 @@ In this paper we study the reasons for such acceleration. Our mathematical analy
             </div>
             <div class="details">
                 This article presents a method for step detection from accelerometer signals based on template matching. This method uses a library of step templates extracted from real data in order to not only count the steps but also to retrieve the start and end times of each step. The algorithm is tested on a large database of 300 recordings, composed of healthy patients and patients with various orthopaedic troubles. Simulations show that even with only 20 templates, our method achieves remarkable results with a 97% recall and a 96% precision, is robust and adapts well to pathological subjects.
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="publication">
+        <div class="project_item">
+            <div class="info" style="display: flex;">
+            <span class="title">Quantify Osteoarthritis Gait at the Doctor's Office: A Simple Pelvis Accelerometer Based Method Independent from Footwear and Aging </span>
+            <span style="width:2em;"></span>
+
+
+
+                <span class="filler"></span>
+                <span class="date">2015</span>
+            </div>
+            <div class="info" style="display: flex;">
+                <span class="authors">Rémi Barrois-Müller, Laurent Oudre, Thomas Moreau, Charles Truong, Nicolas Vayatis, Stéphane Buffat, Alain Yelnik, Catherine de Waele, Thomas Gregory, Serge Laporte</span>
+                <span class="filler"></span>
+                <span class="venue">In  <i>Computer Methods in Biomechanics and Biomedical Engineering</i></span>
+            </div>
+
+        </div>
+
+        <input type="checkbox" class="btnCtrl" id="pub73"/>
+        <label class="btn display-status" for="pub73">
+            <i class="fa fa-plus-circle plus"></i>
+            <i class="fa fa-minus-circle minus"></i>
+        </label>
+        <div class="description">
+            <div class="summary">
+                
+            </div>
+            <div class="details">
+                
             </div>
         </div>
     </div>

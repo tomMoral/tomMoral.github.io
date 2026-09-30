@@ -93,12 +93,8 @@ $(function(){
     <div class="publication">
         <div class="project_item">
             <div class="info" style="display: flex;">
-            <span class="title">Towards a scalable and composable end-to-end workflow for radio-interferometric imaging </span>
+            <span class="title">Crossing the Validation Crisis: Cross-validation Reduces Benchmarking Variance Surprisingly Well </span>
             <span style="width:2em;"></span>
-
-            <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14153/3104445/Towards-a-scalable-and-composable-end-to-end-workflow-for/10.1117/12.3104445.full?tab=ArticleLink">
-                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-            </a>
 
 
 
@@ -106,24 +102,24 @@ $(function(){
                 <span class="date">2026</span>
             </div>
             <div class="info" style="display: flex;">
-                <span class="authors">Baptiste Besnard, Etienne Bonnassieux, Cyril Tasse, Marwane Dalal, Benoit Malézieux, Tobías I. Liaudat, Dinh-Triem Phan, Thomas Moreau, Javier Conejero, Raül Sirvent, Rosa M. Badia, Damien Gratadour</span>
+                <span class="authors">Célestin Eve, Gaël Varoquaux, Thomas Moreau</span>
                 <span class="filler"></span>
-                <span class="venue">In  <i>Radio Telescopes, Technologies, and Methods</i></span>
+                <span class="venue">In  <i>NeurIPS</i></span>
             </div>
 
         </div>
 
-        <input type="checkbox" class="btnCtrl" id="pub64"/>
-        <label class="btn display-status" for="pub64">
+        <input type="checkbox" class="btnCtrl" id="pub65"/>
+        <label class="btn display-status" for="pub65">
             <i class="fa fa-plus-circle plus"></i>
             <i class="fa fa-minus-circle minus"></i>
         </label>
         <div class="description">
             <div class="summary">
-                The Square Kilometer Array (SKA) is designed to produce massive volumes of data in order to achieve its ambitious observational metrics. Handling such data-intensive processing requires efficient, interoperable tools that cover the full radio interferometry workflow from raw data generation to final data products. Developing a robust and realistic end-to-end workflow has therefore become essential to prepare software systems to leverage SKA data efficiently, to optimize processing time and ...
+                Modern machine learning progresses through empirical work, benchmarking new methods to evaluate relative performance. However, the statistical variability inherent to evaluation -- exacerbated by the stochastic nature of many algorithms -- often makes performance estimation unreliable due to the limited test samples available, leading to a validation crisis in which genuine advances are difficult to discern. In this work, we show that cross-validation improves markedly confidence when ...
             </div>
             <div class="details">
-                The Square Kilometer Array (SKA) is designed to produce massive volumes of data in order to achieve its ambitious observational metrics. Handling such data-intensive processing requires efficient, interoperable tools that cover the full radio interferometry workflow from raw data generation to final data products. Developing a robust and realistic end-to-end workflow has therefore become essential to prepare software systems to leverage SKA data efficiently, to optimize processing time and resource usage while ensuring that data reduction pipelines can meet the data product quality requirements. In this context, we present recent work towards the implementation of a fully composable and pipelined workflow realizing the entire data generation and processing chain at scale for a typical observation sequence with SKA-Low. Thanks to the use of PyCOMPSs resource-optimization features, which ensure efficient use of hardware by distributing tasks and parallelizing applications across computing infrastructures, we show how such a complex workflow can be efficiently orchestrated to run on state-of-the-art supercomputers. The end-to-end workflow includes instances of OSKAR, to run simulations and generate realistic visibilities from a telescope model, a sky model and an observation setup. This synthetic data then undergoes a calibration stage using QuartiCal to correct direction-independent effects and imaging is performed with DDF-pipeline, an iterative tool combining killMS for direction-dependent calibration and DDFacet for deconvolution. Through comprehensive benchmarking, we discuss how this processing chain enables efficient preparation for SKA-scale challenges and provides a flexible platform for integrating future algorithmic developments, and in particular how AI algorithms for solving inverse imaging problems can be incorporated into the workflow to propose alternative reconstruction methods.
+                Modern machine learning progresses through empirical work, benchmarking new methods to evaluate relative performance. However, the statistical variability inherent to evaluation -- exacerbated by the stochastic nature of many algorithms -- often makes performance estimation unreliable due to the limited test samples available, leading to a validation crisis in which genuine advances are difficult to discern. In this work, we show that cross-validation improves markedly confidence when evaluating and comparing learning algorithm performances. We introduce the concept of sample gain, which quantifies the virtual data augmentation achieved by using multiple cross-validation splits to reduce benchmarking variance. Experiments on both synthetic and real-world datasets (histopathologic scans and NLP fine-tuning) demonstrate that multiple splits can substantially improve the reliability and stability of performance estimates, with diminishing returns often setting in later than expected. We also introduce a procedure to dynamically early-stop cross-validation by estimating from the first few folds if subsequent folds will bring large sample gains.
             </div>
         </div>
     </div>
